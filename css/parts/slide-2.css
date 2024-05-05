@@ -1,0 +1,12 @@
+.__slide-2 {
+	--clr-bg: hsl(var(--clr-0a));
+
+	z-index: 1;
+}
+
+.__slide-2 .plain-cards {
+	--col: 4;
+	--x: 3;
+
+	place-self: start center;
+}

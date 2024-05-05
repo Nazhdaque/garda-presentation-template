@@ -1,0 +1,195 @@
+.icon-bg {
+	--img-w: var(--img-h);
+
+	background: var(--clr-solid, none);
+	transition: var(--tsn, none);
+	border-radius: var(--radius, initial);
+	line-height: normal;
+
+	display: grid;
+	place-items: center;
+	color: hsl(var(--clr-0a));
+	font-weight: var(--fw-hv);
+}
+
+.inner-icon {
+	padding: var(--icon-gap, 7.5%);
+	z-index: 1;
+	aspect-ratio: 1;
+}
+
+.round {
+	--radius: 50%;
+}
+
+.sphere-1a {
+	--clr-solid: var(--sphere-1a);
+}
+.sphere-1b {
+	--clr-solid: var(--sphere-1b);
+}
+.sphere-1a-1b {
+	--clr-solid: var(--sphere-1a-1b);
+}
+.sphere-1b-1a {
+	--clr-solid: var(--sphere-1b-1a);
+}
+
+.eye {
+	--overlay: var(--eye);
+}
+
+.txt-icon {
+	--unit: calc(var(--fs-rg) * var(--lh-rg));
+	--leading: calc(var(--unit) - var(--fs-rg));
+	--img-h: calc(var(--unit) * var(--size-x, 3) + var(--leading)) !important;
+
+	float: left;
+	margin: var(--leading) var(--gap, var(--fs-rg)) 0 0;
+}
+
+.txt-icon.-size-x2 {
+	--size-x: 2;
+}
+.txt-icon.-size-x4 {
+	--size-x: 4;
+}
+.txt-icon.-size-x5 {
+	--size-x: 5;
+}
+.txt-icon.-size-x6 {
+	--size-x: 6;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| material ui icons */
+.mui-icon {
+	--icon-size: calc(var(--img-w) * 0.75);
+	--clr-solid: hsl(var(--clr-0c));
+
+	color: var(--clr-solid, hsl(var(--clr-0c)));
+	font-size: var(--icon-size) !important;
+	display: grid !important;
+	place-items: center;
+	transition: color var(--time);
+}
+
+/* |||||||||| |||||||||| |||||||||| */
+.contacts-icon {
+	--clr-solid: hsl(var(--clr-0a));
+	--icon-size: calc(var(--img-h) * 0.65);
+	--img-h: var(--logo-height);
+	--tsn: background-color var(--time);
+}
+.contacts-icon:where(:hover, :focus-visible) {
+	--clr-solid: hsl(var(--clr-0c));
+}
+.contacts-icon:where(:hover, :focus-visible) .mui-icon {
+	--clr-solid: hsl(var(--clr-0a));
+}
+
+.phone {
+	--content-width: 10em;
+
+	transition: margin-right var(--time);
+}
+.phone:where(:hover, :focus-visible) {
+	margin-right: var(--content-width);
+}
+
+.phone::before {
+	height: 100%;
+	font-family: var(--ff-rg);
+	font-weight: var(--fw-eb);
+	padding-inline: 0;
+	content: "+7 (495) 540-05-27";
+	white-space: nowrap;
+	background-color: var(--clr-solid, hsl(var(--clr-1a)));
+	color: hsl(var(--clr-0a));
+	border-radius: 100vw;
+	display: grid;
+	place-items: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: width var(--time), padding-inline var(--time),
+		border-radius var(--time), background-color var(--time), opacity var(--time);
+}
+.phone:where(:hover, :focus-visible)::before {
+	width: var(--content-width);
+	padding-inline: 1.5em 0.25em;
+	opacity: 1;
+}
+
+.phone::after {
+	width: var(--logo-height);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| icomoon icons */
+.social-icon {
+	font-size: var(--logo-height) !important;
+	color: var(--clr-solid, hsl(var(--clr-0a)));
+	width: 1em;
+	transition: color var(--time);
+	position: relative;
+}
+.social-icon::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	width: 60%;
+	height: 60%;
+	background-color: var(--clr-solid, hsl(var(--clr-0c)));
+	transition: background-color var(--time);
+	z-index: -1;
+	border-radius: 50%;
+}
+.social-icon:where(:hover, :focus-visible) {
+	--clr-solid: hsl(var(--clr-0c));
+}
+.social-icon:where(:hover, :focus-visible)::after {
+	--clr-solid: hsl(var(--clr-0a));
+}
+
+.icon-vk,
+.icon-youtube {
+	font-size: calc(var(--logo-height) + 2px) !important;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.diamond {
+	--shadow: none;
+	--deg: -80deg;
+	--image: url(/images/demo-bg-1.svg);
+	--underlay: linear-gradient(
+		hsl(var(--clr-1a), 1) 40%,
+		hsl(var(--clr-1b), 1) 100%
+	);
+	--filters: brightness(1.15) saturate(1.15);
+
+	/* filter: drop-shadow(0 0 0.1rem hsla(var(--clr-1a), 0.75)); */
+	height: var(--img-h);
+	aspect-ratio: var(--asp);
+	position: relative;
+}
+.diamond::before {
+	position: absolute;
+	content: "";
+	inset: 0;
+	background: var(--underlay);
+	border-radius: 50%;
+	transform: rotate(var(--deg, 0));
+	filter: blur(2rem) brightness(2) opacity(0.33) saturate(2);
+}
+.diamond > * {
+	clip-path: var(--clip, none);
+	background-image: var(--image, none), var(--underlay, none);
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: luminosity;
+	filter: var(--filters);
+	transform: rotate(var(--deg, 0));
+}
+
+.diamond__icon {
+	transform: rotate(calc(var(--deg, 0) * -1));
+}

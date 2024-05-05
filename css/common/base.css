@@ -1,0 +1,140 @@
+:where(*, *::before, *::after) {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:where(img, picture, canvas, svg) {
+	max-width: 100%;
+	display: block;
+}
+
+:where(ul, ol) {
+	list-style: none;
+}
+
+:where(a, button) {
+	cursor: pointer;
+	font-size: inherit;
+	color: inherit;
+	border: none;
+	outline: none;
+	background: none;
+	text-decoration: none;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+:where(h1, h2, h3, h4, h5, h6)::first-letter {
+	margin-left: -0.05em;
+}
+
+b {
+	font-weight: var(--fw-eb);
+}
+
+:where(p + *, ul + *) {
+	margin-top: 0.5em;
+}
+
+*::selection {
+	background-color: hsl(var(--clr-1b), 0.25);
+}
+
+* {
+	color: var(--clr-solid, var(--clr-0c));
+}
+
+html,
+body {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: var(--header-height);
+	height: 100%;
+}
+
+body {
+	--overlay: hsla(0, 0%, 0%, 0.25);
+
+	font-family: var(--ff-rg);
+	font-weight: var(--fw-rg);
+	font-size: var(--fs-rg);
+	line-height: var(--lh-rg);
+
+	background-image: url(/images/img-5-xl.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| https://css-generators.com/ */
+.pattern-bg-1 {
+	--s: 4rem; /* control the size*/
+	--c1: hsl(0, 0%, 99%);
+	--c2: hsl(0, 0%, 96%);
+	--c3: hsl(0, 0%, 93%);
+
+	--_g: 0 120deg, #0000 0;
+	background: conic-gradient(
+			from 0deg at calc(500% / 6) calc(100% / 3),
+			var(--c3) var(--_g)
+		),
+		conic-gradient(
+			from -120deg at calc(100% / 6) calc(100% / 3),
+			var(--c2) var(--_g)
+		),
+		conic-gradient(
+			from 120deg at calc(100% / 3) calc(500% / 6),
+			var(--c1) var(--_g)
+		),
+		conic-gradient(
+			from 120deg at calc(200% / 3) calc(500% / 6),
+			var(--c1) var(--_g)
+		),
+		conic-gradient(
+			from -180deg at calc(100% / 3) 50%,
+			var(--c2) 60deg,
+			var(--c1) var(--_g)
+		),
+		conic-gradient(
+			from 60deg at calc(200% / 3) 50%,
+			var(--c1) 60deg,
+			var(--c3) var(--_g)
+		),
+		conic-gradient(
+			from -60deg at 50% calc(100% / 3),
+			var(--c1) 120deg,
+			var(--c2) 0 240deg,
+			var(--c3) 0
+		);
+
+	background-size: calc(var(--s) * 1.732) var(--s);
+	background-position: center;
+}
+
+.pattern-bg-2 {
+	--s: 120px; /* control the size */
+	--c1: hsl(0, 0%, 99%);
+	--c2: hsl(0, 0%, 96%);
+	--c3: hsl(0, 0%, 93%);
+
+	--_l: #0000 calc(25% / 3), var(--c1) 0 25%, #0000 0;
+	--_g: conic-gradient(from 120deg at 50% 87.5%, var(--c1) 120deg, #0000 0);
+	background: var(--_g), var(--_g) 0 calc(var(--s) / 2),
+		conic-gradient(from 180deg at 75%, var(--c2) 60deg, #0000 0),
+		conic-gradient(from 60deg at 75% 75%, var(--c1) 0 60deg, #0000 0),
+		linear-gradient(150deg, var(--_l)) 0 calc(var(--s) / 2),
+		conic-gradient(
+			at 25% 25%,
+			#0000 50%,
+			var(--c2) 0 240deg,
+			var(--c1) 0 300deg,
+			var(--c2) 0
+		),
+		linear-gradient(-150deg, var(--_l)) var(--c3);
+	background-size: calc(0.866 * var(--s)) var(--s);
+}

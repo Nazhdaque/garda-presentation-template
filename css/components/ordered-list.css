@@ -1,0 +1,32 @@
+.ordered-list {
+	counter-reset: list-counter 0;
+}
+
+.ordered-list > * {
+	counter-increment: list-counter;
+}
+
+.ordered-list .img-box {
+	--img-size: max-content;
+
+	z-index: 1;
+}
+.ordered-list .img-box::before {
+	content: "/" counter(list-counter) ".";
+	font-family: var(--ff-rg);
+	font-weight: var(--fw-eb);
+	color: var(--clr-solid, hsl(var(--clr-0b), 1));
+}
+
+.ordered-list.plain-cards .img-box {
+	background-color: initial;
+}
+
+.ordered-list.framed-cards .img-box:not(.framed-card__body .img-box) {
+	place-self: center;
+	padding: 0.5em;
+}
+
+.ordered-list .framed-card__body {
+	padding-top: calc(var(--card-gap) * 2);
+}

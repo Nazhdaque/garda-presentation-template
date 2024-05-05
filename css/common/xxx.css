@@ -1,0 +1,51 @@
+/* quick area highlighting */
+.xxx {
+	--clr-shift: 310;
+	--hue: calc(var(--clr-shift) + var(--deg));
+	--thickness: 0.1rem;
+	--density: 2;
+	--transparency: 0.25;
+	--border: hsl(var(--hue), 100%, 50%) 0.1rem dotted;
+
+	position: relative;
+}
+.xxx::after {
+	position: absolute;
+	content: "";
+	inset: 0;
+	border: var(--border);
+	background: repeating-linear-gradient(
+		-60deg,
+		hsl(var(--hue), 100%, 50%, var(--transparency)) 0 var(--thickness),
+		transparent var(--thickness) calc(var(--thickness) * var(--density))
+	);
+	background-clip: padding-box;
+	z-index: 99;
+}
+.xxx:nth-child(3n + 1) {
+	--deg: 0;
+}
+.xxx:nth-child(3n + 2) {
+	--deg: 120;
+}
+.xxx:nth-child(3n + 3) {
+	--deg: 240;
+}
+.xxx:where(:hover, :focus-visible) {
+	--hue: calc(var(--clr-shift) + var(--deg) + 180);
+}
+.xxx:focus-visible {
+	--hue: calc(var(--clr-shift) + var(--deg) + 270);
+}
+.xxx:where(a:active, button:active) {
+	--hue: calc(var(--clr-shift) + var(--deg) + 90);
+}
+.xxx .xxx {
+	--deg: 210;
+	z-index: 100;
+}
+
+.zzz {
+	width: 100%;
+	height: 100%;
+}

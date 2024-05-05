@@ -1,0 +1,60 @@
+.plain-cards {
+	--col: 4;
+	--gap-x: 3em;
+	--gap-y: 4em;
+	--inner-gap: 1.5em;
+	--img-size: 5em;
+
+	margin-block: var(--gap-y);
+	grid-auto-rows: min-content;
+}
+
+.plain-card {
+	display: grid;
+	gap: var(--inner-gap);
+	grid-auto-flow: var(--flow, row);
+	grid-template-columns: var(--gtc, none);
+	grid-auto-rows: min-content;
+}
+.-flow-col {
+	--flow: column;
+}
+
+.-ttl-aside,
+.-ttl-aside .plain-card {
+	--gtc: min-content 1fr;
+}
+
+.plain-card__body .plain-card__ttl {
+	margin-bottom: 0.3em;
+}
+
+.img-box + .plain-card__ttl {
+	grid-column: 2;
+	place-self: center start;
+}
+
+.plain-card__body {
+	grid-column: span 2;
+}
+
+.-framed {
+	z-index: 1;
+	position: relative;
+	border: var(--card-border, 0.5rem) solid transparent;
+	padding: var(--inner-gap, 1.5em);
+}
+.-framed::before {
+	position: absolute;
+	content: "";
+	background-image: var(--clr-1b-1a-solid);
+	inset: calc(var(--card-border, 0.5rem) * -1);
+	z-index: -2;
+}
+.-framed::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: var(--clr-bg);
+	z-index: -1;
+}

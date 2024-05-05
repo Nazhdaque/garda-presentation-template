@@ -1,0 +1,32 @@
+.slide {
+	background-color: var(--clr-bg, initial);
+	position: relative;
+	padding-block: 2rem;
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+/* top right beam */
+.slide:not(:first-child):before {
+	position: absolute;
+	content: "";
+	top: -1rem;
+	right: 0;
+	z-index: 2;
+	clip-path: polygon(100% 0, 0 70%, 100% 30%);
+	width: 6rem;
+	aspect-ratio: 1;
+	background-image: linear-gradient(
+		80deg,
+		hsl(var(--clr-1b)) 0,
+		hsl(var(--clr-1a)) 100%
+	);
+}
+
+.slide-ttl {
+	--col: 3;
+	--x: 2;
+
+	max-width: fit-content;
+}

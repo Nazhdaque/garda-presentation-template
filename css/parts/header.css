@@ -1,0 +1,15 @@
+.main-header__group {
+	padding-block: var(--header-top) var(--header-bottom);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.brand-logo {
+	display: block;
+	max-width: var(--logo-size);
+	min-width: var(--logo-size);
+	aspect-ratio: var(--logo-x) / var(--logo-y);
+	outline: none;
+	overflow: hidden;
+}

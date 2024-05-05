@@ -1,0 +1,107 @@
+:root,
+::backdrop {
+	font-size: clamp(15px, 1dvw + 1dvh + 0.5vmin, 18px);
+	--max-content-width: 100rem;
+
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
+	--clr-0a: #ffffff;
+	--clr-0a: 0, 0%, 100%;
+	--clr-0b: #2c313b;
+	--clr-0b: 220, 15%, 20%;
+	--clr-0c: #41464f;
+	--clr-0c: 219, 10%, 28%;
+	--clr-1a: #9b4fd6;
+	--clr-1a-h: 274;
+	--clr-1a-s: 62%;
+	--clr-1a-l: 57%;
+	--clr-1a: var(--clr-1a-h), var(--clr-1a-s), var(--clr-1a-l);
+	--clr-1b: #2baae2;
+	--clr-1b-h: 198;
+	--clr-1b-s: 76%;
+	--clr-1b-l: 53%;
+	--clr-1b: var(--clr-1b-h), var(--clr-1b-s), var(--clr-1b-l);
+	--clr-1b-1a-solid: linear-gradient(
+		30deg,
+		hsl(var(--clr-1b)) 0,
+		hsl(var(--clr-1a)) 100%
+	);
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
+	/* --sphere-1a: radial-gradient(
+		circle at 65% 15%,
+		white 0.01em,
+		hsl(
+				var(--clr-1a-h),
+				calc(var(--clr-1a-s) * 0.5),
+				calc(var(--clr-1a-l) * 1.75)
+			)
+			3%,
+		hsl(
+				var(--clr-1a-h),
+				calc(var(--clr-1a-s) * 0.5),
+				calc(var(--clr-1a-l) * 0.5)
+			)
+			60%,
+		hsl(
+				var(--clr-1a-h),
+				calc(var(--clr-1a-s) * 0.5),
+				calc(var(--clr-1a-l) * 1.75)
+			)
+			100%
+	); */
+
+	--sphere-1a: radial-gradient(
+		circle at 65% 15%,
+		white 0.01em,
+		hsl(var(--clr-1a)) 3%,
+		hsl(var(--clr-1a-h), var(--clr-1a-s), calc(var(--clr-1a-l) * 0.4)) 60%,
+		hsl(var(--clr-1a)) 100%
+	);
+
+	--sphere-1b: radial-gradient(
+		circle at 65% 15%,
+		white 0.01em,
+		hsl(var(--clr-1b)) 3%,
+		hsl(var(--clr-1b-h), var(--clr-1b-s), calc(var(--clr-1b-l) * 0.4)) 60%,
+		hsl(var(--clr-1b)) 100%
+	);
+
+	--sphere-1a-1b: radial-gradient(
+		circle at 65% 15%,
+		white 0.01em,
+		hsl(var(--clr-1a)) 3%,
+		hsl(var(--clr-1b-h), var(--clr-1b-s), calc(var(--clr-1b-l) * 0.4)) 60%,
+		hsl(var(--clr-1b)) 100%
+	);
+
+	--sphere-1b-1a: radial-gradient(
+		circle at 65% 15%,
+		white 0.01em,
+		hsl(var(--clr-1b)) 3%,
+		hsl(var(--clr-1a-h), var(--clr-1a-s), calc(var(--clr-1a-l) * 0.4)) 60%,
+		hsl(var(--clr-1a)) 100%
+	);
+
+	--eye: radial-gradient(
+		circle at 50% 50%,
+		hsl(0, 0%, 50%, 0.15) 25%,
+		hsl(0, 0%, 0%, 0.65) 75%,
+		hsl(0, 0%, 50%, 0.15) 100%
+	);
+
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
+	--time: 0.1s;
+	--easing: ease-in;
+
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
+	--logo-size: 12rem;
+	--logo-x: 310.52;
+	--logo-y: 49.85;
+	--logo-height: calc((var(--logo-size) / var(--logo-x)) * var(--logo-y));
+
+	--header-top: 1rem;
+	--header-bottom: var(--header-top);
+	--header-height: calc(
+		var(--header-top) + var(--logo-height) + var(--header-bottom)
+	);
+	--main-height: calc(100% - var(--header-height) * 2);
+}

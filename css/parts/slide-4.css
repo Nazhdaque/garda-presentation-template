@@ -1,0 +1,17 @@
+.__slide-4 {
+	--clr-bg: hsl(var(--clr-0b));
+	--clr-solid: hsl(var(--clr-0a));
+
+	z-index: 1;
+	background-image: url(./images/slide-bg-19.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.__slide-4 .plain-cards {
+	--col: 4;
+	--x: 3;
+
+	place-self: start center;
+}

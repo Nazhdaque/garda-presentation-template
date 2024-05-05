@@ -1,0 +1,12 @@
+.__slide-1 {
+	--clr-solid: hsl(var(--clr-0a));
+}
+
+.__slide-1 .slide-ttl {
+	place-self: center;
+	margin-top: auto;
+}
+
+.__slide-1 .plain-cards {
+	--clr-solid: none;
+}

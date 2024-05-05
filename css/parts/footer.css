@@ -1,0 +1,9 @@
+.main-footer__group {
+	--time: 0.25s;
+
+	height: var(--header-height);
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	z-index: 1;
+}
