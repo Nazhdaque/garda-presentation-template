@@ -1,17 +1,17 @@
 .slide {
 	background-color: var(--clr-bg, initial);
 	position: relative;
-	padding-block: 2rem;
+	padding-block: 4rem;
 
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
 
 /* top right beam */
-.slide:not(:first-child):before {
+.slide::before {
 	position: absolute;
 	content: "";
-	top: -1rem;
+	top: -1.25rem;
 	right: 0;
 	z-index: 2;
 	clip-path: polygon(100% 0, 0 70%, 100% 30%);
@@ -29,4 +29,17 @@
 	--x: 2;
 
 	max-width: fit-content;
+}
+
+.slide__top-group {
+	display: flex;
+	justify-content: space-between;
+	/* align-items: baseline; */
+	margin-bottom: 3rem;
+}
+.slide__top-group .brand-logo {
+	--logo-size: 14rem;
+
+	margin-left: auto;
+	margin-top: 0.5rem;
 }
