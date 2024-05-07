@@ -11,7 +11,7 @@
 
 .__slide-4 .plain-cards {
 	--col: 4;
-	--x: 3;
+	/* --x: 3; */
 
 	place-self: start center;
 }
