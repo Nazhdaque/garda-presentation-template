@@ -8,10 +8,10 @@
 
 @import url(./components/icons.css) layer(components);
 @import url(./components/scroll-snap.css) layer(components);
-@import url(./components/framed-card.css) layer(components);
-@import url(./components/plain-card.css) layer(components);
+@import url(./components/card-framed.css) layer(components);
+@import url(./components/card-plain.css) layer(components);
 @import url(./components/ordered-list.css) layer(components);
-@import url(./components/bulleted-list.css) layer(components);
+@import url(./components/list-bullet.css) layer(components);
 @import url(./components/txt-link.css) layer(components);
 @import url(./components/scroll-down.css) layer(components);
 @import url(./components/beams.css) layer(components);
@@ -24,6 +24,8 @@
 @import url(./parts/slide-3.css) layer(parts);
 @import url(./parts/slide-4.css) layer(parts);
 @import url(./parts/slide-5.css) layer(parts);
+@import url(./parts/slide-6.css) layer(parts);
+@import url(./parts/slide-7.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);
 
 @import url(./common/utilities.css) layer(utilities);

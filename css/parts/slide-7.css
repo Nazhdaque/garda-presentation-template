@@ -1,10 +1,8 @@
-.__slide-2 {
+.__slide-7 {
 	--clr-bg: hsl(var(--clr-0a));
-
-	z-index: 1;
 }
 
-.__slide-2 .cards-plain {
+.__slide-7 .cards-plain {
 	--col: 4;
 	--x: 3;
 

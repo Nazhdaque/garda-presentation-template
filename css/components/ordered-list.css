@@ -18,15 +18,15 @@
 	color: var(--clr-solid, hsl(var(--clr-0b), 1));
 }
 
-.ordered-list.plain-cards .img-box {
+.ordered-list.cards-plain .img-box {
 	background-color: initial;
 }
 
-.ordered-list.framed-cards .img-box:not(.framed-card__body .img-box) {
+.ordered-list.cards-framed .img-box:not(.card-framed__body .img-box) {
 	place-self: center;
 	padding: 0.5em;
 }
 
-.ordered-list .framed-card__body {
+.ordered-list .card-framed__body {
 	padding-top: calc(var(--card-gap) * 2);
 }

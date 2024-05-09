@@ -1,10 +1,10 @@
-.bulleted-list li {
+.list-bullet li {
 	display: grid;
 	column-gap: 1em;
 	grid-template-columns: min-content 1fr;
 }
 
-.bulleted-list li::before {
+.list-bullet li::before {
 	content: "";
 	background-color: hsl(var(--clr-1b));
 	width: 0.5em;
@@ -12,22 +12,22 @@
 	margin-top: 0.5em;
 }
 
-.bulleted-list li + li {
+.list-bullet li + li {
 	margin-top: 0.4em;
 }
 
-:where(.bulleted-list ul, .bulleted-list p) {
+:where(.list-bullet ul, .list-bullet p) {
 	grid-column: 2;
 }
 
-.bulleted-list p + p {
+.list-bullet p + p {
 	margin-top: 0.25em;
 }
 
-.bulleted-list ul li + li {
+.list-bullet ul li + li {
 	margin-top: 0.2em;
 }
 
-.bulleted-list ul li::before {
+.list-bullet ul li::before {
 	width: 0.333em;
 }

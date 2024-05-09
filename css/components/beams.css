@@ -24,7 +24,7 @@
 }
 
 .beam-2::after {
-	top: 18rem;
+	top: 20rem;
 	left: -10rem;
 	clip-path: polygon(0 0, 100% 15%, 100% 45%);
 	background-image: linear-gradient(

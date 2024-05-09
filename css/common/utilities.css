@@ -163,13 +163,13 @@
 .img-box {
 	position: relative;
 
-	width: var(--img-size, var(--img-w));
-	height: var(--img-size, var(--img-h));
+	width: var(--img-w, var(--img-size));
+	height: var(--img-h, var(--img-size));
 	aspect-ratio: var(--asp, auto);
 	border-radius: var(--radius, initial);
 }
-.img-box > * {
-	position: absolute !important; /* inner swiper required !important */
+.img-box > img {
+	position: absolute;
 	inset: 0;
 	border-radius: var(--radius, initial);
 }

@@ -5,6 +5,11 @@
 
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+
+	background-image: var(--url, none);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 /* top right beam */

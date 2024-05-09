@@ -1,12 +1,12 @@
-.__slide-4 {
+.__slide-6 {
 	--clr-bg: hsl(var(--clr-0b));
 	--clr-solid: hsl(var(--clr-0a));
-	--url: url(/images/slide-bgs/heroes.webp);
+	--url: url(/images/slide-bgs/skyscrapper.webp);
 }
 
-.__slide-4 .cards-plain {
+.__slide-6 .cards-plain {
 	--col: 4;
-	/* --x: 3; */
+	--x: 3;
 
 	place-self: start center;
 }
