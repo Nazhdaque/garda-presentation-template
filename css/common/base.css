@@ -26,6 +26,8 @@
 :where(h1, h2, h3, h4, h5, h6) {
 	font-size: inherit;
 	font-weight: inherit;
+	display: inline-block;
+	word-break: break-word;
 }
 
 :where(h1, h2, h3, h4, h5, h6)::first-letter {
@@ -51,7 +53,6 @@ b {
 html,
 body {
 	overflow-x: hidden;
-	scroll-behavior: smooth;
 	scroll-padding-top: var(--header-height);
 	height: 100%;
 }

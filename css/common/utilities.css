@@ -50,6 +50,10 @@
 	--col: 4;
 }
 
+.flow-col {
+	grid-auto-flow: column;
+}
+
 /* |||||||||| |||||||||| |||||||||| flex */
 .flex-x {
 	--width-x: min(

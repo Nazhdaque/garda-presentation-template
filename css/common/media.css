@@ -12,6 +12,18 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| sm */
 @media (width <= 768px) {
+	.sm-d-none {
+		display: none;
+	}
+
+	.sm-flow-row {
+		grid-auto-flow: row;
+	}
+
+	.sm-flow-row .card-plain__img {
+		--img-w: auto;
+		--img-h: 15rem;
+	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| xs */
@@ -20,5 +32,3 @@
 		grid-auto-flow: row;
 	}
 }
-
-/* |||||||||| |||||||||| |||||||||| |||||||||| utilities */

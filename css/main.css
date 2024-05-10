@@ -16,6 +16,7 @@
 @import url(./components/scroll-down.css) layer(components);
 @import url(./components/beams.css) layer(components);
 @import url(./components/arrows.css) layer(components);
+@import url(./components/nav-panel.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
 @import url(./parts/slides.css) layer(parts);
@@ -26,6 +27,7 @@
 @import url(./parts/slide-5.css) layer(parts);
 @import url(./parts/slide-6.css) layer(parts);
 @import url(./parts/slide-7.css) layer(parts);
+@import url(./parts/slide-8.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);
 
 @import url(./common/utilities.css) layer(utilities);

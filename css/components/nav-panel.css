@@ -1,0 +1,54 @@
+.nav-panel {
+	position: absolute;
+	right: 0;
+	color: hsl(var(--clr-solid));
+	z-index: 3;
+	place-self: center;
+}
+
+.slide-list {
+	--clr-solid: hsl(var(--clr-0a));
+
+	counter-reset: slide-counter 0;
+	display: grid;
+	gap: 0.25em;
+}
+.slide-list > * {
+	--img-size: 3em;
+
+	counter-increment: slide-counter;
+	width: var(--img-size);
+	aspect-ratio: 2 / 1;
+	display: grid;
+	place-items: center;
+	position: relative;
+	transition: transform 0.1s;
+	overflow: hidden;
+	right: -1em;
+}
+.slide-list > *:hover {
+	transform: translateX(-1em);
+}
+
+.slide-list > *::after {
+	content: counter(slide-counter);
+	font-family: var(--ff-rg);
+	font-weight: var(--fw-eb);
+	font-size: 0.85em;
+	place-self: center start;
+	margin-left: 1.15em;
+}
+
+.slide-list > *::before {
+	position: absolute;
+	content: "";
+	border-top: var(--img-size) solid transparent;
+	border-bottom: var(--img-size) solid transparent;
+	border-right: var(--img-size) solid hsl(var(--clr-1b));
+	z-index: -1;
+}
+
+.slide-list a {
+	position: absolute;
+	inset: 0;
+}

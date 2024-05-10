@@ -1,6 +1,6 @@
 :root,
 ::backdrop {
-	font-size: clamp(15px, 1dvw + 1dvh + 0.5vmin, 18px);
+	font-size: clamp(14px, 1dvw + 1dvh + 0.5vmin, 18px);
 	--max-content-width: 100rem;
 
 	/* |||||||||| |||||||||| |||||||||| |||||||||| */

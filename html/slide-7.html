@@ -1,11 +1,12 @@
-<article class="slide __slide-7 layout-center z-up">
+<article class="slide __slide-7 layout-center z-up"
+				 id="slide-7">
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Plain cards with images</h1>
 			<p class="fs-lg txt-grd">Options: figcaption, icon inside</p>
 		</div>
 		<a href="#"
-			 class="brand-logo"
+			 class="brand-logo sm-d-none"
 			 aria-label="home">
 			<img src="./images/logo-b.svg"
 					 alt="brand-logo">
@@ -44,7 +45,13 @@
 		</section>
 
 		<section class="card-plain">
-			<figure class="img-box card-plain__img order-up">
+			<div class="card-plain__body">
+				<h2 class="card-plain__ttl fs-md fw-eb">Lorem ipsum dolor</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugiat earum temporibus aspernatur
+					voluptate.</p>
+			</div>
+
+			<figure class="img-box card-plain__img">
 				<div class="img-box icon-bg z-up">
 					<img class="o-fit-cover"
 							 loading="lazy"
@@ -61,6 +68,29 @@
 			</figure>
 
 			<div class="card-plain__body">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quae optio sunt libero suscipit, voluptatum
+					blanditiis molestias a beatae. Accusamus officiis sunt, consequuntur ea quos eos!</p>
+			</div>
+		</section>
+
+		<section class="card-plain">
+			<figure class="img-box card-plain__img order-up">
+				<div class="img-box icon-bg z-up">
+					<img class="o-fit-cover"
+							 loading="lazy"
+							 decoding="async"
+							 src="./images/icons/icon-usr-38-w.svg"
+							 alt="">
+				</div>
+				<img class="o-fit-cover"
+						 loading="lazy"
+						 decoding="async"
+						 src="./images/img-3.webp"
+						 alt="">
+				<figcaption>This is figcaption</figcaption>
+			</figure>
+
+			<div class="card-plain__body">
 				<h2 class="card-plain__ttl fs-md fw-eb">Lorem ipsum dolor</h2>
 				<p><a href="#"
 						 target="_blank"
@@ -72,5 +102,9 @@
 					fugiat voluptates in, sequi reiciendis et cupiditate, nobis voluptatum.</p>
 			</div>
 		</section>
+
+		<!-- // -->
+
+
 	</div>
 </article>

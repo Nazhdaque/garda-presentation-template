@@ -10,6 +10,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	row-gap: 4rem;
 }
 
 /* top right beam */
@@ -34,13 +35,16 @@
 	--x: 2;
 
 	max-width: fit-content;
+	display: grid;
+	grid-auto-rows: min-content;
+	row-gap: 0.5em;
 }
 
 .slide__top-group {
 	display: flex;
 	justify-content: space-between;
 	/* align-items: baseline; */
-	margin-bottom: 3rem;
+	gap: 2em;
 }
 .slide__top-group .brand-logo {
 	--logo-size: 14rem;
