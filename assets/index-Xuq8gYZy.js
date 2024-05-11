@@ -811,4 +811,8 @@
 			</div>
 		</section>
 	</div>
-</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",f);const b=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};b(".main-content",".scroll-down");
+</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",f);const b=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};b(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
+			<a href="#slide-${n+1}">
+				<span class="sr-only">slide ${n+1}</span>
+			</a>
+		</li>`)});
