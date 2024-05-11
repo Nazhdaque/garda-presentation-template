@@ -1,0 +1,10 @@
+.__slide-9 {
+	--clr-bg: hsl(var(--clr-0a));
+	--clr-solid: hsl(var(--clr-0b));
+}
+
+.__slide-9 .cards-framed {
+	--col: 4;
+
+	place-self: start center;
+}

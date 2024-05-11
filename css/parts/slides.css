@@ -11,6 +11,7 @@
 	background-position: center;
 	background-size: cover;
 	row-gap: 4rem;
+	/* grid-auto-rows: min-content; */
 }
 
 /* top right beam */

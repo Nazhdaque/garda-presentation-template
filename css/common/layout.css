@@ -23,7 +23,6 @@
 .main-content {
 	scroll-behavior: smooth;
 	grid-area: 1 / 1 / -1 / -1;
-	/* margin-block: var(--header-height); */
 }
 
 .main-footer {

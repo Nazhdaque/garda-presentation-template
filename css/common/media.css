@@ -31,4 +31,11 @@
 	.xs-flow-row {
 		grid-auto-flow: row;
 	}
+
+	.brand-logo {
+		--logo-size: 7rem;
+
+		position: absolute;
+		top: 0.5em;
+	}
 }

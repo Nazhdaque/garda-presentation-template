@@ -17,16 +17,3 @@
 	font-weight: var(--fw-eb);
 	color: var(--clr-solid, hsl(var(--clr-0b), 1));
 }
-
-.ordered-list.cards-plain .img-box {
-	background-color: initial;
-}
-
-.ordered-list.cards-framed .img-box:not(.card-framed__body .img-box) {
-	place-self: center;
-	padding: 0.5em;
-}
-
-.ordered-list .card-framed__body {
-	padding-top: calc(var(--card-gap) * 2);
-}

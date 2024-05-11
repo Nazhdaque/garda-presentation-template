@@ -120,3 +120,7 @@
 	background-color: var(--clr-bg);
 	z-index: -1;
 } */
+
+.ordered-list.cards-plain .img-box {
+	background-color: initial;
+}
