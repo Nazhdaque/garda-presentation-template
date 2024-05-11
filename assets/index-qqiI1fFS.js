@@ -9,7 +9,7 @@
 
 	<div class="slide__top-group">
 		<a href="#"
-			 class="brand-logo"
+			 class="brand-logo test"
 			 aria-label="home">
 			<img src="./images/logo-w.svg"
 					 alt="brand-logo">
@@ -82,7 +82,7 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis et tenetur!</p>
 			</div>
 		</section>
-</article>`,r=`<article class="slide __slide-2 layout-center"
+</article>`,d=`<article class="slide __slide-2 layout-center"
 				 id="slide-2">
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
@@ -183,7 +183,7 @@
 			</div>
 		</section> -->
 	</div>
-</article>`,d=`<article class="slide __slide-3 layout-center"
+</article>`,r=`<article class="slide __slide-3 layout-center"
 				 id="slide-3">
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
@@ -414,7 +414,7 @@
 				 id="slide-6">
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Unordered list with icons</h1>
+			<h1 class="fs-2xl fw-eb">Unordered list <span class="txt-grd">with icons</span></h1>
 			<p class="fs-lg txt-grd">Any icons, with titles / with no titles</p>
 		</div>
 		<a href="#"
@@ -425,7 +425,7 @@
 		</a>
 	</div>
 
-	<div class="grid-x width-x  cards-plain -list-icon">
+	<div class="grid-x width-x cards-plain -list-icon">
 		<section class="card-plain">
 			<div class="img-box check-mark">
 				<img class="o-fit-cover"
@@ -543,8 +543,8 @@
 				 id="slide-7">
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Plain cards with images</h1>
-			<p class="fs-lg txt-grd">Options: figcaption, icon inside</p>
+			<h1 class="fs-2xl fw-eb">Plain cards <span class="txt-grd">with images: vertical</span></h1>
+			<p class="fs-lg txt-grd">Options: figcaption, icon inside etc.</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -652,8 +652,8 @@
 				 id="slide-8">
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Plain cards with images</h1>
-			<p class="fs-lg txt-grd">Horizontal</p>
+			<h1 class="fs-2xl fw-eb">Plain cards <span class="txt-grd">with images: horizontal</span></h1>
+			<!-- <p class="fs-lg txt-grd">Lorem ipsum dolor sit</p> -->
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -676,8 +676,7 @@
 			<div class="card-plain__body">
 				<h2 class="card-plain__ttl fs-md fw-eb">Lorem ipsum dolor</h2>
 				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quis ipsum nulla hic explicabo maiores,
-					alias id facere accusamus molestiae quidem. Ab repellat sit aliquam voluptatem facere, nam reprehenderit sunt
-					iure debitis?.</p>
+					alias id facere accusamus molestiae quidem.</p>
 			</div>
 		</section>
 
@@ -698,8 +697,7 @@
 						 class="txt-link">Lorem ipsum</a> dolor sit amet consectetur adipisicing elit. Recusandae voluptate
 					et voluptatibus reprehenderit
 					quibusdam quo, nobis repudiandae blanditiis dolore fuga, nisi voluptates officia facere quia doloribus
-					repellat autem, eius eaque accusamus alias. Natus architecto quas quidem fuga amet aspernatur labore nulla,
-					fugiat voluptates in, sequi reiciendis et cupiditate, nobis voluptatum.</p>
+					repellat autem, eius eaque accusamus alias.</p>
 			</div>
 		</section>
 
@@ -743,4 +741,74 @@
 			</div>
 		</section>
 	</div>
-</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);const f=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};f(".main-content",".scroll-down");
+</article>`,f=`<article class="slide __slide-9 layout-center z-up"
+				 id="slide-9">
+	<div class="slide__top-group">
+		<div class="slide-ttl width-x z-up">
+			<h1 class="fs-2xl fw-eb">Ordered list: <span class="txt-grd">stages</span></h1>
+			<p class="fs-lg txt-grd">Based on framed cards</p>
+		</div>
+		<a href="#"
+			 class="brand-logo sm-d-none"
+			 aria-label="home">
+			<img src="./images/logo-b.svg"
+					 alt="brand-logo">
+		</a>
+	</div>
+
+	<div class="cards-framed -framed-3 grid-x ordered-list">
+		<section class="card-framed">
+			<div class="card-framed__head">
+				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+			</div>
+			<div class="card-framed__body">
+				<div class="card-framed__txt">
+					<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi delectus minus ex labore accusamus
+						itaque perspiciatis officia, nobis dolorum voluptatum dolore autem.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="card-framed">
+			<div class="card-framed__head">
+				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+			</div>
+			<div class="card-framed__body">
+				<div class="card-framed__txt">
+					<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum dolor sit</h2>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est deserunt quod molestias impedit fugiat
+						laudantium, accusantium veniam pariatur assumenda, fuga illum necessitatibus ipsum. Corporis, optio quia?
+						Magnam possimus at corporis. Iste.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="card-framed">
+			<div class="card-framed__head">
+				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+			</div>
+			<div class="card-framed__body">
+				<div class="card-framed__txt txt-grd">
+					<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum dolor</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit culpa fugit vel
+						nemo ipsam et eos
+						ex.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="card-framed">
+			<div class="card-framed__head">
+				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+			</div>
+			<div class="card-framed__body">
+				<div class="card-framed__txt">
+					<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tenetur rem, distinctio quasi
+						consectetur nisi quae, cum in veniam dolorum sequi fuga tempora, incidunt ipsum optio unde.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",f);const b=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};b(".main-content",".scroll-down");
