@@ -24,18 +24,18 @@
 	position: relative;
 	transition: transform 0.1s;
 	overflow: hidden;
-	right: -1em;
+	right: -0.75em;
 }
 .slide-list > *:hover {
-	transform: translateX(-1em);
+	transform: translateX(-0.75em);
 }
 
 .slide-list > *::after {
 	content: counter(slide-counter);
 	font-family: var(--ff-rg);
 	font-weight: var(--fw-eb);
-	font-size: 0.85em;
 	place-self: center start;
+	font-size: 0.85em;
 	margin-left: 1.15em;
 }
 

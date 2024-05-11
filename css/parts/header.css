@@ -12,4 +12,7 @@
 	aspect-ratio: var(--logo-x) / var(--logo-y);
 	outline: none;
 	overflow: hidden;
+
+	/* position: absolute;
+	right: 3rem; */
 }

@@ -29,6 +29,7 @@
 @import url(./parts/slide-7.css) layer(parts);
 @import url(./parts/slide-8.css) layer(parts);
 @import url(./parts/slide-9.css) layer(parts);
+@import url(./parts/slide-10.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);
 
 @import url(./common/utilities.css) layer(utilities);

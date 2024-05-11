@@ -25,30 +25,8 @@
 		hsl(var(--clr-1b)) 0,
 		hsl(var(--clr-1a)) 100%
 	);
-	/* |||||||||| |||||||||| |||||||||| |||||||||| */
-	/* --sphere-1a: radial-gradient(
-		circle at 65% 15%,
-		white 0.01em,
-		hsl(
-				var(--clr-1a-h),
-				calc(var(--clr-1a-s) * 0.5),
-				calc(var(--clr-1a-l) * 1.75)
-			)
-			3%,
-		hsl(
-				var(--clr-1a-h),
-				calc(var(--clr-1a-s) * 0.5),
-				calc(var(--clr-1a-l) * 0.5)
-			)
-			60%,
-		hsl(
-				var(--clr-1a-h),
-				calc(var(--clr-1a-s) * 0.5),
-				calc(var(--clr-1a-l) * 1.75)
-			)
-			100%
-	); */
 
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
 	--sphere-1a: radial-gradient(
 		circle at 65% 15%,
 		white 0.01em,
