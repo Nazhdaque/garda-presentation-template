@@ -23,6 +23,7 @@
 .main-content {
 	scroll-behavior: smooth;
 	grid-area: 1 / 1 / -1 / -1;
+	counter-reset: slide-counter 0;
 }
 
 .main-footer {

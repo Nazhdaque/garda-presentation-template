@@ -17,6 +17,7 @@
 @import url(./components/beams.css) layer(components);
 @import url(./components/arrows.css) layer(components);
 @import url(./components/nav-panel.css) layer(components);
+@import url(./components/slide-number.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
 @import url(./parts/slides.css) layer(parts);

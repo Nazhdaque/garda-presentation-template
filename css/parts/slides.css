@@ -1,11 +1,10 @@
 .slide {
+	counter-increment: slide-counter;
 	background-color: var(--clr-bg, initial);
 	position: relative;
 	padding-block: 4rem;
-
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-
 	background-image: var(--url, none);
 	background-repeat: no-repeat;
 	background-position: center;
