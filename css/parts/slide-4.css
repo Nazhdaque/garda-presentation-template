@@ -8,5 +8,11 @@
 	--col: 4;
 	/* --x: 3; */
 
-	place-self: start center;
+	place-self: center;
+}
+
+.__slide-4 .txt-bg {
+	max-width: 25ch;
+	padding: 0.5em 0.75em;
+	place-self: start;
 }

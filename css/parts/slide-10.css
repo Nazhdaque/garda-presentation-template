@@ -3,8 +3,34 @@
 	--clr-solid: hsl(var(--clr-0b));
 }
 
-.__slide-10 .cards-framed {
-	--col: 4;
+.__slide-10 .wrapper {
+	--col: 5;
+	--gap-x: 2rem;
+	--gap-y: 2rem;
+}
 
-	place-self: start center;
+.__slide-10 .slide__top-group {
+	grid-column: span 4;
+}
+
+.__slide-10 .cards-framed {
+	--img-size: 6rem;
+
+	grid: subgrid;
+	display: contents;
+}
+
+.__slide-10 .card-framed {
+	/* margin-bottom: auto; */
+}
+
+.__slide-10 .cards-plain {
+	--gap-y: 2em;
+}
+
+.__slide-10 .txt-bg {
+	--span: 3;
+
+	padding: 2em;
+	background-image: var(--clr-1b-1a-solid);
 }

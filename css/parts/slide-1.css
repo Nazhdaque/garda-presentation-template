@@ -1,12 +1,15 @@
 .__slide-1 {
 	--clr-solid: hsl(var(--clr-0a));
+
+	grid-template-rows: min-content 1fr 2.25fr;
 }
 
 .__slide-1 .slide-ttl {
-	place-self: center;
-	margin-top: auto;
+	place-self: end center;
 }
 
 .__slide-1 .cards-plain {
 	--clr-solid: none;
+
+	place-self: start center;
 }

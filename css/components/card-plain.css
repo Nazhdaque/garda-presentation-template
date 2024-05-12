@@ -5,8 +5,11 @@
 	--inner-gap: 1.5em;
 	--img-size: 5em;
 
-	margin-bottom: var(--gap-y);
 	grid-auto-rows: min-content;
+}
+
+.cards-plain:not(:last-child, :only-child) {
+	margin-bottom: var(--gap-y);
 }
 
 .card-plain {

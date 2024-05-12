@@ -1,5 +1,8 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| xl */
 @media (width <= 1400px) {
+	.xl-grid-full-width {
+		grid-column: 1 / -1;
+	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| lg */
@@ -14,6 +17,10 @@
 @media (width <= 768px) {
 	.sm-d-none {
 		display: none;
+	}
+
+	.sm-order-up {
+		order: 1;
 	}
 
 	.sm-flow-row {

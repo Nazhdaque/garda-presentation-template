@@ -38,6 +38,7 @@
 	grid-template-columns: var(--col-x, none);
 	grid-template-rows: var(--row-x, none);
 	grid-auto-flow: var(--flow, row);
+	grid-auto-rows: var(--row-x-auto, auto);
 }
 
 .-col-2 {
@@ -278,11 +279,7 @@
 }
 
 .txt-bg {
-	/* --col: 3;
-	--x: 1; */
+	--clr-solid: hsl(var(--clr-0a));
 
 	background-image: var(--clr-1b-1a-solid);
-	max-width: var(--chars, 25ch);
-	padding: 0.5em 0.75em;
-	place-self: start;
 }

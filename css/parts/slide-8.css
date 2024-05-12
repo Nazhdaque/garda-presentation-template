@@ -1,5 +1,6 @@
 .__slide-8 {
-	--clr-bg: hsl(var(--clr-0a));
+	--clr-bg: hsl(var(--clr-0b));
+	--clr-solid: hsl(var(--clr-0a));
 
 	--shrink: 1;
 }
@@ -8,7 +9,7 @@
 	--col: 3;
 	--x: 2;
 
-	place-self: start center;
+	place-self: center;
 }
 
 .__slide-8 .cards-plain:last-child .card-plain__img {

@@ -5,11 +5,10 @@
 
 	font-size: var(--fs-sm);
 	font-weight: var(--fw-eb);
+	line-height: 1;
 	display: grid;
 	place-items: center;
-	line-height: 1;
 	/* overflow: hidden; */
-
 	grid-column: auto;
 	position: absolute;
 	place-self: start center;
@@ -21,7 +20,6 @@
 .slide-number::before {
 	position: absolute;
 	content: "";
-
 	border-left: var(--img-size) solid transparent;
 	border-right: var(--img-size) solid transparent;
 	border-top: var(--img-size) solid hsl(var(--clr-1a));
@@ -30,6 +28,5 @@
 .slide-number::after {
 	position: absolute;
 	content: counter(slide-counter);
-
 	margin-bottom: -0.25em;
 }

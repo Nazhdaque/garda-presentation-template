@@ -19,11 +19,10 @@
 
 	font-size: var(--fs-sm);
 	font-weight: var(--fw-eb);
+	line-height: 1;
 	display: grid;
 	place-items: center;
-	line-height: 1;
 	overflow: hidden;
-
 	position: relative;
 	right: var(--overflow);
 	width: var(--img-size);
@@ -35,7 +34,6 @@
 .slide-list > *::before {
 	position: absolute;
 	content: "";
-
 	border-top: var(--img-size) solid transparent;
 	border-bottom: var(--img-size) solid transparent;
 	border-right: var(--img-size) solid hsl(var(--clr-1b));
