@@ -1,5 +1,6 @@
-(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))e(t);new MutationObserver(t=>{for(const i of t)if(i.type==="childList")for(const o of i.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&e(o)}).observe(document,{childList:!0,subtree:!0});function l(t){const i={};return t.integrity&&(i.integrity=t.integrity),t.referrerPolicy&&(i.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?i.credentials="include":t.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(t){if(t.ep)return;t.ep=!0;const i=l(t);fetch(t.href,i)}})();const c=`<article class="slide __slide-1 layout-center"
+(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))e(t);new MutationObserver(t=>{for(const i of t)if(i.type==="childList")for(const o of i.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&e(o)}).observe(document,{childList:!0,subtree:!0});function l(t){const i={};return t.integrity&&(i.integrity=t.integrity),t.referrerPolicy&&(i.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?i.credentials="include":t.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(t){if(t.ep)return;t.ep=!0;const i=l(t);fetch(t.href,i)}})();const d=`<article class="slide __slide-1 layout-center"
 				 id="slide-1">
+	<!-- <div class="slide-number"></div> -->
 	<div class="scroll-down">
 		<div class="scroll-down__chevron"></div>
 		<div class="scroll-down__chevron"></div>
@@ -82,8 +83,9 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis et tenetur!</p>
 			</div>
 		</section>
-</article>`,d=`<article class="slide __slide-2 layout-center"
+</article>`,c=`<article class="slide __slide-2 layout-center"
 				 id="slide-2">
+	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Plain cards</h1>
@@ -185,6 +187,7 @@
 	</div>
 </article>`,r=`<article class="slide __slide-3 layout-center"
 				 id="slide-3">
+	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Framed cards</h1>
@@ -270,6 +273,7 @@
 	</div>
 </article>`,m=`<article class="slide __slide-4 layout-center z-up"
 				 id="slide-4">
+	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Ordered list</h1>
@@ -329,6 +333,7 @@
 	</ol>
 </article>`,u=`<article class="slide __slide-5 layout-center"
 				 id="slide-5">
+	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Ordered list</h1>
@@ -412,6 +417,7 @@
 	</div>
 </article>`,p=`<article class="slide __slide-6 layout-center z-up"
 				 id="slide-6">
+	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Unordered list <span class="txt-grd">with icons</span></h1>
@@ -541,6 +547,7 @@
 	</div>
 </article>`,g=`<article class="slide __slide-7 layout-center z-up"
 				 id="slide-7">
+	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Plain cards <span class="txt-grd">with images: vertical</span></h1>
@@ -650,6 +657,7 @@
 	</div>
 </article>`,v=`<article class="slide __slide-8 layout-center z-up"
 				 id="slide-8">
+	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Plain cards <span class="txt-grd">with images: horizontal</span></h1>
@@ -743,6 +751,7 @@
 	</div>
 </article>`,f=`<article class="slide __slide-9 layout-center z-up"
 				 id="slide-9">
+	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Ordered list: <span class="txt-grd">stages</span></h1>
@@ -811,7 +820,78 @@
 			</div>
 		</section>
 	</div>
-</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",f);const b=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};b(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
+</article>`,b=`<article class="slide __slide-10 layout-center z-up"
+				 id="slide-10">
+	<div class="slide-number"></div>
+	<div class="slide__top-group">
+		<div class="slide-ttl width-x z-up">
+			<h1 class="fs-2xl fw-eb">Ordered list: <span class="txt-grd">stages</span></h1>
+			<p class="fs-lg txt-grd">Based on framed cards</p>
+		</div>
+		<a href="#"
+			 class="brand-logo sm-d-none"
+			 aria-label="home">
+			<img src="./images/logo-b.svg"
+					 alt="brand-logo">
+		</a>
+	</div>
+
+	<div class="cards-framed -framed-3 grid-x ordered-list">
+		<section class="card-framed">
+			<div class="card-framed__head">
+				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+			</div>
+			<div class="card-framed__body">
+				<div class="card-framed__txt">
+					<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi delectus minus ex labore accusamus
+						itaque perspiciatis officia, nobis dolorum voluptatum dolore autem.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="card-framed">
+			<div class="card-framed__head">
+				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+			</div>
+			<div class="card-framed__body">
+				<div class="card-framed__txt">
+					<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum dolor sit</h2>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est deserunt quod molestias impedit fugiat
+						laudantium, accusantium veniam pariatur assumenda, fuga illum necessitatibus ipsum. Corporis, optio quia?
+						Magnam possimus at corporis. Iste.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="card-framed">
+			<div class="card-framed__head">
+				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+			</div>
+			<div class="card-framed__body">
+				<div class="card-framed__txt txt-grd">
+					<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum dolor</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit culpa fugit vel
+						nemo ipsam et eos
+						ex.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="card-framed">
+			<div class="card-framed__head">
+				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+			</div>
+			<div class="card-framed__body">
+				<div class="card-framed__txt">
+					<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tenetur rem, distinctio quasi
+						consectetur nisi quae, cum in veniam dolorum sequi fuga tempora, incidunt ipsum optio unde.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",f);s.insertAdjacentHTML("beforeend",b);const _=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};_(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
 			<a href="#slide-${n+1}">
 				<span class="sr-only">slide ${n+1}</span>
 			</a>
