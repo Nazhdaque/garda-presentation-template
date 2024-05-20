@@ -72,10 +72,6 @@
 	gap: var(--card-gap);
 }
 
-.ordered-list .card-framed__body {
-	padding-top: calc(var(--card-gap) * 1.75);
-}
-
 .card-framed__body::before {
 	position: absolute;
 	content: "";
@@ -84,8 +80,16 @@
 	z-index: -1;
 }
 
+.card-framed__body:only-child {
+	padding-top: var(--card-border);
+}
+
+.ordered-list .card-framed__body {
+	padding-top: calc(var(--card-gap) * 1.75);
+}
+
 .card-framed__inner-ttl {
-	margin-bottom: 1.25rem;
+	margin-bottom: 1rem;
 }
 
 .-framed-1 > *:not(:nth-child(1)) .card-framed__body::before {

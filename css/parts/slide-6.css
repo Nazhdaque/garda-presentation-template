@@ -7,6 +7,8 @@
 .__slide-6 .cards-plain {
 	--col: 4;
 	--x: 3;
+	--gaf: column;
+	--gtr: repeat(3, auto);
 
 	place-self: center;
 }

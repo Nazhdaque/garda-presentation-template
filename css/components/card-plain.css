@@ -15,8 +15,8 @@
 .card-plain {
 	display: grid;
 	gap: var(--inner-gap);
-	grid-auto-flow: var(--flow, row);
-	grid-template-columns: var(--gtc, none);
+	grid-auto-flow: var(--card-gaf, row);
+	grid-template-columns: var(--card-gtc, none);
 	grid-auto-rows: min-content;
 }
 
@@ -32,12 +32,12 @@
 
 .-ttl-aside,
 .-ttl-aside .card-plain {
-	--gtc: min-content 1fr;
-	--span: 2;
+	--card-gtc: min-content 1fr;
+	--span-x: 2;
 }
 
 .card-plain__body {
-	grid-column: span var(--span, auto);
+	grid-column: span var(--span-x, auto);
 }
 .card-plain__body .card-plain__ttl {
 	margin-bottom: 0.3em;
@@ -73,20 +73,15 @@
 
 /* === === === === === list with icons */
 .cards-plain.-list-icon {
-	--gtc: min-content;
+	--card-gtc: min-content;
 	--gap-y: 1em;
 	--inner-gap: 1.5em;
-
-	/* --col: auto;
-	--flow: column;
-	--row-x: repeat(3, min-content); */
-
 	--img-h: 3rem;
 	--img-w: auto;
 }
 
 .-list-icon .card-plain {
-	--gtc: var(--img-h) 1fr;
+	--card-gtc: var(--img-h) 1fr;
 }
 .-list-icon .card-plain > * {
 	grid: subgrid;

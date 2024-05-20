@@ -1,48 +1,64 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| xl */
 @media (width <= 1400px) {
+	/* |||||||||| utilities */
 	.xl-grid-full-width {
 		grid-column: 1 / -1;
+	}
+	.xl-order-up {
+		order: 1;
+	}
+	.xl-d-block {
+		display: block;
 	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| lg */
 @media (width <= 1200px) {
+	/* |||||||||| utilities */
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| md */
 @media (width <= 992px) {
+	/* |||||||||| utilities */
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| sm */
 @media (width <= 768px) {
+	.sm-gaf-row .card-plain__img {
+		--img-w: auto;
+		--img-h: 15rem;
+	}
+
+	/* |||||||||| utilities */
+	.sm-gaf-row {
+		grid-auto-flow: row;
+	}
 	.sm-d-none {
 		display: none;
 	}
-
 	.sm-order-up {
 		order: 1;
 	}
-
-	.sm-flow-row {
+	.sm-gaf-row {
 		grid-auto-flow: row;
-	}
-
-	.sm-flow-row .card-plain__img {
-		--img-w: auto;
-		--img-h: 15rem;
 	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| xs */
 @media (width <= 576px) {
-	.xs-flow-row {
-		grid-auto-flow: row;
-	}
-
 	.brand-logo {
 		--logo-size: 7rem;
 
 		position: absolute;
 		top: 0.5em;
+	}
+
+	/* |||||||||| utilities */
+	.xs-gaf-row {
+		grid-auto-flow: row;
+	}
+
+	.xs-span-1 {
+		grid-column: span 1;
 	}
 }

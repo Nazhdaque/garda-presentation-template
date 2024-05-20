@@ -3,14 +3,14 @@
 	--clr-solid: hsl(var(--clr-0b));
 }
 
-.__slide-10 .wrapper {
+.__slide-10 .slide-grid {
 	--col: 5;
 	--gap-x: 2rem;
 	--gap-y: 2rem;
 }
 
 .__slide-10 .slide__top-group {
-	grid-column: span 4;
+	--span-x: 4;
 }
 
 .__slide-10 .cards-framed {
@@ -29,8 +29,20 @@
 }
 
 .__slide-10 .txt-bg {
-	--span: 3;
+	--span-y: 3;
 
-	padding: 2em;
-	background-image: var(--clr-1b-1a-solid);
+	padding: var(--gap-y);
+}
+
+.__slide-10 .card-framed.span-x {
+	--span-x: 2;
+}
+
+.test-img {
+	--img-w: auto;
+	--img-h: auto;
+	--img-size: 15rem;
+	--span-x: 2;
+
+	min-height: var(--img-size);
 }

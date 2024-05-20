@@ -14,7 +14,7 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| grid system */
 .grid-x {
-	--col-x: repeat(
+	--gtc: repeat(
 		var(--repeat, auto-fit),
 		minmax(
 			min(
@@ -35,10 +35,10 @@
 	display: grid;
 	column-gap: var(--gap-x, 0rem);
 	row-gap: var(--gap-y, 0rem);
-	grid-template-columns: var(--col-x, none);
-	grid-template-rows: var(--row-x, none);
-	grid-auto-flow: var(--flow, row);
-	grid-auto-rows: var(--row-x-auto, auto);
+	grid-template-columns: var(--gtc, none);
+	grid-template-rows: var(--gtr, none);
+	grid-auto-flow: var(--gaf, row);
+	grid-auto-rows: var(--gar, auto);
 }
 
 .-col-2 {
@@ -151,11 +151,11 @@
 	gap: initial;
 }
 
-.c-span-x {
-	grid-column: span var(--span, 2);
+.span-x {
+	grid-column: span var(--span-x, 1);
 }
-.r-span-x {
-	grid-row: span var(--span, 2);
+.span-y {
+	grid-row: span var(--span-y, 1);
 }
 
 .overlay {

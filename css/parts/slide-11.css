@@ -1,0 +1,8 @@
+.__slide-11 {
+	--clr-bg: hsl(var(--clr-0b));
+	--clr-solid: hsl(var(--clr-0a));
+	/* --url: url(/images/slide-bgs/skyscrapper.webp); */
+}
+
+.__slide-11 .slide-grid {
+}
