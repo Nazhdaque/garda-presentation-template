@@ -31,3 +31,36 @@
 .list-bullet ul li::before {
 	width: 0.333em;
 }
+
+/* --- */
+.list-bullet.custom li {
+	--bullet-clr: hsl(var(--clr-1a));
+	--bullet-top: 0.675em;
+	--bullet-thin: 0.1em;
+	--bullet-tail: 1em;
+	--bullet-head: calc(var(--bullet-thin) * 3.5);
+	--bullet-glow: 0 0 0.5em 0.25em var(--bullet-clr);
+}
+
+.list-bullet.custom li::before {
+	background-color: var(--bullet-clr);
+	width: var(--bullet-tail);
+	height: var(--bullet-thin);
+	margin: var(--bullet-top) calc(var(--bullet-head) * 0.9) 0 0;
+	grid-area: 1 / 1;
+	border-radius: var(--bullet-thin);
+	z-index: 1;
+}
+
+.list-bullet.custom li::after {
+	content: "";
+	background-color: var(--bullet-clr);
+	width: var(--bullet-head);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	margin-top: var(--bullet-top);
+	place-self: start end;
+	grid-area: 1 / 1;
+	transform: translateY(calc(-50% + var(--bullet-thin) / 2));
+	box-shadow: var(--bullet-glow);
+}
