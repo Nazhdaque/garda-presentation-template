@@ -49,7 +49,7 @@
 
 	background-color: var(--clr-bg);
 	place-self: center;
-	padding: var(--card-gap);
+	padding: var(--card-gap); /* do not delete! */
 }
 
 .card-framed__body .card-framed__icon {
@@ -93,17 +93,33 @@
 }
 
 /* --- */
-.frame-off .card-framed__icon {
-	margin-left: calc(var(--card-gap) * -1);
-}
 .frame-off.card-framed {
 	border-inline: none;
 }
+.frame-off.card-framed::before {
+	display: none;
+	/* inset-inline: 0; */
+}
+.frame-off .card-framed__ttl {
+	padding-left: 0;
+}
+.frame-off .card-framed__icon + .card-framed__ttl {
+	margin-left: calc(var(--card-gap) * -1);
+}
+.frame-off .inner-icon:not(.card-framed__body .inner-icon) {
+	padding-inline: 0 calc(var(--card-gap) * 2);
+}
 .frame-off .card-framed__body {
-	padding: calc(var(--card-gap) * 3) 0 0 0;
+	padding-inline: 0;
+	padding-bottom: 0;
 }
 .frame-off .card-framed__body::before {
 	display: none;
+}
+.frame-off .card-framed__ttl,
+.frame-off .card-framed__icon,
+.frame-off .card-framed__body {
+	background-color: initial;
 }
 
 /* --- */
