@@ -202,7 +202,7 @@
 	</div>
 
 	<div class="cards-framed grid-x">
-		<section class="card-framed">
+		<section class="card-framed frame-on">
 			<div class="card-framed__head">
 				<div class="card-framed__icon img-box icon-bg">
 					<img class="inner-icon"
@@ -863,7 +863,7 @@
 			</div>
 		</section>
 	</div>
-</article>`,b=`<article class="slide __slide-9 layout-center z-up"
+</article>`,f=`<article class="slide __slide-9 layout-center z-up"
 				 id="slide-9">
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
@@ -934,7 +934,7 @@
 			</div>
 		</section>
 	</div>
-</article>`,f=`<article class="slide __slide-10 layout-center z-up"
+</article>`,b=`<article class="slide __slide-10 layout-center z-up"
 				 id="slide-10">
 	<div class="slide-number"></div>
 	<div class="slide-grid grid-x">
@@ -1081,7 +1081,7 @@
 	<div class="slide-grid grid-x">
 
 	</div>
-</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",b);s.insertAdjacentHTML("beforeend",f);s.insertAdjacentHTML("beforeend",_);const h=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};h(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
+</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",f);s.insertAdjacentHTML("beforeend",b);s.insertAdjacentHTML("beforeend",_);const h=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};h(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
 			<a href="#slide-${n+1}">
 				<span class="sr-only">slide ${n+1}</span>
 			</a>
