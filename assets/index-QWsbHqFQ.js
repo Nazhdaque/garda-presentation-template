@@ -1,4 +1,4 @@
-(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))e(t);new MutationObserver(t=>{for(const i of t)if(i.type==="childList")for(const o of i.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&e(o)}).observe(document,{childList:!0,subtree:!0});function l(t){const i={};return t.integrity&&(i.integrity=t.integrity),t.referrerPolicy&&(i.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?i.credentials="include":t.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(t){if(t.ep)return;t.ep=!0;const i=l(t);fetch(t.href,i)}})();const d=`<article class="slide __slide-1 layout-center"
+(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))e(t);new MutationObserver(t=>{for(const i of t)if(i.type==="childList")for(const l of i.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&e(l)}).observe(document,{childList:!0,subtree:!0});function o(t){const i={};return t.integrity&&(i.integrity=t.integrity),t.referrerPolicy&&(i.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?i.credentials="include":t.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(t){if(t.ep)return;t.ep=!0;const i=o(t);fetch(t.href,i)}})();const d=`<article class="slide __slide-1 layout-center"
 				 id="slide-1">
 	<!-- <div class="slide-number"></div> -->
 	<div class="scroll-down">
@@ -202,7 +202,7 @@
 	</div>
 
 	<div class="cards-framed grid-x">
-		<section class="card-framed frame-on">
+		<section class="card-framed">
 			<div class="card-framed__head">
 				<div class="card-framed__icon img-box icon-bg">
 					<img class="inner-icon"
@@ -432,8 +432,8 @@
 		</a>
 	</div>
 
-	<div class="grid-x width-x cards-plain -list-icon sm-gaf-row">
-		<section class="card-plain">
+	<ul class="grid-x width-x cards-plain -list-icon sm-gaf-row">
+		<li class="card-plain">
 			<div class="img-box check-mark">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -456,9 +456,9 @@
 					</li>
 				</ul>
 			</div>
-		</section>
+		</li>
 
-		<section class="card-plain">
+		<li class="card-plain">
 			<div class="img-box check-mark">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -472,9 +472,9 @@
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, eaque eos minima quibusdam unde magni
 					possimus maxime nulla aperiam architecto!</p>
 			</div>
-		</section>
+		</li>
 
-		<section class="card-plain">
+		<li class="card-plain">
 			<div class="img-box check-mark">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -487,11 +487,11 @@
 					voluptatum in a minus blanditiis inventore est sunt labore nostrum impedit odit, asperiores unde! Itaque,
 					nulla.</p>
 			</div>
-		</section>
+		</li>
 
 		<!-- // -->
 
-		<section class="card-plain">
+		<li class="card-plain">
 			<div class="img-box cross-mark">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -505,9 +505,9 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit, expedita amet explicabo aperiam atque!
 				</p>
 			</div>
-		</section>
+		</li>
 
-		<section class="card-plain">
+		<li class="card-plain">
 			<div class="img-box cross-mark">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -519,9 +519,9 @@
 				<h2 class="card-plain__ttl fs-md fw-eb">Lorem ipsum dolor</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ducimus ad quidem doloribus rem minima.</p>
 			</div>
-		</section>
+		</li>
 
-		<section class="card-plain">
+		<li class="card-plain">
 			<div class="img-box cross-mark">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -544,11 +544,11 @@
 					</li>
 				</ul>
 			</div>
-		</section>
+		</li>
 
 		<!-- // -->
 
-		<!-- <section class="card-plain">
+		<!-- <li class="card-plain">
 			<div class="img-box">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -571,9 +571,9 @@
 					</li>
 				</ul>
 			</div>
-		</section>
+		</li>
 
-		<section class="card-plain">
+		<li class="card-plain">
 			<div class="img-box">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -587,9 +587,9 @@
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, eaque eos minima quibusdam unde magni
 					possimus maxime nulla aperiam architecto!</p>
 			</div>
-		</section>
+		</li>
 
-		<section class="card-plain">
+		<li class="card-plain">
 			<div class="img-box">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -602,9 +602,9 @@
 					voluptatum in a minus blanditiis inventore est sunt labore nostrum impedit odit, asperiores unde! Itaque,
 					nulla.</p>
 			</div>
-		</section>
+		</li>
 
-		<section class="card-plain">
+		<li class="card-plain">
 			<div class="img-box">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -618,9 +618,9 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit, expedita amet explicabo aperiam atque!
 				</p>
 			</div>
-		</section>
+		</li>
 
-		<section class="card-plain">
+		<li class="card-plain">
 			<div class="img-box">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -632,9 +632,9 @@
 				<h2 class="card-plain__ttl fs-md fw-eb">Lorem ipsum dolor</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ducimus ad quidem doloribus rem minima.</p>
 			</div>
-		</section>
+		</li>
 
-		<section class="card-plain">
+		<li class="card-plain">
 			<div class="img-box">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -657,8 +657,8 @@
 					</li>
 				</ul>
 			</div>
-		</section> -->
-	</div>
+		</li> -->
+	</ul>
 </article>`,g=`<article class="slide __slide-7 layout-center z-up"
 				 id="slide-7">
 	<div class="slide-number"></div>
@@ -879,10 +879,10 @@
 		</a>
 	</div>
 
-	<div class="cards-framed -framed-3 grid-x ordered-list">
-		<section class="card-framed">
-			<div class="card-framed__head">
-				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+	<div class="cards-framed grid-x ordered-list">
+		<section class="card-framed -frame-off">
+			<div class="card-framed__head fs-2xl">
+				<div class="card-framed__icon img-box icon-bg "></div>
 			</div>
 			<div class="card-framed__body">
 				<div class="card-framed__txt">
@@ -893,9 +893,9 @@
 			</div>
 		</section>
 
-		<section class="card-framed">
-			<div class="card-framed__head">
-				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+		<section class="card-framed -frame-off">
+			<div class="card-framed__head fs-2xl">
+				<div class="card-framed__icon img-box icon-bg"></div>
 			</div>
 			<div class="card-framed__body">
 				<div class="card-framed__txt">
@@ -908,8 +908,8 @@
 		</section>
 
 		<section class="card-framed">
-			<div class="card-framed__head">
-				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+			<div class="card-framed__head fs-2xl">
+				<div class="card-framed__icon img-box icon-bg"></div>
 			</div>
 			<div class="card-framed__body">
 				<div class="card-framed__txt txt-gradient">
@@ -921,9 +921,9 @@
 			</div>
 		</section>
 
-		<section class="card-framed">
-			<div class="card-framed__head">
-				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
+		<section class="card-framed -frame-off">
+			<div class="card-framed__head fs-2xl">
+				<div class="card-framed__icon img-box icon-bg"></div>
 			</div>
 			<div class="card-framed__body">
 				<div class="card-framed__txt">
@@ -998,7 +998,7 @@
 
 		<!-- // -->
 
-		<div class="cards-framed -framed-1">
+		<div class="cards-framed">
 			<section class="card-framed __slide-10-card-1">
 				<div class="card-framed__head">
 					<div class="card-framed__icon img-box icon-bg">
@@ -1017,11 +1017,11 @@
 				</div>
 			</section>
 
-			<section class="card-framed frame-off __slide-10-card-2">
+			<section class="card-framed -frame-off __slide-10-card-2">
 				<div class="card-framed__head">
 					<div class="card-framed__icon img-box icon-bg">
 						<img class="inner-icon"
-								 src="./images/icons/icon-bus-09-b.svg"
+								 src="./images/icons/icon-apr-36-b.svg"
 								 alt="">
 					</div>
 				</div>
@@ -1047,7 +1047,7 @@
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, maiores. Quaerat reiciendis nostrum
 				possimus placeat sunt optio ducimus tempore distinctio. Repellendus illo doloribus praesentium saepe,
 				labore ab.</p>
-			<ul class="list-bullet custom">
+			<ul class="list-bullet">
 				<li>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto magni eos voluptates in?</p>
 				</li>
