@@ -230,7 +230,7 @@
 			<div class="card-framed__head">
 				<h2 class="card-framed__ttl fw-eb">Lorem ipsum dolor sit</h2>
 			</div>
-			<div class="card-framed__body xs-flow-row">
+			<div class="card-framed__body xs-gaf-row">
 				<div class="card-framed__icon img-box icon-bg">
 					<img class="inner-icon"
 							 src="./images/icons/icon-set-03-w.svg"
@@ -372,7 +372,7 @@
 			<div class="card-framed__head">
 				<h2 class="card-framed__ttl fw-eb">Lorem ipsum dolor sit</h2>
 			</div>
-			<div class="card-framed__body xs-flow-row">
+			<div class="card-framed__body xs-gaf-row">
 				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
 				<div class="card-framed__txt">
 					<h3 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum dolor sit</h3>
@@ -431,7 +431,7 @@
 		</a>
 	</div>
 
-	<div class="grid-x width-x cards-plain -list-icon">
+	<div class="grid-x width-x cards-plain -list-icon sm-gaf-row">
 		<section class="card-plain">
 			<div class="img-box check-mark">
 				<img class="o-fit-cover"
@@ -544,6 +544,119 @@
 				</ul>
 			</div>
 		</section>
+
+		<!-- // -->
+
+		<!-- <section class="card-plain">
+			<div class="img-box">
+				<img class="o-fit-cover"
+						 loading="lazy"
+						 decoding="async"
+						 src="./images/icons/icon-usr-38-w.svg"
+						 alt="">
+			</div>
+			<div class="card-plain__body">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+				<ul class="list-bullet">
+					<li>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</li>
+					<li>
+						<p>Lorem ipsum dolor sit amet consectetur.</p>
+					</li>
+					<li>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="card-plain">
+			<div class="img-box">
+				<img class="o-fit-cover"
+						 loading="lazy"
+						 decoding="async"
+						 src="./images/icons/icon-apr-36-w.svg"
+						 alt="">
+			</div>
+			<div class="card-plain__body">
+				<h2 class="card-plain__ttl fs-md fw-eb">Lorem ipsum dolor</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aperiam.</p>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, eaque eos minima quibusdam unde magni
+					possimus maxime nulla aperiam architecto!</p>
+			</div>
+		</section>
+
+		<section class="card-plain">
+			<div class="img-box">
+				<img class="o-fit-cover"
+						 loading="lazy"
+						 decoding="async"
+						 src="./images/icons/icon-bus-09-w.svg"
+						 alt="">
+			</div>
+			<div class="card-plain__body">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi nesciunt laborum, cumque atque
+					voluptatum in a minus blanditiis inventore est sunt labore nostrum impedit odit, asperiores unde! Itaque,
+					nulla.</p>
+			</div>
+		</section>
+
+		<section class="card-plain">
+			<div class="img-box">
+				<img class="o-fit-cover"
+						 loading="lazy"
+						 decoding="async"
+						 src="./images/icons/icon-dbs-21-w.svg"
+						 alt="">
+			</div>
+			<div class="card-plain__body">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eligendi ad rem doloribus accusantium quasi
+					pariatur, nemo repudiandae beatae quod!</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit, expedita amet explicabo aperiam atque!
+				</p>
+			</div>
+		</section>
+
+		<section class="card-plain">
+			<div class="img-box">
+				<img class="o-fit-cover"
+						 loading="lazy"
+						 decoding="async"
+						 src="./images/icons/icon-dbs-23-w.svg"
+						 alt="">
+			</div>
+			<div class="card-plain__body">
+				<h2 class="card-plain__ttl fs-md fw-eb">Lorem ipsum dolor</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ducimus ad quidem doloribus rem minima.</p>
+			</div>
+		</section>
+
+		<section class="card-plain">
+			<div class="img-box">
+				<img class="o-fit-cover"
+						 loading="lazy"
+						 decoding="async"
+						 src="./images/icons/icon-dev-21-w.svg"
+						 alt="">
+			</div>
+			<div class="card-plain__body">
+				<h2 class="card-plain__ttl fs-md fw-eb">Lorem ipsum dolor</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ducimus ad quidem doloribus rem minima.</p>
+				<ul class="list-bullet">
+					<li>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</li>
+					<li>
+						<p>Lorem ipsum dolor sit.</p>
+					</li>
+					<li>
+						<p>Lorem ipsum dolor.</p>
+					</li>
+				</ul>
+			</div>
+		</section> -->
 	</div>
 </article>`,g=`<article class="slide __slide-7 layout-center z-up"
 				 id="slide-7">
@@ -672,7 +785,7 @@
 	</div>
 
 	<div class="grid-x z-up cards-plain width-x">
-		<section class="card-plain flow-col sm-flow-row">
+		<section class="card-plain flow-col sm-gaf-row">
 			<figure class="img-box card-plain__img">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -688,7 +801,7 @@
 			</div>
 		</section>
 
-		<section class="card-plain flow-col sm-flow-row">
+		<section class="card-plain flow-col sm-gaf-row">
 			<figure class="img-box card-plain__img order-up">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -709,13 +822,13 @@
 			</div>
 		</section>
 
-		<section class="card-plain flow-col sm-flow-row grid-full-width">
+		<section class="card-plain flow-col sm-gaf-row grid-full-width">
 			<div class="card-plain__body">
 				<h2 class="card-plain__ttl fs-md fw-eb">Lorem ipsum dolor</h2>
 				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quis ipsum nulla hic explicabo maiores,
 					alias id facere accusamus molestiae quidem. Ab repellat sit aliquam voluptatem facere, nam reprehenderit sunt
 					iure debitis?.</p>
-				<ul class="list-bullet">
+				<ul class="list-bullet custom">
 					<li>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto magni eos voluptates in?</p>
 					</li>
@@ -749,7 +862,7 @@
 			</div>
 		</section>
 	</div>
-</article>`,f=`<article class="slide __slide-9 layout-center z-up"
+</article>`,b=`<article class="slide __slide-9 layout-center z-up"
 				 id="slide-9">
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
@@ -820,24 +933,25 @@
 			</div>
 		</section>
 	</div>
-</article>`,b=`<article class="slide __slide-10 layout-center z-up"
+</article>`,f=`<article class="slide __slide-10 layout-center z-up"
 				 id="slide-10">
 	<div class="slide-number"></div>
-	<div class="wrapper grid-x">
-		<div class="slide__top-group xl-grid-full-width">
+	<div class="slide-grid grid-x">
+		<div class="slide__top-group __slide-10-title">
 			<div class="slide-ttl width-x z-up">
-				<h1 class="fs-2xl fw-eb">Test area</h1>
-				<p class="fs-lg txt-grd">Under construction</p>
+				<h1 class="fs-2xl fw-eb">Complex responsive grid layout</h1>
+				<p class="fs-lg txt-grd">Layout changes at breakpoints: 1600px, 1400px, 992px, 768px</p>
 			</div>
-			<!-- <a href="#"
-				 class="brand-logo sm-d-none"
+
+			<a href="#"
+				 class="brand-logo d-none xxl-d-block xl-d-none"
 				 aria-label="home">
 				<img src="./images/logo-b.svg"
 						 alt="brand-logo">
-			</a> -->
+			</a>
 		</div>
 
-		<div class="txt-bg r-span-x sm-order-up">
+		<div class="txt-bg __slide-10-aside">
 			<ol class="grid-x z-up cards-plain ordered-list">
 				<li class="card-plain">
 					<div class="img-box icon-bg fs-xl"></div>
@@ -873,8 +987,16 @@
 
 		<!-- // -->
 
+		<div class="img-box __slide-10-image">
+			<img class="o-fit-cover"
+					 src="./images/img-3.webp"
+					 alt="">
+		</div>
+
+		<!-- // -->
+
 		<div class="cards-framed -framed-1">
-			<section class="card-framed">
+			<section class="card-framed __slide-10-card-1">
 				<div class="card-framed__head">
 					<div class="card-framed__icon img-box icon-bg">
 						<img class="inner-icon"
@@ -892,7 +1014,7 @@
 				</div>
 			</section>
 
-			<section class="card-framed">
+			<section class="card-framed __slide-10-card-2">
 				<div class="card-framed__head">
 					<div class="card-framed__icon img-box icon-bg">
 						<img class="inner-icon"
@@ -906,105 +1028,52 @@
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est deserunt quod molestias impedit fugiat
 							laudantium, accusantium veniam pariatur assumenda, fuga illum necessitatibus ipsum. Corporis, optio quia?
 							Magnam possimus at corporis. Iste.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, incidunt! Esse laudantium alias,
+							repudiandae ipsa quos culpa deleniti? Corporis obcaecati dolorum molestiae labore voluptas deserunt aut
+							provident voluptatum accusamus accusantium fugiat illum pariatur debitis quo commodi, cumque consequatur
+							eveniet adipisci illo reprehenderit.</p>
 					</div>
 				</div>
 			</section>
 
-			<section class="card-framed">
-				<div class="card-framed__head">
-					<div class="card-framed__icon img-box icon-bg">
-						<img class="inner-icon"
-								 src="./images/icons/icon-set-03-b.svg"
-								 alt="">
-					</div>
-				</div>
-				<div class="card-framed__body">
-					<div class="card-framed__txt">
-						<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum dolor</h2>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit culpa fugit vel
-							nemo ipsam et eos
-							ex.</p>
-					</div>
-				</div>
-			</section>
+			<!-- // -->
 
-			<section class="card-framed">
-				<div class="card-framed__head">
-					<div class="card-framed__icon img-box icon-bg">
-						<img class="inner-icon"
-								 src="./images/icons/icon-dbs-21-b.svg"
-								 alt="">
-					</div>
-				</div>
-				<div class="card-framed__body">
-					<div class="card-framed__txt">
-						<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem</h2>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tenetur rem, distinctio quasi
-							consectetur nisi quae, cum in veniam dolorum sequi fuga tempora, incidunt ipsum optio unde.</p>
-					</div>
-				</div>
-			</section>
+			<div class="__slide-10-text-1">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eligendi repellendus consequatur
+					iusto, illum minima earum at. Ipsum porro molestias eos sequi quam nisi ad dolore inventore aspernatur minus?
+					Corrupti assumenda pariatur, totam atque quod facilis corporis amet porro? Minima ipsum culpa qui rem.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, maiores. Quaerat reiciendis nostrum
+					possimus placeat sunt optio ducimus tempore distinctio. Repellendus illo doloribus praesentium saepe,
+					labore ab.</p>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore expedita, eius aut eligendi ut quos autem
+					tenetur iste consectetur magni ea modi, odit similique alias nostrum tempore placeat iure voluptate dolore
+					quas. Modi veniam placeat quidem ex eius iure. Sint pariatur explicabo alias corrupti architecto quasi
+					repellat fugiat, earum, asperiores delectus ipsa expedita sunt consequatur! Nihil illum facere alias eaque
+					sequi deleniti animi reiciendis accusantium aut. Quo aut labore delectus suscipit aliquid corrupti ipsam
+					molestias necessitatibus autem.</p>
+			</div>
 		</div>
-
-		<!-- // -->
-		<!-- <div class="cards-framed -framed-3 ordered-list">
-			<section class="card-framed">
-				<div class="card-framed__head">
-					<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
-				</div>
-				<div class="card-framed__body">
-					<div class="card-framed__txt">
-						<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum</h2>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi delectus minus ex labore
-							accusamus
-							itaque perspiciatis officia, nobis dolorum voluptatum dolore autem.</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="card-framed">
-				<div class="card-framed__head">
-					<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
-				</div>
-				<div class="card-framed__body">
-					<div class="card-framed__txt">
-						<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum dolor sit</h2>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est deserunt quod molestias impedit fugiat
-							laudantium, accusantium veniam pariatur assumenda, fuga illum necessitatibus ipsum. Corporis, optio quia?
-							Magnam possimus at corporis. Iste.</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="card-framed">
-				<div class="card-framed__head">
-					<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
-				</div>
-				<div class="card-framed__body">
-					<div class="card-framed__txt txt-grd">
-						<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum dolor</h2>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit culpa fugit vel
-							nemo ipsam et eos
-							ex.</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="card-framed">
-				<div class="card-framed__head">
-					<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
-				</div>
-				<div class="card-framed__body">
-					<div class="card-framed__txt">
-						<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem</h2>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tenetur rem, distinctio quasi
-							consectetur nisi quae, cum in veniam dolorum sequi fuga tempora, incidunt ipsum optio unde.</p>
-					</div>
-				</div>
-			</section>
-		</div> -->
 	</div>
-</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",f);s.insertAdjacentHTML("beforeend",b);const _=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};_(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
+</article>`,_=`<article class="slide __slide-11 layout-center z-up"
+				 id="slide-11">
+	<div class="slide-number"></div>
+	<div class="slide__top-group">
+		<div class="slide-ttl width-x z-up">
+			<h1 class="fs-2xl fw-eb">Test area</h1>
+			<p class="fs-lg txt-grd">Under construction</p>
+		</div>
+		<a href="#"
+			 class="brand-logo sm-d-none"
+			 aria-label="home">
+			<img src="./images/logo-w.svg"
+					 alt="brand-logo">
+		</a>
+	</div>
+
+	<div class="slide-grid grid-x">
+
+	</div>
+</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",b);s.insertAdjacentHTML("beforeend",f);s.insertAdjacentHTML("beforeend",_);const h=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};h(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
 			<a href="#slide-${n+1}">
 				<span class="sr-only">slide ${n+1}</span>
 			</a>
