@@ -271,7 +271,7 @@
 	--clr-alpha: var(--clr-1b);
 }
 
-.txt-grd {
+.txt-gradient {
 	background-image: var(--clr-1b-1a-solid);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -284,7 +284,7 @@
 	color: var(--clr-1b);
 }
 
-.txt-bg {
+.bg-gradient {
 	--clr-solid: hsl(var(--clr-0a));
 
 	background-image: var(--clr-1b-1a-solid);

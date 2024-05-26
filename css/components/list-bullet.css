@@ -39,7 +39,6 @@
 	--bullet-thin: 0.1em;
 	--bullet-tail: 1em;
 	--bullet-head: calc(var(--bullet-thin) * 3.5);
-	--bullet-glow: 0 0 0.5em 0.25em var(--bullet-clr);
 }
 
 .list-bullet.custom li::before,
@@ -64,5 +63,9 @@
 	border-radius: 50%;
 	justify-self: end;
 	transform: translateY(calc(-50% + var(--bullet-thin) / 2));
-	box-shadow: var(--bullet-glow);
+	box-shadow: var(--bullet-glow, none);
+}
+
+.list-bullet.glow li {
+	--bullet-glow: 0 0 0.5em 0.25em var(--bullet-clr);
 }

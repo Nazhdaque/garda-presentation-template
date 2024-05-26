@@ -70,7 +70,7 @@
 			"aside aside aside";
 	}
 }
-/* |||||||||| |||||||||| lg */
+/* |||||||||| |||||||||| md */
 @media (width <= 992px) {
 	.__slide-10 .slide-grid {
 		grid-template-areas:
@@ -81,7 +81,7 @@
 			"aside aside";
 	}
 }
-/* |||||||||| md */
+/* |||||||||| sm */
 @media (width <= 768px) {
 	.__slide-10 .slide-grid {
 		grid-template-areas:

@@ -92,6 +92,21 @@
 	margin-bottom: 1rem;
 }
 
+/* --- */
+.frame-off .card-framed__icon {
+	margin-left: calc(var(--card-gap) * -1);
+}
+.frame-off.card-framed {
+	border-inline: none;
+}
+.frame-off .card-framed__body {
+	padding: calc(var(--card-gap) * 3) 0 0 0;
+}
+.frame-off .card-framed__body::before {
+	display: none;
+}
+
+/* --- */
 .-framed-1 > *:not(:nth-child(1)) .card-framed__body::before {
 	--clr-frame: none;
 }
