@@ -89,7 +89,7 @@
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Plain cards</h1>
-			<p class="fs-lg txt-grd">With icons</p>
+			<p class="fs-lg txt-gradient">With icons</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -191,7 +191,7 @@
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Framed cards</h1>
-			<p class="fs-lg txt-grd">With icons</p>
+			<p class="fs-lg txt-gradient">With icons</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -212,7 +212,7 @@
 			</div>
 			<div class="card-framed__body">
 				<div class="card-framed__txt">
-					<h2 class="card-framed__inner-ttl fs-lg fw-eb txt-grd">Lorem ipsum dolor sit</h2>
+					<h2 class="card-framed__inner-ttl fs-lg fw-eb txt-gradient">Lorem ipsum dolor sit</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, eum. Maiores
 						sapiente tenetur reiciendis eos non eius unde quam officia illum quos, quisquam iste error.</p>
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur nisi
@@ -238,7 +238,7 @@
 				</div>
 				<div class="card-framed__txt">
 					<h3 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum dolor sit</h3>
-					<p class="txt-grd">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias voluptates
+					<p class="txt-gradient">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias voluptates
 						tempora quae debitis molestiae eveniet? Minima blanditiis laudantium commodi necessitatibus dolor, ipsa
 						odio nisi perspiciatis ab, aperiam quas eveniet nobis nam molestias beatae exercitationem fugiat ratione
 						enim voluptatum dolorem facere qui vel dolores? Vero, totam maiores voluptas, enim laudantium quaerat
@@ -277,7 +277,7 @@
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Ordered list</h1>
-			<p class="fs-lg txt-grd">Based on plain cards</p>
+			<p class="fs-lg txt-gradient">Based on plain cards</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -318,12 +318,13 @@
 		</li>
 
 		<li>
-			<p class="fs-lg fw-eb txt-bg width-x">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur odio
+			<p class="fs-lg fw-eb bg-gradient width-x">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+				odio
 				maiores odit consectetur magnam ratione dolores hic nesciunt.</p>
 		</li>
 
 		<!-- <li class="card-plain -ttl-aside -framed">
-			<div class="img-box icon-bg fs-2xl txt-grd"></div>
+			<div class="img-box icon-bg fs-2xl txt-gradient"></div>
 			<h2 class="card-plain__ttl fs-md fw-eb">Lorem ipsum dolor</h2>
 			<div class="card-plain__body">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse velit aperiam mollitia ducimus veritatis saepe
@@ -337,7 +338,7 @@
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Ordered list</h1>
-			<p class="fs-lg txt-grd">Based on framed cards</p>
+			<p class="fs-lg txt-gradient">Based on framed cards</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -354,7 +355,7 @@
 			</div>
 			<div class="card-framed__body">
 				<div class="card-framed__txt">
-					<h2 class="card-framed__inner-ttl fs-lg fw-eb txt-grd">Lorem ipsum dolor sit</h2>
+					<h2 class="card-framed__inner-ttl fs-lg fw-eb txt-gradient">Lorem ipsum dolor sit</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, eum. Maiores
 						sapiente tenetur reiciendis eos non eius unde quam officia illum quos, quisquam iste error.</p>
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur nisi
@@ -376,7 +377,7 @@
 				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
 				<div class="card-framed__txt">
 					<h3 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum dolor sit</h3>
-					<p class="txt-grd">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias voluptates
+					<p class="txt-gradient">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias voluptates
 						tempora quae debitis molestiae eveniet? Minima blanditiis laudantium commodi necessitatibus dolor, ipsa
 						odio nisi perspiciatis ab, aperiam quas eveniet nobis nam molestias beatae exercitationem fugiat ratione
 						enim voluptatum dolorem facere qui vel dolores? Vero, totam maiores voluptas, enim laudantium quaerat
@@ -420,8 +421,8 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Unordered list <span class="txt-grd">with icons</span></h1>
-			<p class="fs-lg txt-grd">Any icons, with titles / with no titles</p>
+			<h1 class="fs-2xl fw-eb">Unordered list <span class="txt-gradient">with icons</span></h1>
+			<p class="fs-lg txt-gradient">Any icons, with titles / with no titles</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -663,8 +664,8 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Plain cards <span class="txt-grd">with images: vertical</span></h1>
-			<p class="fs-lg txt-grd">Options: figcaption, icon inside etc.</p>
+			<h1 class="fs-2xl fw-eb">Plain cards <span class="txt-gradient">with images: vertical</span></h1>
+			<p class="fs-lg txt-gradient">Options: figcaption, icon inside etc.</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -773,8 +774,8 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Plain cards <span class="txt-grd">with images: horizontal</span></h1>
-			<!-- <p class="fs-lg txt-grd">Lorem ipsum dolor sit</p> -->
+			<h1 class="fs-2xl fw-eb">Plain cards <span class="txt-gradient">with images: horizontal</span></h1>
+			<!-- <p class="fs-lg txt-gradient">Lorem ipsum dolor sit</p> -->
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -828,7 +829,7 @@
 				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quis ipsum nulla hic explicabo maiores,
 					alias id facere accusamus molestiae quidem. Ab repellat sit aliquam voluptatem facere, nam reprehenderit sunt
 					iure debitis?.</p>
-				<ul class="list-bullet custom">
+				<ul class="list-bullet custom glow">
 					<li>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto magni eos voluptates in?</p>
 					</li>
@@ -867,8 +868,8 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Ordered list: <span class="txt-grd">stages</span></h1>
-			<p class="fs-lg txt-grd">Based on framed cards</p>
+			<h1 class="fs-2xl fw-eb">Ordered list: <span class="txt-gradient">stages</span></h1>
+			<p class="fs-lg txt-gradient">Based on framed cards</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -911,7 +912,7 @@
 				<div class="card-framed__icon img-box icon-bg fs-2xl"></div>
 			</div>
 			<div class="card-framed__body">
-				<div class="card-framed__txt txt-grd">
+				<div class="card-framed__txt txt-gradient">
 					<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum dolor</h2>
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit culpa fugit vel
 						nemo ipsam et eos
@@ -939,8 +940,10 @@
 	<div class="slide-grid grid-x">
 		<div class="slide__top-group __slide-10-title">
 			<div class="slide-ttl width-x z-up">
-				<h1 class="fs-2xl fw-eb">Complex responsive grid layout</h1>
-				<p class="fs-lg txt-grd">Layout changes at breakpoints: 1600px, 1400px, 992px, 768px</p>
+				<h1 class="fs-2xl fw-eb"><span class="txt-gradient">Complex responsive</span> grid layout</h1>
+				<p class="fs-lg">Layout changes at breakpoints: <span class="txt-gradient fw-bd">1600px, 1400px, 992px,
+						768px</span>
+				</p>
 			</div>
 
 			<a href="#"
@@ -951,7 +954,7 @@
 			</a>
 		</div>
 
-		<div class="txt-bg __slide-10-aside">
+		<div class="bg-gradient __slide-10-aside">
 			<ol class="grid-x z-up cards-plain ordered-list">
 				<li class="card-plain">
 					<div class="img-box icon-bg fs-xl"></div>
@@ -1005,7 +1008,7 @@
 					</div>
 				</div>
 				<div class="card-framed__body">
-					<div class="card-framed__txt txt-grd">
+					<div class="card-framed__txt txt-gradient">
 						<h2 class="card-framed__inner-ttl fs-lg fw-eb">Lorem ipsum</h2>
 						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi delectus minus ex labore
 							accusamus
@@ -1014,7 +1017,7 @@
 				</div>
 			</section>
 
-			<section class="card-framed __slide-10-card-2">
+			<section class="card-framed frame-off __slide-10-card-2">
 				<div class="card-framed__head">
 					<div class="card-framed__icon img-box icon-bg">
 						<img class="inner-icon"
@@ -1035,23 +1038,28 @@
 					</div>
 				</div>
 			</section>
+		</div>
 
-			<!-- // -->
-
-			<div class="__slide-10-text-1">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eligendi repellendus consequatur
-					iusto, illum minima earum at. Ipsum porro molestias eos sequi quam nisi ad dolore inventore aspernatur minus?
-					Corrupti assumenda pariatur, totam atque quod facilis corporis amet porro? Minima ipsum culpa qui rem.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, maiores. Quaerat reiciendis nostrum
-					possimus placeat sunt optio ducimus tempore distinctio. Repellendus illo doloribus praesentium saepe,
-					labore ab.</p>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore expedita, eius aut eligendi ut quos autem
-					tenetur iste consectetur magni ea modi, odit similique alias nostrum tempore placeat iure voluptate dolore
-					quas. Modi veniam placeat quidem ex eius iure. Sint pariatur explicabo alias corrupti architecto quasi
-					repellat fugiat, earum, asperiores delectus ipsa expedita sunt consequatur! Nihil illum facere alias eaque
-					sequi deleniti animi reiciendis accusantium aut. Quo aut labore delectus suscipit aliquid corrupti ipsam
-					molestias necessitatibus autem.</p>
-			</div>
+		<div class="__slide-10-text-1">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eligendi repellendus consequatur
+				iusto, illum minima earum at. Ipsum porro molestias eos sequi quam nisi ad dolore inventore aspernatur minus?
+				Corrupti assumenda pariatur, totam atque quod facilis corporis amet porro? Minima ipsum culpa qui rem.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, maiores. Quaerat reiciendis nostrum
+				possimus placeat sunt optio ducimus tempore distinctio. Repellendus illo doloribus praesentium saepe,
+				labore ab.</p>
+			<ul class="list-bullet custom">
+				<li>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto magni eos voluptates in?</p>
+				</li>
+				<li>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor corrupti deleniti ab, consequuntur quas
+						eum similique excepturi fugit ea expedita dignissimos possimus eligendi!</p>
+				</li>
+				<li>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iure dicta impedit eos ab odio, veritatis
+						reiciendis!</p>
+				</li>
+			</ul>
 		</div>
 	</div>
 </article>`,_=`<article class="slide __slide-11 layout-center z-up"
@@ -1060,7 +1068,7 @@
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Test area</h1>
-			<p class="fs-lg txt-grd">Under construction</p>
+			<p class="fs-lg txt-gradient">Under construction</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
