@@ -154,6 +154,12 @@
 .span-x {
 	grid-column: span var(--span-x, 1);
 }
+.span-x2 {
+	grid-column: span var(--span-x, 2);
+}
+.span-x3 {
+	grid-column: span var(--span-x, 3);
+}
 .span-y {
 	grid-row: span var(--span-y, 1);
 }
