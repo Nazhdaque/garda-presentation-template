@@ -5,6 +5,7 @@
 
 .__slide-9 .cards-framed {
 	--col: 4;
+	--img-size: 1em;
 
 	place-self: center;
 }

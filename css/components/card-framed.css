@@ -60,6 +60,9 @@
 	place-self: start;
 	padding: 0;
 }
+.ordered-list .card-framed__icon {
+	padding-block: 0;
+}
 
 .card-framed__body {
 	background-color: var(--clr-bg);
@@ -85,7 +88,7 @@
 }
 
 .ordered-list .card-framed__body {
-	padding-top: calc(var(--card-gap) * 1.75);
+	padding-top: calc(var(--card-gap) * 2);
 }
 
 .card-framed__inner-ttl {
@@ -93,51 +96,39 @@
 }
 
 /* --- */
-.frame-off.card-framed {
+.-frame-off.card-framed {
 	border-inline: none;
 }
-.frame-off.card-framed::before {
+.-frame-off.card-framed::before {
 	display: none;
 	/* inset-inline: 0; */
 }
-.frame-off .card-framed__ttl {
+.-frame-off .card-framed__ttl {
 	padding-left: 0;
 }
-.frame-off .card-framed__icon + .card-framed__ttl {
+.-frame-off .card-framed__icon {
+	padding: 0;
+}
+.-frame-off .card-framed__icon + .card-framed__ttl {
 	margin-left: calc(var(--card-gap) * -1);
 }
-.frame-off .inner-icon:not(.card-framed__body .inner-icon) {
+.-frame-off .inner-icon:not(.card-framed__body .inner-icon) {
 	padding-inline: 0 calc(var(--card-gap) * 2);
 }
-.frame-off .card-framed__body {
+.-frame-off .card-framed__body {
 	padding-inline: 0;
 	padding-bottom: 0;
 }
-.frame-off .card-framed__body::before {
+.-frame-off .card-framed__body::before {
 	display: none;
 }
-.frame-off .card-framed__ttl,
-.frame-off .card-framed__icon,
-.frame-off .card-framed__body {
+.-frame-off .card-framed__ttl,
+.-frame-off .card-framed__icon,
+.-frame-off .card-framed__body {
 	background-color: initial;
 }
 
 /* --- */
-.-framed-1 > *:not(:nth-child(1)) .card-framed__body::before {
+/* .-framed-1 > *:not(:nth-child(1)) .card-framed__body::before {
 	--clr-frame: none;
-}
-.-framed-2 > *:not(:nth-child(2)) .card-framed__body::before {
-	--clr-frame: none;
-}
-.-framed-3 > *:not(:nth-child(3)) .card-framed__body::before {
-	--clr-frame: none;
-}
-.-framed-4 > *:not(:nth-child(4)) .card-framed__body::before {
-	--clr-frame: none;
-}
-.-framed-5 > *:not(:nth-child(5)) .card-framed__body::before {
-	--clr-frame: none;
-}
-.-framed-6 > *:not(:nth-child(6)) .card-framed__body::before {
-	--clr-frame: none;
-}
+} */
