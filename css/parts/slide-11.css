@@ -1,8 +1,60 @@
 .__slide-11 {
 	--clr-bg: hsl(var(--clr-0b));
 	--clr-solid: hsl(var(--clr-0a));
-	/* --url: url(/images/slide-bgs/skyscrapper.webp); */
+	--overlay: linear-gradient(
+		90deg,
+		hsl(0, 0%, 0%, 0) 50%,
+		hsl(0, 0%, 0%, 0.5) 75%,
+		hsl(0, 0%, 0%, 1) 100%
+	);
+	--slide-img: var(--overlay), url(/images/slide-bgs/skyscrapper.webp);
 }
 
 .__slide-11 .slide-grid {
+	--col: 3;
+	--gap-x: 2rem;
+	--gap-y: 2rem;
+	--shrink: 0.75;
+
+	grid-template-areas: "list image image";
+}
+
+.__slide-11-list {
+	--img-size: 2.5rem;
+	--gap-y: 2rem;
+	--clr-1b-1a: linear-gradient(
+		30deg,
+		hsl(var(--clr-1b), 0.5) 0,
+		hsl(var(--clr-1a), 0.5) 100%
+	);
+
+	padding: var(--gap-y);
+	grid-area: list;
+}
+
+.__slide-11-image {
+	--img-w: auto;
+	--img-h: auto;
+	--img-size: 30rem;
+
+	min-height: var(--img-size);
+	grid-area: image;
+}
+
+@media (width <= 1600px) {
+	.__slide-11 .slide-grid {
+		grid-template-areas:
+			"list"
+			"image";
+	}
+}
+@media (width <= 992px) {
+	.__slide-11-image {
+		--img-size: 20rem;
+	}
+}
+@media (width <= 576px) {
+	.__slide-11-image {
+		--img-size: 15rem;
+	}
 }

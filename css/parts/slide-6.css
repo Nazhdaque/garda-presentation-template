@@ -1,7 +1,7 @@
 .__slide-6 {
 	/* --clr-bg: hsl(var(--clr-0b)); */
 	--clr-solid: hsl(var(--clr-0a));
-	/* --url: url(/images/slide-bgs/skyscrapper.webp); */
+	/* --slide-img: url(/images/slide-bgs/skyscrapper.webp); */
 }
 
 .__slide-6 .cards-plain {

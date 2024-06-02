@@ -5,7 +5,7 @@
 	--img-size: 10rem;
 	--card-gap: max(var(--img-size) / 6, 1rem);
 	--card-border: 0.5rem;
-	--clr-frame: var(--clr-1b-1a-solid);
+	--clr-frame: var(--clr-1b-1a);
 
 	grid-auto-rows: min-content;
 }
@@ -24,6 +24,7 @@
 	inset: calc(var(--card-border) * -1);
 	background-color: var(--clr-bg);
 	z-index: -1;
+	border-radius: var(--radius, none);
 }
 
 .card-framed__head {
@@ -73,6 +74,7 @@
 	display: grid;
 	grid-auto-flow: column;
 	gap: var(--card-gap);
+	border-radius: calc(var(--radius, none) - var(--card-border));
 }
 
 .card-framed__body::before {
@@ -81,6 +83,7 @@
 	background-image: var(--clr-frame, none);
 	inset: calc(var(--card-border) * -1);
 	z-index: -1;
+	border-radius: var(--radius, none);
 }
 
 .card-framed__body:only-child {
@@ -95,7 +98,7 @@
 	margin-bottom: 1rem;
 }
 
-/* --- */
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .-frame-off.card-framed {
 	border-inline: none;
 }
@@ -128,7 +131,7 @@
 	background-color: initial;
 }
 
-/* --- */
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 /* .-framed-1 > *:not(:nth-child(1)) .card-framed__body::before {
 	--clr-frame: none;
 } */

@@ -71,13 +71,14 @@
 	place-self: end;
 }
 
-/* === === === === === list with icons */
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .cards-plain.-list-icon {
 	--card-gtc: min-content;
 	--gap-y: 1em;
 	--inner-gap: 1.5em;
 	--img-h: 3rem;
 	--img-w: auto;
+	--radius: none;
 }
 
 .-list-icon .card-plain {
@@ -97,7 +98,7 @@
 	transform: translateX(-5%) translateY(5%) scale(1.05);
 }
 
-/* === === === === === framed */
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 /* .card-plain.-framed {
 	z-index: 1;
 	position: relative;
@@ -107,7 +108,7 @@
 .card-plain.-framed::before {
 	position: absolute;
 	content: "";
-	background-image: var(--clr-1b-1a-solid);
+	background-image: var(--clr-1b-1a);
 	inset: calc(var(--card-border, 0.5rem) * -1);
 	z-index: -2;
 }

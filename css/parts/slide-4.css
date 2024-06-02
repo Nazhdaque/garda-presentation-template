@@ -1,7 +1,7 @@
 .__slide-4 {
 	--clr-bg: hsl(var(--clr-0b));
 	--clr-solid: hsl(var(--clr-0a));
-	--url: url(/images/slide-bgs/heroes.webp);
+	--slide-img: url(/images/slide-bgs/heroes.webp);
 }
 
 .__slide-4 .cards-plain {

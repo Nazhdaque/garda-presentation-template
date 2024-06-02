@@ -272,10 +272,11 @@
 }
 
 .txt-gradient {
-	background-image: var(--clr-1b-1a-solid);
+	background-image: var(--clr-1b-1a);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	border-radius: var(--radius, none);
 }
 .txt-1a {
 	color: var(--clr-1a);
@@ -287,5 +288,6 @@
 .bg-gradient {
 	--clr-solid: hsl(var(--clr-0a));
 
-	background-image: var(--clr-1b-1a-solid);
+	background-image: var(--clr-1b-1a);
+	border-radius: var(--radius, none);
 }

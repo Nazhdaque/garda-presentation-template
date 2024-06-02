@@ -20,7 +20,7 @@
 	--clr-1b-s: 76%;
 	--clr-1b-l: 53%;
 	--clr-1b: var(--clr-1b-h), var(--clr-1b-s), var(--clr-1b-l);
-	--clr-1b-1a-solid: linear-gradient(
+	--clr-1b-1a: linear-gradient(
 		30deg,
 		hsl(var(--clr-1b)) 0,
 		hsl(var(--clr-1a)) 100%

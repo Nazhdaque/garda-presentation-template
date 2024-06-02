@@ -56,7 +56,7 @@
 		grid-template-areas:
 			"title title title title title"
 			"image image text1 text1 text1"
-			"card1 card2 card2 card2 -----"
+			"card1 card2 card2 card2 ....."
 			"aside aside aside aside aside";
 	}
 }

@@ -1,7 +1,7 @@
 .icon-bg {
 	--img-w: var(--img-h);
 
-	background: var(--clr-solid, none);
+	/* background: var(--clr-solid, none); */
 	transition: var(--tsn, none);
 	border-radius: var(--radius, initial);
 	line-height: normal;
