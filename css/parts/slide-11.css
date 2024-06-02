@@ -16,10 +16,13 @@
 	--gap-y: 2rem;
 	--shrink: 0.75;
 
-	grid-template-areas: "list image image";
+	grid-template-areas:
+		"list img1 img1"
+		"img2 img2 txt1";
 }
 
-.__slide-11-list {
+.__slide-11-list-1,
+.__slide-11-text-1 {
 	--img-size: 2.5rem;
 	--gap-y: 2rem;
 	--clr-1b-1a: linear-gradient(
@@ -32,29 +35,42 @@
 	grid-area: list;
 }
 
-.__slide-11-image {
+.__slide-11-image-1,
+.__slide-11-image-2 {
 	--img-w: auto;
 	--img-h: auto;
 	--img-size: 30rem;
 
 	min-height: var(--img-size);
-	grid-area: image;
+	grid-area: img1;
 }
 
+.__slide-11-text-1 {
+	grid-area: txt1;
+}
+.__slide-11-image-2 {
+	grid-area: img2;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 @media (width <= 1600px) {
 	.__slide-11 .slide-grid {
 		grid-template-areas:
 			"list"
-			"image";
+			"img1"
+			"txt1"
+			"img2";
 	}
 }
 @media (width <= 992px) {
-	.__slide-11-image {
+	.__slide-11-image-1,
+	.__slide-11-image-2 {
 		--img-size: 20rem;
 	}
 }
 @media (width <= 576px) {
-	.__slide-11-image {
+	.__slide-11-image-1,
+	.__slide-11-image-2 {
 		--img-size: 15rem;
 	}
 }

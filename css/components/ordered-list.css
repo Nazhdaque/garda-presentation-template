@@ -16,4 +16,40 @@
 	font-family: var(--ff-rg);
 	font-weight: var(--fw-eb);
 	color: var(--clr-solid, hsl(var(--clr-0b), 1));
+	z-index: 1;
+}
+
+.ordered-list:has(.card-plain__img) .img-box::before {
+	display: none;
+}
+.ordered-list .card-plain__img {
+	position: relative;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.card-number {
+	position: absolute;
+	font-size: 0.85em;
+	font-weight: var(--fw-eb);
+	line-height: 1;
+	display: grid;
+	place-items: center;
+	aspect-ratio: 1;
+	z-index: 1;
+	inset: 0.75em 0.75em auto auto;
+}
+
+.card-number::before {
+	position: absolute;
+	content: "";
+	border-left: 1.6em solid transparent;
+	border-right: 1.6em solid transparent;
+	border-top: 1.6em solid hsl(var(--clr-1b), 1);
+	transform: rotate(-135deg);
+}
+
+.card-number::after {
+	position: absolute;
+	content: counter(list-counter);
+	inset: -0.3em -0.3em auto auto;
 }

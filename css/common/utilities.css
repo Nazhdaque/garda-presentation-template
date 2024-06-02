@@ -231,6 +231,16 @@
 	order: var(--order, -1);
 }
 
+.fd-row-reverse {
+	flex-direction: row-reverse;
+}
+.fd-col {
+	flex-direction: column;
+}
+.fd-col-reverse {
+	flex-direction: column-reverse;
+}
+
 .filters {
 	filter: var(--filters, none);
 }
