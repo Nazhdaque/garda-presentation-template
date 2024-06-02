@@ -35,8 +35,8 @@
 }
 
 .slide-ttl {
-	--col: 3;
-	--x: 2;
+	--col: 5;
+	--x: 4;
 
 	max-width: fit-content;
 	display: grid;

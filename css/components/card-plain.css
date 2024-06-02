@@ -9,7 +9,7 @@
 }
 
 .cards-plain:not(:last-child, :only-child) {
-	margin-bottom: var(--gap-y);
+	/* margin-bottom: var(--gap-y); */
 }
 
 .card-plain {
@@ -59,9 +59,9 @@
 
 .card-plain__img figcaption {
 	z-index: 1;
-
-	margin: 0.5em 0.75em;
 	place-self: end;
+	margin: 0.5em 0.75em;
+	font-size: var(--fs-sm);
 }
 .card-plain__img figcaption.-txt-vertical-left {
 	margin: 0.75em 0.5em;

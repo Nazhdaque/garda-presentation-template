@@ -13,16 +13,35 @@
 .__slide-11 .slide-grid {
 	--col: 3;
 	--gap-x: 2rem;
-	--gap-y: 2rem;
-	--shrink: 0.75;
+	--gap-y: 6rem;
 
 	grid-template-areas:
 		"list img1 img1"
-		"img2 img2 txt1";
+		"img2 img2 text";
 }
 
-.__slide-11-list-1,
-.__slide-11-text-1 {
+.__slide-11-list > *:nth-child(2) .img-box {
+	place-self: center;
+}
+.__slide-11-list > *:nth-child(3) .img-box {
+	place-self: end;
+}
+
+.__slide-11-list {
+	grid-area: list;
+}
+.__slide-11-image-1 {
+	grid-area: img1;
+}
+.__slide-11-text {
+	grid-area: text;
+}
+.__slide-11-image-2 {
+	grid-area: img2;
+}
+
+.__slide-11-list,
+.__slide-11-text {
 	--img-size: 2.5rem;
 	--gap-y: 2rem;
 	--clr-1b-1a: linear-gradient(
@@ -32,7 +51,6 @@
 	);
 
 	padding: var(--gap-y);
-	grid-area: list;
 }
 
 .__slide-11-image-1,
@@ -42,14 +60,6 @@
 	--img-size: 30rem;
 
 	min-height: var(--img-size);
-	grid-area: img1;
-}
-
-.__slide-11-text-1 {
-	grid-area: txt1;
-}
-.__slide-11-image-2 {
-	grid-area: img2;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
@@ -58,7 +68,7 @@
 		grid-template-areas:
 			"list"
 			"img1"
-			"txt1"
+			"text"
 			"img2";
 	}
 }
