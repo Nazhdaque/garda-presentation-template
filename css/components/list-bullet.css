@@ -10,6 +10,11 @@
 	width: 0.5em;
 	aspect-ratio: 1;
 	margin-top: 0.5em;
+	transition: 0.1s transform;
+}
+
+.list-bullet:not(.custom) li:hover::before {
+	transform: scale(1.4);
 }
 
 .list-bullet li + li {
@@ -32,7 +37,7 @@
 	width: 0.333em;
 }
 
-/* --- */
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .list-bullet.custom li {
 	--bullet-clr: hsl(var(--clr-1a));
 	--bullet-top: 50%;
@@ -64,6 +69,11 @@
 	justify-self: end;
 	transform: translateY(calc(-50% + var(--bullet-thin) / 2));
 	box-shadow: var(--bullet-glow, none);
+	transition: box-shadow 0.1s;
+}
+
+.list-bullet.custom li:hover {
+	--bullet-glow: 0 0 0.5em 0.25em var(--bullet-clr);
 }
 
 .list-bullet.glow li {
