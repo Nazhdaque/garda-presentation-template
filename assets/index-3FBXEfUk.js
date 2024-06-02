@@ -1,4 +1,4 @@
-(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))e(t);new MutationObserver(t=>{for(const i of t)if(i.type==="childList")for(const l of i.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&e(l)}).observe(document,{childList:!0,subtree:!0});function o(t){const i={};return t.integrity&&(i.integrity=t.integrity),t.referrerPolicy&&(i.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?i.credentials="include":t.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(t){if(t.ep)return;t.ep=!0;const i=o(t);fetch(t.href,i)}})();const d=`<article class="slide __slide-1 layout-center"
+(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))e(t);new MutationObserver(t=>{for(const i of t)if(i.type==="childList")for(const o of i.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&e(o)}).observe(document,{childList:!0,subtree:!0});function l(t){const i={};return t.integrity&&(i.integrity=t.integrity),t.referrerPolicy&&(i.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?i.credentials="include":t.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(t){if(t.ep)return;t.ep=!0;const i=l(t);fetch(t.href,i)}})();const d=`<article class="slide __slide-1 layout-center"
 				 id="slide-1">
 	<!-- <div class="slide-number"></div> -->
 	<div class="scroll-down">
@@ -88,7 +88,7 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Plain cards</h1>
+			<h1 class="fs-2xl fw-eb">Components: <span class="txt-gradient">plain cards</span></h1>
 			<p class="fs-lg txt-gradient">With icons</p>
 		</div>
 		<a href="#"
@@ -190,7 +190,7 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Framed cards</h1>
+			<h1 class="fs-2xl fw-eb">Components: <span class="txt-gradient">framed cards</span></h1>
 			<p class="fs-lg txt-gradient">With icons</p>
 		</div>
 		<a href="#"
@@ -276,7 +276,8 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Ordered list</h1>
+			<h1 class="fs-2xl fw-eb">Components: <span class="txt-gradient">ordered list items</span> & <span
+							class="txt-gradient">text box</span></h1>
 			<p class="fs-lg txt-gradient">Based on plain cards</p>
 		</div>
 		<a href="#"
@@ -337,7 +338,7 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Ordered list</h1>
+			<h1 class="fs-2xl fw-eb">Components: <span class="txt-gradient">ordered list items</span></h1>
 			<p class="fs-lg txt-gradient">Based on framed cards</p>
 		</div>
 		<a href="#"
@@ -421,7 +422,7 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Unordered list <span class="txt-gradient">with icons</span></h1>
+			<h1 class="fs-2xl fw-eb">Component: <span class="txt-gradient">unordered list with icons</span></h1>
 			<p class="fs-lg txt-gradient">Any icons, with titles / with no titles</p>
 		</div>
 		<a href="#"
@@ -664,7 +665,7 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Plain cards <span class="txt-gradient">with images: vertical</span></h1>
+			<h1 class="fs-2xl fw-eb">Components: <span class="txt-gradient">cards with images | vertical</span></h1>
 			<p class="fs-lg txt-gradient">Options: figcaption, icon inside etc.</p>
 		</div>
 		<a href="#"
@@ -678,7 +679,7 @@
 	<div class="grid-x z-up cards-plain width-x">
 		<section class="card-plain">
 			<figure class="img-box card-plain__img">
-				<figcaption>This is figcaption</figcaption>
+				<figcaption>This is a figcaption</figcaption>
 				<div class="img-box icon-bg z-up">
 					<img class="o-fit-cover"
 							 loading="lazy"
@@ -726,7 +727,7 @@
 						 decoding="async"
 						 src="./images/img-2.webp"
 						 alt="">
-				<figcaption>This is figcaption</figcaption>
+				<figcaption>This is a figcaption</figcaption>
 			</figure>
 
 			<div class="card-plain__body">
@@ -749,7 +750,7 @@
 						 decoding="async"
 						 src="./images/img-3.webp"
 						 alt="">
-				<figcaption class="-txt-vertical-left">This is figcaption</figcaption>
+				<figcaption class="-txt-vertical-left">This is a figcaption</figcaption>
 			</figure>
 
 			<div class="card-plain__body">
@@ -770,7 +771,7 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Plain cards <span class="txt-gradient">with images: horizontal</span></h1>
+			<h1 class="fs-2xl fw-eb">Components: <span class="txt-gradient">cards with images | horizontal</span></h1>
 			<p class="fs-lg txt-gradient">Option: counter inside</p>
 		</div>
 		<a href="#"
@@ -867,7 +868,7 @@
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Ordered list: <span class="txt-gradient">stages</span></h1>
+			<h1 class="fs-2xl fw-eb">Component: <span class="txt-gradient">ordered list / stages</span></h1>
 			<p class="fs-lg txt-gradient">Based on framed cards</p>
 		</div>
 		<a href="#"
@@ -939,7 +940,7 @@
 	<div class="slide-grid grid-x">
 		<div class="slide__top-group __slide-10-title">
 			<div class="slide-ttl width-x z-up">
-				<h1 class="fs-2xl fw-eb"><span class="txt-gradient">Complex responsive</span> grid layout</h1>
+				<h1 class="fs-2xl fw-eb">Demo: <span class="txt-gradient">complex responsive</span> grid layout</h1>
 				<p class="fs-lg">Layout changes at breakpoints: <span class="txt-gradient fw-bd">1600px, 1400px, 992px,
 						768px</span>
 				</p>
@@ -1067,8 +1068,8 @@
 
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Test area</h1>
-			<p class="fs-lg txt-gradient">Under construction</p>
+			<h1 class="fs-2xl fw-eb">Demo: long slide</h1>
+			<p class="fs-lg txt-gradient">Charts, some list and some accompanying text</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -1079,7 +1080,7 @@
 	</div>
 
 	<div class="slide-grid grid-x">
-		<ol class="grid-x z-up cards-plain bg-gradient __slide-11-list-1">
+		<ol class="grid-x z-up cards-plain bg-gradient __slide-11-list">
 			<li class="card-plain">
 				<div class="img-box icon-bg">
 					<img class="o-fit-cover"
@@ -1132,7 +1133,7 @@
 
 		<!-- // -->
 
-		<div class="bg-gradient __slide-11-text-1">
+		<div class="bg-gradient __slide-11-text">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio labore
 				facilis
 				commodi itaque, vero laboriosam velit fugit ipsum. Nobis quaerat et possimus laboriosam autem perferendis?
