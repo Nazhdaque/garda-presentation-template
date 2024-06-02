@@ -678,6 +678,7 @@
 	<div class="grid-x z-up cards-plain width-x">
 		<section class="card-plain">
 			<figure class="img-box card-plain__img">
+				<figcaption>This is figcaption</figcaption>
 				<div class="img-box icon-bg z-up">
 					<img class="o-fit-cover"
 							 loading="lazy"
@@ -690,7 +691,6 @@
 						 decoding="async"
 						 src="./images/img-1.webp"
 						 alt="">
-				<figcaption>This is figcaption</figcaption>
 			</figure>
 
 			<div class="card-plain__body">
@@ -718,7 +718,7 @@
 					<img class="o-fit-cover"
 							 loading="lazy"
 							 decoding="async"
-							 src="./images/icons/icon-usr-38-w.svg"
+							 src="./images/icons/icon-set-03-w.svg"
 							 alt="">
 				</div>
 				<img class="o-fit-cover"
@@ -736,12 +736,12 @@
 		</section>
 
 		<section class="card-plain">
-			<figure class="img-box card-plain__img order-up">
+			<figure class="img-box card-plain__img order-up fd-row-reverse">
 				<div class="img-box icon-bg z-up">
 					<img class="o-fit-cover"
 							 loading="lazy"
 							 decoding="async"
-							 src="./images/icons/icon-usr-38-w.svg"
+							 src="./images/icons/icon-apr-36-w.svg"
 							 alt="">
 				</div>
 				<img class="o-fit-cover"
@@ -749,7 +749,7 @@
 						 decoding="async"
 						 src="./images/img-3.webp"
 						 alt="">
-				<figcaption>This is figcaption</figcaption>
+				<figcaption class="-txt-vertical-left">This is figcaption</figcaption>
 			</figure>
 
 			<div class="card-plain__body">
@@ -764,10 +764,6 @@
 					fugiat voluptates in, sequi reiciendis et cupiditate, nobis voluptatum.</p>
 			</div>
 		</section>
-
-		<!-- // -->
-
-
 	</div>
 </article>`,v=`<article class="slide __slide-8 layout-center z-up"
 				 id="slide-8">
@@ -775,7 +771,7 @@
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Plain cards <span class="txt-gradient">with images: horizontal</span></h1>
-			<!-- <p class="fs-lg txt-gradient">Lorem ipsum dolor sit</p> -->
+			<p class="fs-lg txt-gradient">Option: counter inside</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -785,9 +781,10 @@
 		</a>
 	</div>
 
-	<div class="grid-x z-up cards-plain width-x">
+	<div class="grid-x z-up cards-plain width-x ordered-list fd-col-reverse">
 		<section class="card-plain flow-col sm-gaf-row">
 			<figure class="img-box card-plain__img">
+				<div class="card-number"></div>
 				<img class="o-fit-cover"
 						 loading="lazy"
 						 decoding="async"
@@ -804,6 +801,7 @@
 
 		<section class="card-plain flow-col sm-gaf-row">
 			<figure class="img-box card-plain__img order-up">
+				<div class="card-number"></div>
 				<img class="o-fit-cover"
 						 loading="lazy"
 						 decoding="async"
@@ -829,7 +827,7 @@
 				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quis ipsum nulla hic explicabo maiores,
 					alias id facere accusamus molestiae quidem. Ab repellat sit aliquam voluptatem facere, nam reprehenderit sunt
 					iure debitis?.</p>
-				<ul class="list-bullet custom glow">
+				<ul class="list-bullet custom">
 					<li>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto magni eos voluptates in?</p>
 					</li>
@@ -845,6 +843,7 @@
 			</div>
 
 			<figure class="img-box card-plain__img">
+				<div class="card-number"></div>
 				<img class="o-fit-cover"
 						 loading="lazy"
 						 decoding="async"
@@ -863,7 +862,7 @@
 			</div>
 		</section>
 	</div>
-</article>`,f=`<article class="slide __slide-9 layout-center z-up"
+</article>`,b=`<article class="slide __slide-9 layout-center z-up"
 				 id="slide-9">
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
@@ -934,7 +933,7 @@
 			</div>
 		</section>
 	</div>
-</article>`,b=`<article class="slide __slide-10 layout-center z-up"
+</article>`,f=`<article class="slide __slide-10 layout-center z-up"
 				 id="slide-10">
 	<div class="slide-number"></div>
 	<div class="slide-grid grid-x">
@@ -1065,6 +1064,7 @@
 </article>`,_=`<article class="slide __slide-11 layout-center z-up"
 				 id="slide-11">
 	<div class="slide-number"></div>
+
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
 			<h1 class="fs-2xl fw-eb">Test area</h1>
@@ -1079,9 +1079,81 @@
 	</div>
 
 	<div class="slide-grid grid-x">
+		<ol class="grid-x z-up cards-plain bg-gradient __slide-11-list-1">
+			<li class="card-plain">
+				<div class="img-box icon-bg">
+					<img class="o-fit-cover"
+							 loading="lazy"
+							 decoding="async"
+							 src="./images/icons/icon-bus-09-w.svg"
+							 alt="">
+				</div>
+				<div class="card-plain__body">
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam repellat id veniam repellendus nobis,
+						asperiores suscipit! Omnis magni impedit ea officia vitae error sapiente, repellat natus nulla sint quis
+						qui.</p>
+				</div>
+			</li>
 
+			<li class="card-plain">
+				<div class="img-box icon-bg">
+					<img class="o-fit-cover"
+							 loading="lazy"
+							 decoding="async"
+							 src="./images/icons/icon-dbs-21-w.svg"
+							 alt="">
+				</div>
+				<div class="card-plain__body">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloribus dolorem laudantium est rerum.
+						Magni, fuga quasi harum explicabo maxime cum excepturi officia! Omnis, reprehenderit?</p>
+				</div>
+			</li>
+
+			<li class="card-plain">
+				<div class="img-box icon-bg">
+					<img class="o-fit-cover"
+							 loading="lazy"
+							 decoding="async"
+							 src="./images/icons/icon-dbs-23-w.svg"
+							 alt="">
+				</div>
+				<div class="card-plain__body">
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos iusto quis reprehenderit corporis incidunt
+						porro totam voluptate.</p>
+				</div>
+			</li>
+		</ol>
+
+		<div class="img-box __slide-11-image-1">
+			<img class="o-fit-contain"
+					 src="./images/charts/chart-9.svg"
+					 alt="">
+		</div>
+
+		<!-- // -->
+
+		<div class="bg-gradient __slide-11-text-1">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio labore
+				facilis
+				commodi itaque, vero laboriosam velit fugit ipsum. Nobis quaerat et possimus laboriosam autem perferendis?
+				Recusandae distinctio rem cupiditate earum asperiores, suscipit dicta magni eum dolorum possimus est
+				necessitatibus expedita commodi. Molestias nobis quasi tempora nisi, ullam dolorum minima quibusdam magnam vero
+				expedita possimus dignissimos!</p>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dignissimos! Sapiente beatae recusandae
+				sint asperiores ex, voluptatum nam, odit officiis ipsa commodi, quaerat laborum.</p>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi similique, illum quisquam suscipit, repellat,
+				enim officia at iusto voluptatum cumque eius est autem porro sunt nam aut consequuntur hic iste delectus? Quas,
+				non unde debitis eius sint in perspiciatis corrupti, deleniti nisi aliquam impedit nostrum dignissimos
+				asperiores veritatis explicabo corporis beatae, velit iusto a. Perspiciatis, earum.</p>
+		</div>
+
+		<div class="img-box __slide-11-image-2">
+			<img class="o-fit-contain"
+					 src="./images/charts/chart-3.svg"
+					 alt="">
+		</div>
 	</div>
-</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",f);s.insertAdjacentHTML("beforeend",b);s.insertAdjacentHTML("beforeend",_);const h=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};h(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
+</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",b);s.insertAdjacentHTML("beforeend",f);s.insertAdjacentHTML("beforeend",_);const h=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};h(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
 			<a href="#slide-${n+1}">
 				<span class="sr-only">slide ${n+1}</span>
 			</a>
