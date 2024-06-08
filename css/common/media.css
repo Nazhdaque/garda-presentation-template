@@ -4,6 +4,12 @@
 	.xxl-d-block {
 		display: block;
 	}
+	.xxl-wrap-1 {
+		flex-wrap: wrap;
+	}
+	.xxl-order-up {
+		order: var(--order, 1);
+	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| xl */
@@ -14,6 +20,9 @@
 	}
 	.xl-d-none {
 		display: none;
+	}
+	.xl-grow-0 {
+		flex-grow: 0;
 	}
 }
 
@@ -40,6 +49,9 @@
 	}
 	.sm-d-none {
 		display: none;
+	}
+	.md-grow-1 {
+		flex-grow: 1;
 	}
 }
 

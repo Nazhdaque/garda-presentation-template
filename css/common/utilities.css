@@ -70,13 +70,26 @@
 	);
 
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: var(--wrap, wrap);
 	justify-content: var(--justify, center);
 	column-gap: var(--gap-x, normal);
 	row-gap: var(--gap-y, normal);
 }
 .flex-x > * {
 	flex: var(--grow, 1) 1 var(--width-x);
+}
+
+.wrap-0 {
+	flex-wrap: nowrap;
+}
+.wrap-1 {
+	flex-wrap: wrap;
+}
+.grow-0 {
+	flex-grow: 0;
+}
+.grow-1 {
+	flex-grow: 1;
 }
 
 /* |||||||||| |||||||||| |||||||||| width */

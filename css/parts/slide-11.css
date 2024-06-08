@@ -10,14 +10,10 @@
 	--slide-img: var(--overlay), url(/images/slide-bgs/skyscrapper.webp);
 }
 
-.__slide-11 .slide-grid {
+.__slide-11 .flex-x {
 	--col: 3;
 	--gap-x: 2rem;
 	--gap-y: 6rem;
-
-	grid-template-areas:
-		"list img1 img1"
-		"img2 img2 text";
 }
 
 .__slide-11-list > *:nth-child(2) .img-box {
@@ -25,19 +21,6 @@
 }
 .__slide-11-list > *:nth-child(3) .img-box {
 	place-self: end;
-}
-
-.__slide-11-list {
-	grid-area: list;
-}
-.__slide-11-image-1 {
-	grid-area: img1;
-}
-.__slide-11-text {
-	grid-area: text;
-}
-.__slide-11-image-2 {
-	grid-area: img2;
 }
 
 .__slide-11-list,
@@ -53,8 +36,7 @@
 	padding: var(--gap-y);
 }
 
-.__slide-11-image-1,
-.__slide-11-image-2 {
+.__slide-11-chart {
 	--img-w: auto;
 	--img-h: auto;
 	--img-size: 30rem;
@@ -63,24 +45,13 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
-@media (width <= 1600px) {
-	.__slide-11 .slide-grid {
-		grid-template-areas:
-			"list"
-			"img1"
-			"text"
-			"img2";
-	}
-}
 @media (width <= 992px) {
-	.__slide-11-image-1,
-	.__slide-11-image-2 {
+	.__slide-11-chart {
 		--img-size: 20rem;
 	}
 }
-@media (width <= 576px) {
-	.__slide-11-image-1,
-	.__slide-11-image-2 {
+@media (width <= 768px) {
+	.__slide-11-chart {
 		--img-size: 15rem;
 	}
 }
