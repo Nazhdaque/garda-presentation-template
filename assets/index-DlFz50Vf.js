@@ -1079,8 +1079,8 @@
 		</a>
 	</div>
 
-	<div class="slide-grid grid-x">
-		<ol class="grid-x z-up cards-plain bg-gradient __slide-11-list">
+	<div class="flex-x wrap-0 xxl-wrap-1">
+		<ol class="grid-x z-up cards-plain bg-gradient xxl-order-up xl-grow-0 md-grow-1 __slide-11-list">
 			<li class="card-plain">
 				<div class="img-box icon-bg">
 					<img class="o-fit-cover"
@@ -1125,15 +1125,21 @@
 			</li>
 		</ol>
 
-		<div class="img-box __slide-11-image-1">
+		<div class="img-box width-x -w-2 __slide-11-chart">
 			<img class="o-fit-contain"
 					 src="./images/charts/chart-9.svg"
 					 alt="">
 		</div>
+	</div>
 
-		<!-- // -->
+	<div class="flex-x wrap-0 xxl-wrap-1">
+		<div class="img-box width-x -w-2 __slide-11-chart">
+			<img class="o-fit-contain"
+					 src="./images/charts/chart-3.svg"
+					 alt="">
+		</div>
 
-		<div class="bg-gradient __slide-11-text">
+		<div class="bg-gradient __slide-11-text grow-0 md-grow-1">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio labore
 				facilis
 				commodi itaque, vero laboriosam velit fugit ipsum. Nobis quaerat et possimus laboriosam autem perferendis?
@@ -1146,12 +1152,6 @@
 				enim officia at iusto voluptatum cumque eius est autem porro sunt nam aut consequuntur hic iste delectus? Quas,
 				non unde debitis eius sint in perspiciatis corrupti, deleniti nisi aliquam impedit nostrum dignissimos
 				asperiores veritatis explicabo corporis beatae, velit iusto a. Perspiciatis, earum.</p>
-		</div>
-
-		<div class="img-box __slide-11-image-2">
-			<img class="o-fit-contain"
-					 src="./images/charts/chart-3.svg"
-					 alt="">
 		</div>
 	</div>
 </article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",b);s.insertAdjacentHTML("beforeend",f);s.insertAdjacentHTML("beforeend",_);const h=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};h(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
