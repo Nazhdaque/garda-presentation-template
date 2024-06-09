@@ -18,6 +18,7 @@
 @import url(./components/arrows.css) layer(components);
 @import url(./components/nav-panel.css) layer(components);
 @import url(./components/slide-number.css) layer(components);
+@import url(./components/bar-chart.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
 @import url(./parts/slides.css) layer(parts);
@@ -32,6 +33,7 @@
 @import url(./parts/slide-9.css) layer(parts);
 @import url(./parts/slide-10.css) layer(parts);
 @import url(./parts/slide-11.css) layer(parts);
+@import url(./parts/slide-12.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);
 
 @import url(./common/utilities.css) layer(utilities);

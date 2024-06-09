@@ -1,0 +1,137 @@
+.bar-chart {
+	--figure-size: 200vw;
+	--item-size: 6em;
+	--equal: calc(var(--gap-x) * 0.75);
+	--gap-x: 0.3em;
+	--gap-y: var(--equal);
+	--scale-bg: linear-gradient(
+		30deg,
+		hsl(var(--clr-1b), 0.5) 0,
+		hsl(var(--clr-1a), 0.5) 100%
+	);
+	--gap-clr: hsl(var(--clr-0b));
+
+	display: grid;
+	gap: var(--gap-y);
+	font-weight: var(--fw-bd);
+	font-size: 1rem;
+	text-shadow: 1px 1px 1px hsl(var(--clr-0b));
+}
+.bar-chart > * {
+	--item-1: drop-shadow(calc(var(--item-size) * 1.25) 0 0 hsl(var(--item-clr)))
+		drop-shadow(var(--gap-x) 0 0 var(--gap-clr));
+	--item: drop-shadow(var(--item-size) 0 0 hsl(var(--item-clr)))
+		drop-shadow(var(--gap-x) 0 0 var(--gap-clr));
+	--item-fraction: drop-shadow(
+			calc(var(--item-size) * var(--fr)) 0 0 hsl(var(--item-clr))
+		)
+		drop-shadow(var(--gap-x) 0 0 var(--gap-clr));
+
+	padding: 0.5em 6em 0.5em 1.5em;
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	place-items: center start;
+	border-radius: 100vw;
+}
+.bar-chart > *::before {
+	position: absolute;
+	content: "";
+	place-self: center;
+	border-top: var(--figure-size) solid transparent;
+	border-bottom: var(--figure-size) solid transparent;
+	border-left: var(--figure-size) solid hsl(var(--clr-0b));
+	right: 100%;
+	filter: var(--items);
+}
+
+.bar-chart > *::after {
+	position: absolute;
+	content: var(--item-value);
+	right: 0;
+	height: 100%;
+	aspect-ratio: 1.5 / 1;
+	transform: scale(0.8) translateX(5%);
+	border-radius: 100vw;
+	display: grid;
+	place-items: center;
+	background: var(--scale-bg);
+	outline: var(--gap-x) solid hsl(var(--item-clr));
+}
+
+.bar-chart > * > * {
+	z-index: 1;
+}
+
+/* --- */
+.bar-chart > * {
+	--items: var(--item);
+}
+
+.-solid > *:nth-child(1) {
+	--item-value: "16%";
+	--item-size: 16em;
+	--item-clr: var(--clr-2a);
+}
+.-solid > *:nth-child(2) {
+	--item-value: "24%";
+	--item-size: 24em;
+	--item-clr: var(--clr-2d);
+}
+.-solid > *:nth-child(3) {
+	--item-value: "32%";
+	--item-size: 32em;
+	--item-clr: var(--clr-2g);
+}
+.-solid > *:nth-child(4) {
+	--item-value: "12%";
+	--item-size: 12em;
+	--item-clr: var(--clr-2i);
+}
+.-solid > *:nth-child(5) {
+	--item-value: "4%";
+	--item-size: 4em;
+	--item-clr: var(--clr-2b);
+}
+
+/* --- */
+.-segmented > *:nth-child(1) {
+	--item-value: "x1";
+	--item-clr: var(--clr-2a);
+	--items: var(--item-1);
+}
+.-segmented > *:nth-child(2) {
+	--fr: 0.5;
+	--item-value: "x1.5";
+	--item-clr: var(--clr-2d);
+	--items: var(--item-1) var(--item) var(--item-fraction);
+}
+.-segmented > *:nth-child(3) {
+	--fr: 0.67;
+	--item-value: "x3.67";
+	--item-clr: var(--clr-2g);
+	--items: var(--item-1) var(--item) var(--item) var(--item-fraction);
+}
+.-segmented > *:nth-child(4) {
+	--fr: 0.15;
+	--item-value: "x5.15";
+	--item-clr: var(--clr-2i);
+	--items: var(--item-1) var(--item) var(--item) var(--item) var(--item)
+		var(--item-fraction);
+}
+.-segmented > *:nth-child(5) {
+	--fr: 0.75;
+	--item-value: "x4.75";
+	--item-clr: var(--clr-2b);
+	--items: var(--item-1) var(--item) var(--item) var(--item)
+		var(--item-fraction);
+}
+
+/* --- */
+.-bar-bg > * {
+	background: var(--scale-bg);
+}
+.-bar-bg > *::after {
+	background: var(--gap-clr);
+	outline: none;
+}

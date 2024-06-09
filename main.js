@@ -2,6 +2,7 @@ import "./css/main.css";
 import "material-icons/iconfont/round.css";
 import "./js/importHTML.js";
 import "./js/scrollDownPromptDisable.js";
+import { SizeSetter } from "./js/helpers.js";
 
 document.querySelectorAll(".slide").forEach((slide, i) => {
 	document.querySelector(".slide-list").insertAdjacentHTML(
@@ -13,3 +14,11 @@ document.querySelectorAll(".slide").forEach((slide, i) => {
 		</li>`
 	);
 });
+
+const heightSetter = new SizeSetter("h");
+heightSetter.initWith([
+	["h-master-1", "h-slave-1"],
+	["h-master-1", "h-slave-2"],
+	["h-master-1", "h-slave-3"],
+	["h-master-1", "h-slave-4"],
+]);
