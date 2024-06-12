@@ -15,10 +15,10 @@ document.querySelectorAll(".slide").forEach((slide, i) => {
 	);
 });
 
-const heightSetter = new SizeSetter("h");
-heightSetter.initWith([
-	["h-master-1", "h-slave-1"],
-	["h-master-1", "h-slave-2"],
-	["h-master-1", "h-slave-3"],
-	["h-master-1", "h-slave-4"],
-]);
+// const heightSetter = new SizeSetter("h");
+// heightSetter.initWith([
+// 	["h-master-1", "h-slave-1"],
+// 	["h-master-1", "h-slave-2"],
+// 	["h-master-1", "h-slave-3"],
+// 	["h-master-1", "h-slave-4"],
+// ]);

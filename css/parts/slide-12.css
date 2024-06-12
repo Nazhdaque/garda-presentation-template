@@ -2,11 +2,11 @@
 	--clr-bg: hsl(var(--clr-0b));
 	--clr-solid: hsl(var(--clr-0a));
 
-	grid-auto-rows: min-content;
+	/* grid-auto-rows: min-content auto auto; */
 }
 
 .__slide-12 .bar-chart {
-	--col: 4;
-	--x: 3;
+	--col: 3;
+	--x: 2;
 	place-self: center;
 }

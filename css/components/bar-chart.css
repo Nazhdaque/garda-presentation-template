@@ -1,6 +1,6 @@
 .bar-chart {
-	--figure-size: 100dvh;
-	--item-size: 10dvw;
+	--segment-size: 8cqi;
+	--figure-size: calc(var(--segment-size) * 2);
 	--equal: calc(var(--gap-x) * 0.75);
 	--gap-x: 0.3em;
 	--gap-y: var(--equal);
@@ -16,17 +16,11 @@
 	font-weight: var(--fw-bd);
 	font-size: 1rem;
 	text-shadow: 1px 1px 1px hsl(var(--clr-0b));
+	padding: 1.5em;
 }
-.bar-chart > * {
-	--item-1: drop-shadow(calc(var(--item-size) * 1.1) 0 0 hsl(var(--item-clr)))
-		drop-shadow(var(--gap-x) 0 0 var(--gap-clr));
-	--item-x: drop-shadow(var(--item-size) 0 0 hsl(var(--item-clr)))
-		drop-shadow(var(--gap-x) 0 0 var(--gap-clr));
-	--item-f: drop-shadow(
-			calc(var(--item-size) * var(--fraction)) 0 0 hsl(var(--item-clr))
-		)
-		drop-shadow(var(--gap-x) 0 0 var(--gap-clr));
-	--item-all: var(--item-x);
+.bar-chart .bar {
+	--bar-items: var(--item-x);
+	--bar-value-fr: 0;
 
 	padding: 0.5em 6em 0.5em 1.5em;
 	position: relative;
@@ -35,7 +29,7 @@
 	place-items: center start;
 	border-radius: 100vw;
 }
-.bar-chart > *::before {
+.bar-chart .bar::before {
 	position: absolute;
 	content: "";
 	place-self: center;
@@ -43,21 +37,22 @@
 	border-bottom: var(--figure-size) solid transparent;
 	border-left: var(--figure-size) solid hsl(var(--clr-0b));
 	right: 100%;
-	filter: var(--item-all);
+	filter: var(--bar-items);
 }
 
-.bar-chart > *::after {
+.bar-chart .bar::after {
 	position: absolute;
-	content: var(--item-val);
+	counter-reset: value var(--bar-value-int) fraction var(--bar-value-fr);
 	right: 0;
 	height: 100%;
-	aspect-ratio: 1.5 / 1;
-	transform: scale(0.8) translateX(5%);
+	aspect-ratio: 2 / 1;
+	transform: scale(0.8) translateX(7%);
 	border-radius: 100vw;
 	display: grid;
 	place-items: center;
 	background: var(--scale-bg);
-	outline: var(--gap-x) solid hsl(var(--item-clr));
+	outline: 0.325em solid hsl(var(--bar-color));
+	line-height: 1;
 }
 
 /* --- */
@@ -68,72 +63,104 @@
 
 /* --- */
 
-.-bar-bg > * {
+.-bar-bg .bar {
 	background: var(--scale-bg);
 }
-.-bar-bg > *::after {
+.-bar-bg .bar::after {
 	background: var(--gap-clr);
 	outline: none;
 }
 
 /* --- */
-
-.-solid > *:nth-child(1) {
-	--item-val: "16%";
-	--item-size: 16dvw;
-	--item-clr: var(--clr-2a);
-}
-.-solid > *:nth-child(2) {
-	--item-val: "24%";
-	--item-size: 24dvw;
-	--item-clr: var(--clr-2d);
-}
-.-solid > *:nth-child(3) {
-	--item-val: "32%";
-	--item-size: 32dvw;
-	--item-clr: var(--clr-2g);
-}
-.-solid > *:nth-child(4) {
-	--item-val: "12%";
-	--item-size: 12dvw;
-	--item-clr: var(--clr-2i);
-}
-.-solid > *:nth-child(5) {
-	--item-val: "4%";
-	--item-size: 4dvw;
-	--item-clr: var(--clr-2b);
+.-legend-top .bar::after {
+	transform: none;
+	outline: none;
+	aspect-ratio: 3 / 1;
+	background: hsl(var(--bar-color));
+	font-size: 0.8em;
 }
 
 /* --- */
-.-segmented > *:nth-child(1) {
-	--fraction: 0.25;
-	--item-val: "x1.25";
-	--item-clr: var(--clr-2a);
-	--item-all: var(--item-1) var(--item-f);
+.-solid {
+	--figure-size: 100cqi;
 }
-.-segmented > *:nth-child(2) {
-	--fraction: 0.5;
-	--item-val: "x2.5";
-	--item-clr: var(--clr-2d);
-	--item-all: var(--item-1) var(--item-x) var(--item-f);
+.-solid .bar {
+	--item-x: drop-shadow(var(--segment-size) 0 0 hsl(var(--bar-color)));
+	--segment-size: calc(
+		(var(--bar-value-int) * 1cqi + var(--bar-value-fr) * 0.1cqi) / 2
+	);
 }
-.-segmented > *:nth-child(3) {
-	--fraction: 0.75;
-	--item-val: "x3.75";
-	--item-clr: var(--clr-2g);
-	--item-all: var(--item-1) var(--item-x) var(--item-x) var(--item-f);
+.-solid .bar::after {
+	content: counter(value) "." counter(fraction) "%";
 }
-.-segmented > *:nth-child(4) {
-	--fraction: 0.33;
-	--item-val: "x5.33";
-	--item-clr: var(--clr-2i);
-	--item-all: var(--item-1) var(--item-x) var(--item-x) var(--item-x)
+.-solid :nth-child(1 of .bar) {
+	--bar-value-int: 25;
+	--bar-color: var(--clr-2a);
+}
+.-solid :nth-child(2 of .bar) {
+	--bar-value-int: 25;
+	--bar-value-fr: 5;
+	--bar-color: var(--clr-2d);
+}
+.-solid :nth-child(3 of .bar) {
+	--bar-value-int: 50;
+	--bar-color: var(--clr-2g);
+}
+.-solid :nth-child(4 of .bar) {
+	--bar-value-int: 75;
+	--bar-color: var(--clr-2i);
+}
+.-solid :nth-child(5 of .bar) {
+	--bar-value-int: 100;
+	--bar-color: var(--clr-2b);
+}
+
+/* --- */
+.-segmented .bar {
+	--item-1: drop-shadow(
+			calc(var(--segment-size) * 1.1) 0 0 hsl(var(--bar-color))
+		)
+		drop-shadow(var(--gap-x) 0 0 var(--gap-clr));
+	--item-x: drop-shadow(var(--segment-size) 0 0 hsl(var(--bar-color)))
+		drop-shadow(var(--gap-x) 0 0 var(--gap-clr));
+	--item-f: drop-shadow(
+			calc(var(--segment-size) * var(--bar-value-fr) * 0.01) 0 0
+				hsl(var(--bar-color))
+		)
+		drop-shadow(var(--gap-x) 0 0 var(--gap-clr));
+}
+.-segmented .bar::after {
+	content: "x" counter(value) "." counter(fraction);
+}
+.-segmented :nth-child(1 of .bar) {
+	--bar-value-int: 1;
+	--bar-value-fr: 25;
+	--bar-color: var(--clr-2a);
+	--bar-items: var(--item-1) var(--item-f);
+}
+.-segmented .bar:nth-child(2 of .bar) {
+	--bar-value-int: 2;
+	--bar-value-fr: 50;
+	--bar-color: var(--clr-2d);
+	--bar-items: var(--item-1) var(--item-x) var(--item-f);
+}
+.-segmented .bar:nth-child(3 of .bar) {
+	--bar-value-int: 3;
+	--bar-value-fr: 75;
+	--bar-color: var(--clr-2g);
+	--bar-items: var(--item-1) var(--item-x) var(--item-x) var(--item-f);
+}
+.-segmented .bar:nth-child(4 of .bar) {
+	--bar-value-int: 5;
+	--bar-value-fr: 33;
+	--bar-color: var(--clr-2i);
+	--bar-items: var(--item-1) var(--item-x) var(--item-x) var(--item-x)
 		var(--item-x) var(--item-f);
 }
-.-segmented > *:nth-child(5) {
-	--fraction: 0.66;
-	--item-val: "x4.66";
-	--item-clr: var(--clr-2b);
-	--item-all: var(--item-1) var(--item-x) var(--item-x) var(--item-x)
+.-segmented .bar:nth-child(5 of .bar) {
+	--bar-value-int: 4;
+	--bar-value-fr: 66;
+	--bar-color: var(--clr-2b);
+	--bar-items: var(--item-1) var(--item-x) var(--item-x) var(--item-x)
 		var(--item-f);
 }
