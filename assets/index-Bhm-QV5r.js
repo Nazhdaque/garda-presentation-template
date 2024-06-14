@@ -1,4 +1,4 @@
-var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configurable:!0,writable:!0,value:n}):a[t]=n;var d=(a,t,n)=>(m(a,typeof t!="symbol"?t+"":t,n),n);(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))l(i);new MutationObserver(i=>{for(const s of i)if(s.type==="childList")for(const o of s.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&l(o)}).observe(document,{childList:!0,subtree:!0});function n(i){const s={};return i.integrity&&(s.integrity=i.integrity),i.referrerPolicy&&(s.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?s.credentials="include":i.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function l(i){if(i.ep)return;i.ep=!0;const s=n(i);fetch(i.href,s)}})();const u=`<article class="slide __slide-1 layout-center"
+(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))e(t);new MutationObserver(t=>{for(const i of t)if(i.type==="childList")for(const l of i.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&e(l)}).observe(document,{childList:!0,subtree:!0});function o(t){const i={};return t.integrity&&(i.integrity=t.integrity),t.referrerPolicy&&(i.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?i.credentials="include":t.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(t){if(t.ep)return;t.ep=!0;const i=o(t);fetch(t.href,i)}})();const d=`<article class="slide __slide-1 layout-center"
 				 id="slide-1">
 	<!-- <div class="slide-number"></div> -->
 	<div class="scroll-down">
@@ -83,7 +83,7 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis et tenetur!</p>
 			</div>
 		</section>
-</article>`,p=`<article class="slide __slide-2 layout-center"
+</article>`,c=`<article class="slide __slide-2 layout-center"
 				 id="slide-2">
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
@@ -185,7 +185,7 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 			</div>
 		</section> -->
 	</div>
-</article>`,g=`<article class="slide __slide-3 layout-center"
+</article>`,r=`<article class="slide __slide-3 layout-center"
 				 id="slide-3">
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
@@ -271,7 +271,7 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 			</div>
 		</section>
 	</div>
-</article>`,v=`<article class="slide __slide-4 layout-center z-up"
+</article>`,m=`<article class="slide __slide-4 layout-center z-up"
 				 id="slide-4">
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
@@ -333,7 +333,7 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 			</div>
 		</li> -->
 	</ol>
-</article>`,b=`<article class="slide __slide-5 layout-center"
+</article>`,u=`<article class="slide __slide-5 layout-center"
 				 id="slide-5">
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
@@ -417,7 +417,7 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 			</div>
 		</section>
 	</div>
-</article>`,f=`<article class="slide __slide-6 layout-center z-up"
+</article>`,p=`<article class="slide __slide-6 layout-center z-up"
 				 id="slide-6">
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
@@ -660,7 +660,7 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 			</div>
 		</li> -->
 	</ul>
-</article>`,_=`<article class="slide __slide-7 layout-center z-up"
+</article>`,g=`<article class="slide __slide-7 layout-center z-up"
 				 id="slide-7">
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
@@ -766,7 +766,7 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 			</div>
 		</section>
 	</div>
-</article>`,h=`<article class="slide __slide-8 layout-center z-up"
+</article>`,v=`<article class="slide __slide-8 layout-center z-up"
 				 id="slide-8">
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
@@ -863,7 +863,7 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 			</div>
 		</section>
 	</div>
-</article>`,x=`<article class="slide __slide-9 layout-center z-up"
+</article>`,b=`<article class="slide __slide-9 layout-center z-up"
 				 id="slide-9">
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
@@ -934,7 +934,7 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 			</div>
 		</section>
 	</div>
-</article>`,q=`<article class="slide __slide-10 layout-center z-up"
+</article>`,f=`<article class="slide __slide-10 layout-center z-up"
 				 id="slide-10">
 	<div class="slide-number"></div>
 	<div class="slide-grid grid-x">
@@ -1062,7 +1062,7 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 			</ul>
 		</div>
 	</div>
-</article>`,L=`<article class="slide __slide-11 layout-center z-up"
+</article>`,_=`<article class="slide __slide-11 layout-center z-up"
 				 id="slide-11">
 	<div class="slide-number"></div>
 
@@ -1154,7 +1154,7 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 				asperiores veritatis explicabo corporis beatae, velit iusto a. Perspiciatis, earum.</p>
 		</div>
 	</div>
-</article>`,w=`<article class="slide __slide-12 layout-center z-up"
+</article>`,h=`<article class="slide __slide-12 layout-center z-up"
 				 id="slide-12">
 	<div class="slide-number"></div>
 
@@ -1172,46 +1172,103 @@ var c=Object.defineProperty;var m=(a,t,n)=>t in a?c(a,t,{enumerable:!0,configura
 	</div>
 
 	<ul class="bar-chart width-x -solid">
-		<li class="h-slave-3">
+		<li class="bar">
 			<p>Lorem ipsum dolor sit amet.</p>
 		</li>
-		<li class="h-slave-2">
+		<li class="bar">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
 		</li>
-		<li class="h-master-1">
+		<li class="bar">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ullam doloribus voluptatibus.
 			</p>
 		</li>
-		<li class="h-slave-1">
-			<p>Lorem ipsum dolor sit amet consectetur.
+		<li class="bar">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sunt.
 			</p>
 		</li>
-		<li class="h-slave-4">
-			<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p> -->
+		<li class="bar">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
 		</li>
 	</ul>
 
+	<ul class="bar-chart -solid -legend-top width-x">
+		<li>
+			<p>Lorem ipsum dolor.</p>
+		</li>
+		<li class="bar"></li>
+
+		<li>
+			<p>Lorem ipsum dolor sit amet, consectetur.</p>
+		</li>
+		<li class="bar"></li>
+
+		<li>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
+				sunt?</p>
+		</li>
+		<li class="bar"></li>
+
+		<li>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+		</li>
+		<li class="bar"></li>
+
+		<li>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
+		</li>
+		<li class="bar"></li>
+	</ul>
+
 	<ul class="bar-chart -bar-bg -segmented width-x">
-		<li class="h-slave-3">
-			<p>Lorem ipsum dolor sit amet.</p>
+		<li class="bar">
+			<p>Lorem ipsum dolor.</p>
 		</li>
-		<li class="h-slave-2">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+		<li class="bar">
+			<p>Lorem ipsum dolor sit amet, consectetur.</p>
 		</li>
-		<li class="h-master-1">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ullam doloribus voluptatibus.
+		<li class="bar">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
+				sunt?
 			</p>
 		</li>
-		<li class="h-slave-1">
-			<p>Lorem ipsum dolor sit amet consectetur.
+		<li class="bar">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing.
 			</p>
 		</li>
-		<li class="h-slave-4">
-			<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p> -->
+		<li class="bar">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
 		</li>
 	</ul>
-</article>`,e=document.querySelector(".main-content");e.insertAdjacentHTML("beforeend",u);e.insertAdjacentHTML("beforeend",p);e.insertAdjacentHTML("beforeend",g);e.insertAdjacentHTML("beforeend",v);e.insertAdjacentHTML("beforeend",b);e.insertAdjacentHTML("beforeend",f);e.insertAdjacentHTML("beforeend",_);e.insertAdjacentHTML("beforeend",h);e.insertAdjacentHTML("beforeend",x);e.insertAdjacentHTML("beforeend",q);e.insertAdjacentHTML("beforeend",L);e.insertAdjacentHTML("beforeend",w);const y=(a,t)=>{document.querySelectorAll(`${a} ${t}`).forEach(l=>{const i=l.closest(`${a}`),s=()=>{l.style.display="none",i.removeEventListener("scrollend",s)};i.addEventListener("scrollend",s)})};y(".main-content",".scroll-down");class z{constructor(t){d(this,"observer",t=>new ResizeObserver(n=>n.forEach(l=>{switch(this.prop){case"w":const i=l.borderBoxSize[0].inlineSize;t.forEach(o=>o.style.maxWidth=`${i}px`);break;case"h":const s=l.borderBoxSize[0].blockSize;t.forEach(o=>o.style.minHeight=`${s}px`);break}})));d(this,"initWith",t=>{t.forEach(([n,l],i)=>{const s=document.querySelector(`.${n}`),o=document.querySelectorAll(`.${l}`),r=i+1;s&&o?this.observer(o).observe(s):console.error(`SizeSetter: there is no master-${r} or slave-${r}`)})});this.prop=t}}document.querySelectorAll(".slide").forEach((a,t)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
-			<a href="#slide-${t+1}">
-				<span class="sr-only">slide ${t+1}</span>
+
+	<ul class="bar-chart -segmented -legend-top width-x">
+		<li>
+			<p>Lorem ipsum dolor.</p>
+		</li>
+		<li class="bar"></li>
+
+		<li>
+			<p>Lorem ipsum dolor sit amet, consectetur.</p>
+		</li>
+		<li class="bar"></li>
+
+		<li>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
+				sunt?</p>
+		</li>
+		<li class="bar"></li>
+
+		<li>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+		</li>
+		<li class="bar"></li>
+
+		<li>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
+		</li>
+		<li class="bar"></li>
+	</ul>
+</article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",b);s.insertAdjacentHTML("beforeend",f);s.insertAdjacentHTML("beforeend",_);s.insertAdjacentHTML("beforeend",h);const x=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};x(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
+			<a href="#slide-${n+1}">
+				<span class="sr-only">slide ${n+1}</span>
 			</a>
-		</li>`)});const M=new z("h");M.initWith([["h-master-1","h-slave-1"],["h-master-1","h-slave-2"],["h-master-1","h-slave-3"],["h-master-1","h-slave-4"]]);
+		</li>`)});
