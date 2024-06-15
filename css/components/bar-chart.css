@@ -2,7 +2,7 @@
 	--segment-size: 8cqi;
 	--figure-size: calc(var(--segment-size) * 2);
 	--equal: calc(var(--gap-x) * 0.75);
-	--gap-x: 0.3em;
+	--gap-x: 0.25em;
 	--gap-y: var(--equal);
 	--bar-bg: linear-gradient(
 		30deg,
@@ -46,7 +46,7 @@
 	position: absolute;
 	right: 0;
 	height: 100%;
-	aspect-ratio: 2 / 1;
+	aspect-ratio: 3 / 1;
 	transform: scale(var(--scale)) translateX(7%);
 	border-radius: 100vw;
 	display: grid;
@@ -74,7 +74,7 @@
 .-legend-top .bar::after {
 	outline: none;
 	transform: none;
-	aspect-ratio: 3 / 1;
+	aspect-ratio: 4 / 1;
 	background: hsl(var(--bar-color));
 	font-size: calc(var(--scale) * 1em);
 }
@@ -183,35 +183,11 @@
 	margin-left: 2em;
 }
 
-.stacked-charts > :nth-child(2) {
-	--value-1: 27;
-	--color-1: var(--clr-2i);
-	--value-2: 10;
-	--color-2: var(--clr-2a);
-	--value-3: 13;
-	--color-3: var(--clr-2d);
-	--value-4: 34;
-	--color-4: var(--clr-2g);
-	--value-5: 16;
-	--color-5: var(--clr-2b);
-}
-
 .stacked-chart {
 	--figure-size: 100cqi;
 	--shift: 2em;
 	--gap-color: var(--clr-0b);
-	--gap-width: 0.5em;
-
-	--value-1: 8;
-	--color-1: var(--clr-2i);
-	--value-2: 21;
-	--color-2: var(--clr-2a);
-	--value-3: 32;
-	--color-3: var(--clr-2d);
-	--value-4: 12;
-	--color-4: var(--clr-2g);
-	--value-5: 27;
-	--color-5: var(--clr-2b);
+	--gap-width: 0.25em;
 
 	grid-template-columns:
 		calc(var(--value-1) * 1%)
@@ -223,6 +199,19 @@
 	margin: 0;
 	display: grid;
 	grid-auto-flow: column;
+	position: relative;
+	border-radius: 100vw;
+}
+.stacked-chart::after {
+	position: absolute;
+	content: "";
+	right: 0;
+	height: 100%;
+	aspect-ratio: 1;
+	background-image: var(--chart-icon);
+	background-size: contain;
+	background-repeat: no-repeat;
+	/* padding-right: calc(var(--shift) * 4); */
 }
 
 .stacked-chart > * {
@@ -251,7 +240,7 @@
 	right: 2em;
 	font-size: 1.25em;
 	font-weight: var(--fw-eb);
-	transform: rotate(-45deg) translateY(25%);
+	transform: rotate(-45deg) translateY(75%) translateX(25%);
 }
 
 .stacked-chart > :nth-child(1) {
@@ -287,4 +276,31 @@
 
 	right: calc(var(--shift) * 4);
 	z-index: -4;
+}
+
+#stacked-chart-1 {
+	--value-1: 8;
+	--color-1: var(--clr-2i);
+	--value-2: 21;
+	--color-2: var(--clr-2a);
+	--value-3: 32;
+	--color-3: var(--clr-2d);
+	--value-4: 12;
+	--color-4: var(--clr-2g);
+	--value-5: 27;
+	--color-5: var(--clr-2b);
+	--chart-icon: url(/public/images/icons/icon-bus-09-w.svg);
+}
+#stacked-chart-2 {
+	--value-1: 27;
+	--color-1: var(--clr-2i);
+	--value-2: 10;
+	--color-2: var(--clr-2a);
+	--value-3: 13;
+	--color-3: var(--clr-2d);
+	--value-4: 34;
+	--color-4: var(--clr-2g);
+	--value-5: 16;
+	--color-5: var(--clr-2b);
+	--chart-icon: url(/public/images/icons/icon-apr-36-w.svg);
 }
