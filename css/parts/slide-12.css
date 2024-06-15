@@ -5,8 +5,9 @@
 	/* grid-auto-rows: min-content auto auto; */
 }
 
-.__slide-12 .bar-chart {
+.__slide-12 .width-x {
 	--col: 3;
 	--x: 2;
+
 	place-self: center;
 }
