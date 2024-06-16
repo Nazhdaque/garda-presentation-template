@@ -1159,9 +1159,9 @@
 	<div class="slide-number"></div>
 
 	<div class="slide__top-group">
-		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Component: <span class="txt-gradient">bar chart</span></h1>
-			<p class="fs-lg txt-gradient">CSS only / under construction</p>
+		<div class="slide-ttl z-up">
+			<h1 class="fs-2xl fw-eb">Components: <span class="txt-gradient">charts</span></h1>
+			<p class="fs-lg txt-gradient">CSS only / under construction / only for taking screenshots</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
@@ -1171,102 +1171,144 @@
 		</a>
 	</div>
 
-	<ul class="bar-chart width-x -solid">
-		<li class="bar">
-			<p>Lorem ipsum dolor sit amet.</p>
-		</li>
-		<li class="bar">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-		</li>
-		<li class="bar">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ullam doloribus voluptatibus.
+	<div class="width-x">
+		<ul class="bar-chart -solid">
+			<li class="bar">
+				<p>Lorem ipsum dolor sit amet.</p>
+			</li>
+			<li class="bar">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+			</li>
+			<li class="bar">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ullam doloribus voluptatibus.
+				</p>
+			</li>
+			<li class="bar">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sunt.
+				</p>
+			</li>
+			<li class="bar">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
+			</li>
+		</ul>
+
+		<ul class="bar-chart -solid -legend-top">
+			<li>
+				<p>Lorem ipsum dolor.</p>
+			</li>
+			<li class="bar"></li>
+
+			<li>
+				<p>Lorem ipsum dolor sit amet, consectetur.</p>
+			</li>
+			<li class="bar"></li>
+
+			<li>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
+					sunt?</p>
+			</li>
+			<li class="bar"></li>
+
+			<li>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+			</li>
+			<li class="bar"></li>
+
+			<li>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
+			</li>
+			<li class="bar"></li>
+		</ul>
+
+		<ul class="bar-chart -bar-bg -segmented">
+			<li class="bar">
+				<p>Lorem ipsum dolor.</p>
+			</li>
+			<li class="bar">
+				<p>Lorem ipsum dolor sit amet, consectetur.</p>
+			</li>
+			<li class="bar">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
+					sunt?
+				</p>
+			</li>
+			<li class="bar">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing.
+				</p>
+			</li>
+			<li class="bar">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
+			</li>
+		</ul>
+
+		<ul class="bar-chart -segmented -legend-top">
+			<li>
+				<p>Lorem ipsum dolor.</p>
+			</li>
+			<li class="bar"></li>
+
+			<li>
+				<p>Lorem ipsum dolor sit amet, consectetur.</p>
+			</li>
+			<li class="bar"></li>
+
+			<li>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
+					sunt?</p>
+			</li>
+			<li class="bar"></li>
+
+			<li>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+			</li>
+			<li class="bar"></li>
+
+			<li>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
+			</li>
+			<li class="bar"></li>
+		</ul>
+
+		<div class="stacked-charts">
+			<p class="stacked-chart-name txt-gradient">Lorem ipsum, dolor sit amet consectetur adipisicing?</p>
+			<ul class="stacked-chart data-1 -legend-off">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+
+			<ul class="stacked-chart-legend data-1">
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi totam necessitatibus, doloremque error
+					aliquid.</li>
+				<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, modi.</li>
+				<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, natus. Nam, veniam ex?</li>
+			</ul>
+
+			<p class="stacked-chart-name txt-gradient">Lorem ipsum dolor sit amet consectetur adipisicing elit quis qui quam
+				provident?
 			</p>
-		</li>
-		<li class="bar">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sunt.
-			</p>
-		</li>
-		<li class="bar">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
-		</li>
-	</ul>
+			<ul class="stacked-chart data-2">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 
-	<ul class="bar-chart -solid -legend-top width-x">
-		<li>
-			<p>Lorem ipsum dolor.</p>
-		</li>
-		<li class="bar"></li>
-
-		<li>
-			<p>Lorem ipsum dolor sit amet, consectetur.</p>
-		</li>
-		<li class="bar"></li>
-
-		<li>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
-				sunt?</p>
-		</li>
-		<li class="bar"></li>
-
-		<li>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-		</li>
-		<li class="bar"></li>
-
-		<li>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
-		</li>
-		<li class="bar"></li>
-	</ul>
-
-	<ul class="bar-chart -bar-bg -segmented width-x">
-		<li class="bar">
-			<p>Lorem ipsum dolor.</p>
-		</li>
-		<li class="bar">
-			<p>Lorem ipsum dolor sit amet, consectetur.</p>
-		</li>
-		<li class="bar">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
-				sunt?
-			</p>
-		</li>
-		<li class="bar">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing.
-			</p>
-		</li>
-		<li class="bar">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
-		</li>
-	</ul>
-
-	<ul class="bar-chart -segmented -legend-top width-x">
-		<li>
-			<p>Lorem ipsum dolor.</p>
-		</li>
-		<li class="bar"></li>
-
-		<li>
-			<p>Lorem ipsum dolor sit amet, consectetur.</p>
-		</li>
-		<li class="bar"></li>
-
-		<li>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
-				sunt?</p>
-		</li>
-		<li class="bar"></li>
-
-		<li>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-		</li>
-		<li class="bar"></li>
-
-		<li>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
-		</li>
-		<li class="bar"></li>
-	</ul>
+			<ul class="stacked-chart-legend data-2 -legend-off">
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi totam necessitatibus, doloremque error
+					aliquid.</li>
+				<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, modi.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, natus. Nam, veniam ex?</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+			</ul>
+		</div>
+	</div>
 </article>`,s=document.querySelector(".main-content");s.insertAdjacentHTML("beforeend",d);s.insertAdjacentHTML("beforeend",c);s.insertAdjacentHTML("beforeend",r);s.insertAdjacentHTML("beforeend",m);s.insertAdjacentHTML("beforeend",u);s.insertAdjacentHTML("beforeend",p);s.insertAdjacentHTML("beforeend",g);s.insertAdjacentHTML("beforeend",v);s.insertAdjacentHTML("beforeend",b);s.insertAdjacentHTML("beforeend",f);s.insertAdjacentHTML("beforeend",_);s.insertAdjacentHTML("beforeend",h);const x=(a,n)=>{document.querySelectorAll(`${a} ${n}`).forEach(e=>{const t=e.closest(`${a}`),i=()=>{e.style.display="none",t.removeEventListener("scrollend",i)};t.addEventListener("scrollend",i)})};x(".main-content",".scroll-down");document.querySelectorAll(".slide").forEach((a,n)=>{document.querySelector(".slide-list").insertAdjacentHTML("beforeend",`<li>
 			<a href="#slide-${n+1}">
 				<span class="sr-only">slide ${n+1}</span>
