@@ -18,6 +18,7 @@
 	font-size: 1rem;
 	text-shadow: 1px 1px 1px hsl(var(--clr-0b));
 	/* padding: 1.5em; */
+	margin: 0;
 }
 .bar-chart .bar {
 	--bar-items: var(--item-x);
@@ -45,9 +46,9 @@
 	counter-reset: value var(--bar-value-int) fraction var(--bar-value-fr);
 	position: absolute;
 	right: 0;
-	height: 100%;
+	min-height: 100%;
 	aspect-ratio: 3 / 1;
-	transform: scale(var(--scale)) translateX(7%);
+	transform: scale(var(--scale)) translateX(8%);
 	border-radius: 100vw;
 	display: grid;
 	place-items: center;
@@ -86,7 +87,7 @@
 .-solid .bar {
 	--item-x: drop-shadow(var(--segment-size) 0 0 hsl(var(--bar-color)));
 	--segment-size: calc(
-		(var(--bar-value-int) * 1cqi + var(--bar-value-fr) * 0.01cqi) / 2
+		(var(--bar-value-int) * 1cqi + var(--bar-value-fr) * 0.1cqi) / 2
 	);
 }
 .-solid .bar::after {
@@ -100,7 +101,7 @@
 }
 .-solid :nth-child(2 of .bar) {
 	--bar-value-int: 25;
-	--bar-value-fr: 75;
+	--bar-value-fr: 9;
 	--bar-color: var(--clr-2d);
 }
 .-solid :nth-child(3 of .bar) {
