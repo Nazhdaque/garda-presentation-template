@@ -18,7 +18,8 @@
 @import url(./components/arrows.css) layer(components);
 @import url(./components/nav-panel.css) layer(components);
 @import url(./components/slide-number.css) layer(components);
-@import url(./components/bar-chart.css) layer(components);
+@import url(./components/chart-bar.css) layer(components);
+@import url(./components/chart-stacked.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
 @import url(./parts/slides.css) layer(parts);

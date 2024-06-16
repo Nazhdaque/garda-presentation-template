@@ -10,4 +10,6 @@
 	--x: 2;
 
 	place-self: center;
+	display: grid;
+	row-gap: 4em;
 }

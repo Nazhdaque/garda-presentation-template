@@ -1,0 +1,179 @@
+.stacked-charts {
+	--color-1: var(--clr-2i);
+	--color-2: var(--clr-2a);
+	--color-3: var(--clr-2d);
+	--color-4: var(--clr-2g);
+	--color-5: var(--clr-2b);
+	--margin: 1.25rem;
+}
+.stacked-charts .data-1 {
+	--chart-icon: url(/images/icons/icon-bus-09-w.svg);
+	--value-1: 8;
+	--value-2: 21;
+	--value-3: 32;
+	--value-4: 12;
+	--value-5: 27;
+}
+.stacked-charts .data-2 {
+	--chart-icon: url(/images/icons/icon-apr-36-w.svg);
+	--value-1: 29;
+	--value-2: 8;
+	--value-3: 13;
+	--value-4: 34;
+	--value-5: 16;
+}
+
+.stacked-chart {
+	--figure-size: 100cqi;
+	--shift: 2em;
+	--gap-color: var(--clr-0b);
+	--gap-width: 0.25em;
+
+	grid-template-columns:
+		calc(var(--value-1) * 1%)
+		calc(var(--value-2) * 1%)
+		calc(var(--value-3) * 1%)
+		calc(var(--value-4) * 1%)
+		calc(var(--value-5) * 1%);
+
+	margin: 0;
+	display: grid;
+	grid-auto-flow: column;
+	position: relative;
+	border-radius: 100vw;
+	text-shadow: 1px 1px 1px hsl(var(--clr-0b));
+}
+.stacked-chart::after {
+	position: absolute;
+	content: "";
+	right: 0;
+	height: 100%;
+	aspect-ratio: 1;
+	background-image: var(--chart-icon);
+	background-size: contain;
+	background-repeat: no-repeat;
+	/* padding-right: calc(var(--shift) * 4); */
+	/* padding-right: 12%; */
+}
+
+.stacked-chart > * {
+	counter-reset: value var(--segment-value);
+	position: relative;
+	padding-block: 2em;
+	overflow: hidden;
+	display: grid;
+}
+.stacked-chart > *::before {
+	position: absolute;
+	content: "";
+	place-self: center end;
+	right: var(--gap-width);
+	border-top: var(--figure-size) solid transparent;
+	border-bottom: var(--figure-size) solid transparent;
+	border-left: var(--figure-size) solid hsl(var(--segment-color));
+	filter: drop-shadow(var(--gap-width) 0 0 hsl(var(--gap-color)));
+}
+
+.stacked-chart > *::after {
+	position: absolute;
+	content: counter(value) "%";
+	place-self: center;
+	right: 2em;
+	font-size: 1.25em;
+	font-weight: var(--fw-eb);
+	transform: rotate(-45deg) translateY(75%) translateX(25%);
+}
+
+.stacked-chart > :nth-child(1),
+.stacked-chart-legend > :nth-child(1) {
+	--segment-color: var(--color-1);
+	--segment-value: var(--value-1);
+
+	border-radius: 100vw;
+}
+.stacked-chart > :nth-child(2),
+.stacked-chart-legend > :nth-child(2) {
+	--segment-color: var(--color-2);
+	--segment-value: var(--value-2);
+
+	right: calc(var(--shift) * 1);
+	z-index: -1;
+}
+.stacked-chart > :nth-child(3),
+.stacked-chart-legend > :nth-child(3) {
+	--segment-color: var(--color-3);
+	--segment-value: var(--value-3);
+
+	right: calc(var(--shift) * 2);
+	z-index: -2;
+}
+.stacked-chart > :nth-child(4),
+.stacked-chart-legend > :nth-child(4) {
+	--segment-color: var(--color-4);
+	--segment-value: var(--value-4);
+
+	right: calc(var(--shift) * 3);
+	z-index: -3;
+}
+.stacked-chart > :nth-child(5),
+.stacked-chart-legend > :nth-child(5) {
+	--segment-color: var(--color-5);
+	--segment-value: var(--value-5);
+
+	right: calc(var(--shift) * 4);
+	z-index: -4;
+}
+
+/* |||||||||| |||||||||| */
+.stacked-chart-legend {
+	--marker-size: 4em;
+
+	display: grid;
+	row-gap: 0.25em;
+	margin: var(--margin) 0 0 var(--margin);
+	font-weight: var(--fw-bd);
+}
+.stacked-chart-legend > * {
+	counter-reset: value var(--segment-value);
+	display: grid;
+	overflow: hidden;
+	position: relative;
+	padding-left: calc(var(--marker-size) + 0.5em);
+	border-radius: 100vw;
+}
+.stacked-chart-legend > ::before {
+	position: absolute;
+	content: "";
+	place-self: center start;
+	border-top: var(--marker-size) solid transparent;
+	border-bottom: var(--marker-size) solid transparent;
+	border-left: var(--marker-size) solid hsl(var(--segment-color));
+}
+.stacked-chart-legend > ::after {
+	position: absolute;
+	content: counter(value) "%";
+	text-shadow: 1px 1px 1px hsl(var(--clr-0b));
+	min-width: var(--marker-size);
+	min-height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.stacked-chart-legend.-legend-off {
+	--marker-size: 2em;
+}
+
+/* |||||||||| |||||||||| */
+.stacked-chart-name {
+	font-size: 1.5em;
+	font-weight: var(--fw-eb);
+	margin-left: var(--margin);
+}
+.stacked-chart-legend + .stacked-chart-name {
+	margin-top: 1.5em;
+}
+
+/* |||||||||| |||||||||| */
+.-legend-off > ::after {
+	display: none;
+}
