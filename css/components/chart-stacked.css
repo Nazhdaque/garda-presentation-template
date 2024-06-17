@@ -7,7 +7,7 @@
 	--margin: 1.25rem;
 }
 .stacked-charts .data-1 {
-	--chart-icon: url(/images/icons/icon-bus-09-w.svg);
+	--chart-icon: url(/images/icons/icon-bus-09-b.svg);
 	--value-1: 8;
 	--value-2: 21;
 	--value-3: 32;
@@ -15,7 +15,7 @@
 	--value-5: 27;
 }
 .stacked-charts .data-2 {
-	--chart-icon: url(/images/icons/icon-apr-36-w.svg);
+	--chart-icon: url(/images/icons/icon-apr-36-b.svg);
 	--value-1: 29;
 	--value-2: 8;
 	--value-3: 13;
@@ -47,11 +47,18 @@
 	position: absolute;
 	content: "";
 	right: 0;
-	height: 100%;
+	top: 0;
+	bottom: 0;
+	margin-block: auto;
+	height: 160%;
 	aspect-ratio: 1;
 	background-image: var(--chart-icon);
-	background-size: contain;
+	background-size: 60%;
 	background-repeat: no-repeat;
+	background-position: center;
+	background-color: hsl(var(--clr-0a));
+	border-radius: 50%;
+
 	/* padding-right: calc(var(--shift) * 4); */
 	/* padding-right: 12%; */
 }
@@ -129,7 +136,7 @@
 	--marker-size: 4em;
 
 	display: grid;
-	row-gap: 0.25em;
+	row-gap: 0.2em;
 	margin: var(--margin) 0 0 var(--margin);
 	font-weight: var(--fw-bd);
 }
