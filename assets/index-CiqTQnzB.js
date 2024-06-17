@@ -1193,30 +1193,16 @@
 		</ul>
 
 		<ul class="bar-chart -solid -legend-top">
-			<li>
-				<p>Lorem ipsum dolor.</p>
-			</li>
+			<li>Lorem ipsum dolor.</li>
 			<li class="bar"></li>
-
-			<li>
-				<p>Lorem ipsum dolor sit amet, consectetur.</p>
-			</li>
+			<li>Lorem ipsum dolor sit amet, consectetur.</li>
 			<li class="bar"></li>
-
-			<li>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
-					sunt?</p>
-			</li>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
+				sunt?</li>
 			<li class="bar"></li>
-
-			<li>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-			</li>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
 			<li class="bar"></li>
-
-			<li>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
-			</li>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</li>
 			<li class="bar"></li>
 		</ul>
 
@@ -1228,13 +1214,11 @@
 				<p>Lorem ipsum dolor sit amet, consectetur.</p>
 			</li>
 			<li class="bar">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
-					sunt?
-				</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut
+					amet aperiam sunt?</p>
 			</li>
 			<li class="bar">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing.
-				</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 			</li>
 			<li class="bar">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
@@ -1242,30 +1226,16 @@
 		</ul>
 
 		<ul class="bar-chart -segmented -legend-top">
-			<li>
-				<p>Lorem ipsum dolor.</p>
-			</li>
+			<li>Lorem ipsum dolor.</li>
 			<li class="bar"></li>
-
-			<li>
-				<p>Lorem ipsum dolor sit amet, consectetur.</p>
-			</li>
+			<li>Lorem ipsum dolor sit amet, consectetur.</li>
 			<li class="bar"></li>
-
-			<li>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
-					sunt?</p>
-			</li>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe cupiditate hic ut amet aperiam
+				sunt?</li>
 			<li class="bar"></li>
-
-			<li>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-			</li>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
 			<li class="bar"></li>
-
-			<li>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
-			</li>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</li>
 			<li class="bar"></li>
 		</ul>
 
