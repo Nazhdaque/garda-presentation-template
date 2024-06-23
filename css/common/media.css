@@ -14,7 +14,14 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| xl */
 @media (width <= 1400px) {
+	.xl-gaf-row .chart-box {
+		--img-w: auto;
+		--img-h: 30rem;
+	}
 	/* |||||||||| utilities */
+	.xl-gaf-row {
+		grid-auto-flow: row;
+	}
 	.xl-d-block {
 		display: block;
 	}

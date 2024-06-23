@@ -1,0 +1,13 @@
+.__bar_charts {
+	--clr-bg: hsl(var(--clr-0b));
+	--clr-solid: hsl(var(--clr-0a));
+}
+
+.__bar_charts .width-x {
+	--col: 3;
+	--x: 2;
+
+	place-self: center;
+	display: grid;
+	row-gap: 4em;
+}

@@ -192,7 +192,8 @@
 	aspect-ratio: var(--asp, auto);
 	border-radius: var(--radius, initial);
 }
-.img-box > img {
+.img-box > img,
+.img-box > picture {
 	position: absolute;
 	inset: 0;
 	border-radius: var(--radius, initial);

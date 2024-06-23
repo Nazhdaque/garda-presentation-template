@@ -12,9 +12,12 @@
 	},
 	"devDependencies": {
 		"gh-pages": "^6.1.1",
+		"papaparse": "^5.4.1",
 		"vite": "^5.2.13"
 	},
 	"dependencies": {
+		"chart.js": "^4.4.3",
+		"chartjs-plugin-datalabels": "^2.2.0",
 		"material-icons": "^1.13.12"
 	}
 }
