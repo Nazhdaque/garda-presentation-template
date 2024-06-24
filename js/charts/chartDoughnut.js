@@ -45,7 +45,7 @@ const getChart = () => {
 
 	const segmentIcon = {
 		id: "segmentImage",
-		afterDatasetDraw(chart, args, plugins) {
+		afterDatasetDraw(chart) {
 			const { ctx, data } = chart;
 			const iconSize = 30;
 			const angle = Math.PI / 180;
@@ -121,10 +121,10 @@ const getChart = () => {
 						"./images/icons/icon-bus-09-b.svg",
 						"./images/icons/icon-dbs-21-b.svg",
 						"./images/icons/icon-set-03-b.svg",
-						"./images/icons/icon-apr-36-b.svg",
-						"./images/icons/icon-bus-09-b.svg",
-						"./images/icons/icon-dbs-21-b.svg",
-						"./images/icons/icon-set-03-b.svg",
+						"./images/icons/icon-apr-08-b.svg",
+						"./images/icons/icon-com-38-b.svg",
+						"./images/icons/icon-dev-21-b.svg",
+						"./images/icons/icon-msc-36-b.svg",
 					],
 				},
 			],
