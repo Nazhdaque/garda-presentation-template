@@ -43,9 +43,38 @@ const getChart = () => {
 		},
 	};
 
+	const segmentIcon = {
+		id: "segmentImage",
+		afterDatasetDraw(chart, args, plugins) {
+			const { ctx, data } = chart;
+			const iconSize = 30;
+			const angle = Math.PI / 180;
+
+			chart.getDatasetMeta(0).data.forEach((datapoint, i) => {
+				const icon = new Image();
+				icon.src = data.datasets[0].icons[i];
+				ctx.save();
+				const x = chart.getDatasetMeta(0).data[i].tooltipPosition().x;
+				const y = chart.getDatasetMeta(0).data[i].tooltipPosition().y;
+				ctx.beginPath();
+				ctx.arc(x, y, iconSize / 1.25, 0, angle * 360, false);
+				ctx.fillStyle = "white";
+				ctx.fill();
+
+				ctx.drawImage(
+					icon,
+					x - iconSize / 2,
+					y - iconSize / 2,
+					iconSize,
+					iconSize
+				);
+			});
+		},
+	};
+
 	const config = {
 		type: "doughnut",
-		plugins: [ChartDataLabels, labelCenter],
+		plugins: [ChartDataLabels, labelCenter, segmentIcon],
 		options: {
 			plugins: {
 				tooltip: { enabled: false },
@@ -87,6 +116,16 @@ const getChart = () => {
 					borderColor: data.colors.at(-1),
 					borderWidth: 5,
 					hoverOffset: 25,
+					icons: [
+						"./images/icons/icon-apr-36-b.svg",
+						"./images/icons/icon-bus-09-b.svg",
+						"./images/icons/icon-dbs-21-b.svg",
+						"./images/icons/icon-set-03-b.svg",
+						"./images/icons/icon-apr-36-b.svg",
+						"./images/icons/icon-bus-09-b.svg",
+						"./images/icons/icon-dbs-21-b.svg",
+						"./images/icons/icon-set-03-b.svg",
+					],
 				},
 			],
 		},
