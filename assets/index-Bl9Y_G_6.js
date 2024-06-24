@@ -1161,7 +1161,8 @@ var wa=Object.defineProperty;var ka=(i,t,e)=>t in i?wa(i,t,{enumerable:!0,config
 	<div class="slide__top-group">
 		<div class="slide-ttl z-up">
 			<h1 class="fs-2xl fw-eb">Component: <span class="txt-gradient">donut-chart</span></h1>
-			<p class="fs-lg txt-gradient">Using Chart.js library | interactive | automatic percentage calculation</p>
+			<p class="fs-lg txt-gradient">Using Chart.js library | interactive | automatic percentage calculation | option:
+				icons</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
