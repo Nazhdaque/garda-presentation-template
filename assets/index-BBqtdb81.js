@@ -1284,7 +1284,7 @@ var ka=Object.defineProperty;var Ma=(i,t,e)=>t in i?ka(i,t,{enumerable:!0,config
 	<div class="slide__top-group">
 		<div class="slide-ttl z-up">
 			<h1 class="fs-2xl fw-eb">Слайд с <span class="txt-gradient">Яниным графиком</span></h1>
-			<p class="fs-lg txt-gradient">Который можно заскриншотить по штрих-линии | знаков после запятой может быть больше
+			<p class="fs-lg txt-gradient">Который можно заскриншотить | знаков после запятой может быть больше
 			</p>
 		</div>
 		<a href="#"
