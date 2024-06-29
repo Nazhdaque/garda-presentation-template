@@ -4,20 +4,25 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 const chartData = items => {
 	const values = [];
 	const colors = ["#2c313b"];
+	const icons = [];
+
 	items.forEach((item, i) => {
 		values.push(Number.parseFloat(item.dataset.value, 10));
 		colors.splice(i, colors[i], item.dataset.color);
 		item.style.setProperty("--segment-color", item.dataset.color);
+		item.dataset.icon && icons.push(item.dataset.icon);
 	});
 
-	return {
-		values: values,
-		colors: colors,
-	};
+	return { values, colors, icons };
 };
-const data = chartData(document.querySelectorAll(".chart-legend > *"));
 
-const getChart = () => {
+const data = [];
+const canvas = [];
+
+document.querySelectorAll(".chart-doughnut").forEach((item, i) => {
+	data.push(chartData(item.querySelectorAll(".chart-legend > *")));
+	canvas.push(item.querySelector(".chart-doughnut canvas"));
+
 	const labelCenter = {
 		id: "labelCenter",
 		beforeDatasetsDraw(chart) {
@@ -44,7 +49,7 @@ const getChart = () => {
 	};
 
 	const segmentIcon = {
-		id: "segmentImage",
+		id: "segmentIcon",
 		afterDatasetDraw(chart) {
 			const { ctx, data } = chart;
 			const iconSize = 30;
@@ -60,7 +65,6 @@ const getChart = () => {
 				ctx.arc(x, y, iconSize / 1.25, 0, angle * 360, false);
 				ctx.fillStyle = "white";
 				ctx.fill();
-
 				ctx.drawImage(
 					icon,
 					x - iconSize / 2,
@@ -74,7 +78,11 @@ const getChart = () => {
 
 	const config = {
 		type: "doughnut",
-		plugins: [ChartDataLabels, labelCenter, segmentIcon],
+		plugins: [
+			ChartDataLabels,
+			labelCenter,
+			data[i].icons.length !== 0 && segmentIcon,
+		],
 		options: {
 			plugins: {
 				tooltip: { enabled: false },
@@ -98,42 +106,29 @@ const getChart = () => {
 						size: 28,
 						weight: "bold",
 					},
-					color: data.colors,
+					color: data[i].colors,
 				},
 			},
 			maintainAspectRatio: false,
 			cutout: "60%",
 			layout: { padding: 50 },
-			rotation: -65,
+			rotation: -75,
 		},
 
 		data: {
 			datasets: [
 				{
-					data: data.values,
-					backgroundColor: data.colors,
-					hoverBackgroundColor: data.colors,
-					borderColor: data.colors.at(-1),
+					data: data[i].values,
+					backgroundColor: data[i].colors,
+					hoverBackgroundColor: data[i].colors,
+					borderColor: data[i].colors.at(-1),
 					borderWidth: 5,
 					hoverOffset: 25,
-					icons: [
-						"./images/icons/icon-apr-36-b.svg",
-						"./images/icons/icon-bus-09-b.svg",
-						"./images/icons/icon-dbs-21-b.svg",
-						"./images/icons/icon-set-03-b.svg",
-						"./images/icons/icon-apr-08-b.svg",
-						"./images/icons/icon-com-38-b.svg",
-						"./images/icons/icon-dev-21-b.svg",
-						"./images/icons/icon-msc-36-b.svg",
-					],
+					icons: data[i].icons,
 				},
 			],
 		},
 	};
 
-	document
-		.querySelectorAll(".chart-doughnut")
-		.forEach(ctx => new Chart(ctx, config));
-};
-
-getChart();
+	new Chart(canvas[i], config);
+});
