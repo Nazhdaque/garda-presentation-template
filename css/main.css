@@ -20,6 +20,7 @@
 @import url(./components/slide-number.css) layer(components);
 @import url(./components/chart-bar.css) layer(components);
 @import url(./components/chart-stacked.css) layer(components);
+@import url(./components/chart-doughnut.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
 @import url(./parts/slides.css) layer(parts);
@@ -35,6 +36,7 @@
 @import url(./parts/slide-10.css) layer(parts);
 @import url(./parts/slide-11.css) layer(parts);
 @import url(./parts/slide-12.css) layer(parts);
+@import url(./parts/slide-13.css) layer(parts);
 @import url(./parts/bar_charts.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);
 

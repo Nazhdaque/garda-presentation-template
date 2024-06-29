@@ -11,8 +11,8 @@ const chartData = items => {
 		colors.splice(i, colors[i], item.dataset.color);
 		item.style.setProperty("--segment-color", item.dataset.color);
 		item.dataset.icon && icons.push(item.dataset.icon);
+		item.dataset.border && (colors[colors.length - 1] = item.dataset.border);
 	});
-
 	return { values, colors, icons };
 };
 
@@ -111,7 +111,7 @@ document.querySelectorAll(".chart-doughnut").forEach((item, i) => {
 			},
 			maintainAspectRatio: false,
 			cutout: "60%",
-			layout: { padding: 50 },
+			layout: { padding: 60 },
 			rotation: -75,
 		},
 
@@ -122,6 +122,7 @@ document.querySelectorAll(".chart-doughnut").forEach((item, i) => {
 					backgroundColor: data[i].colors,
 					hoverBackgroundColor: data[i].colors,
 					borderColor: data[i].colors.at(-1),
+					hoverBorderColor: data[i].colors.at(-1),
 					borderWidth: 5,
 					hoverOffset: 25,
 					icons: data[i].icons,

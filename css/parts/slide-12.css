@@ -3,37 +3,6 @@
 	--clr-solid: hsl(var(--clr-0a));
 }
 
-.chart {
-	--col: 3;
-	--x: 2;
-	--inner-gap: 4em;
-
-	place-self: center;
-}
-.chart-box {
+.__slide-12 .chart-box {
 	--img-w: 30rem;
-}
-
-.chart-data {
-	place-self: center;
-}
-
-.chart-legend {
-	--clr-solid: #bbbbbb;
-
-	display: grid;
-	row-gap: 0.75em;
-	margin-top: 2em;
-}
-.chart-legend > * {
-	display: grid;
-	grid-template-columns: min-content auto;
-	gap: 1em;
-}
-.chart-legend > ::before {
-	content: "";
-	background-color: var(--segment-color);
-	width: 2.5em;
-	height: 0.8em;
-	margin-top: 0.3em;
 }
