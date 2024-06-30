@@ -64,7 +64,7 @@ const getChartData = async () => {
 		});
 		legends.push(chartLegends);
 		sections.push(chartSection(entry.ttl, legends[index], index));
-		palette = colors;
+		palette = [...colors];
 	});
 
 	render(sections, container);
