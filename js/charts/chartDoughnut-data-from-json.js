@@ -3,6 +3,12 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 import { FetchWrapper } from "../helpers.js";
 import { html, render } from "lit-html";
 
+const getElements = classNames => {
+	const elements = [];
+	classNames.forEach(item => elements.push(document.querySelector(item)));
+	return elements;
+};
+
 let palette = [
 	"#0bbafa",
 	"#b657ff",
@@ -19,7 +25,7 @@ const colors = [...palette];
 const API = new FetchWrapper("");
 const getChartData = async () => {
 	const json = await API.get("data-doughnuts.json");
-	const container = document.querySelector(".__slide-13");
+	const containers = getElements([".__slide-12", ".__slide-13"]);
 
 	const chartSection = (title, legends, index) => html`
 		<section class="grid-x cards-plain width-x chart z-up chart-doughnut">
@@ -67,7 +73,7 @@ const getChartData = async () => {
 		palette = [...colors];
 	});
 
-	render(sections, container);
+	render(sections, containers[1]);
 
 	// ---
 	const chartData = items => {
