@@ -157,3 +157,10 @@ export const trimData = (data, cut) => {
 	newInnerData.unshift(newColHeads);
 	return newInnerData;
 };
+
+//---
+export const getElements = array => {
+	const elements = [];
+	array.forEach(item => elements.push(document.querySelector(item)));
+	return elements;
+};

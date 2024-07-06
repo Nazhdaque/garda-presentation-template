@@ -1,6 +1,11 @@
 .__slide-9 {
 	--clr-bg: hsl(var(--clr-0a));
 	--clr-solid: hsl(var(--clr-0b));
+
+	--slide-img: url(/images/light-bulbs.svg);
+
+	background-position: left 10% bottom -70%;
+	background-size: 25%;
 }
 
 .__slide-9 .cards-framed {

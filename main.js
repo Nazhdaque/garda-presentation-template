@@ -2,10 +2,7 @@ import "./css/main.css";
 import "material-icons/iconfont/round.css";
 import "./js/importHTML.js";
 import "./js/scrollDownPromptDisable.js";
-// import "./js/charts/chartDoughnut.js";
-import "./js/charts/chartDoughnut-data-from-json.js";
-// import "./js/charts/chartBar.js";
-// import "./js/charts/chartLine.js";
+import "./js/charts/chartDoughnut.js";
 
 document.querySelectorAll(".slide").forEach((slide, i) => {
 	document.querySelector(".slide-list").insertAdjacentHTML(

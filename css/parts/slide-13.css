@@ -1,15 +1,18 @@
 .__slide-13 {
 	--clr-bg: hsl(var(--clr-0a));
 	--clr-solid: hsl(var(--clr-0b));
+	--slide-img: url(/images/light-bulbs.svg);
+
+	background-position: right 5% bottom -125%;
+	background-size: 30%;
 }
 
+.__slide-13 .chart {
+	place-self: start;
+}
 .__slide-13 .chart-box {
 	--img-w: 30rem;
 }
 .__slide-13 .chart-legend {
 	--clr-solid: hsl(var(--clr-0b));
 }
-
-/* .__slide-13 .chart-doughnut {
-	border: 2px dashed var(--clr-solid);
-} */
