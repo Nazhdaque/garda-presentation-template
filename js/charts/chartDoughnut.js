@@ -15,6 +15,7 @@ let palette = [
 	"#a4897a",
 ];
 const colors = [...palette];
+const mobile = 576;
 
 const API = new FetchWrapper("");
 const getChartData = async () => {
@@ -124,7 +125,7 @@ const getChartData = async () => {
 			id: "segmentIcon",
 			afterDatasetDraw(chart) {
 				const { ctx, data } = chart;
-				const iconSize = window.outerWidth <= 576 ? chart.width / 18 : 30;
+				const iconSize = window.outerWidth <= mobile ? chart.width / 18 : 30;
 				const angle = Math.PI / 180;
 
 				chart.getDatasetMeta(0).data.forEach((datapoint, i) => {
@@ -176,8 +177,8 @@ const getChartData = async () => {
 						font: ctx => {
 							return {
 								family: "Proxima Nova",
-								size: window.outerWidth <= 576 ? ctx.chart.width / 18 : 28,
-								weight: "bold",
+								size: window.outerWidth <= mobile ? ctx.chart.width / 24 : 28,
+								weight: window.outerWidth <= mobile ? "normal" : "bold",
 							};
 						},
 						color: data[i].colors,
@@ -197,7 +198,7 @@ const getChartData = async () => {
 						hoverBackgroundColor: data[i].colors,
 						borderColor: data[i].colors.at(-1),
 						hoverBorderColor: data[i].colors.at(-1),
-						borderWidth: 5,
+						borderWidth: window.outerWidth <= mobile ? 2 : 5,
 						hoverOffset: 25,
 						icons: data[i].icons,
 					},
