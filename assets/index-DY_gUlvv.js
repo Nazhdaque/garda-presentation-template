@@ -1212,8 +1212,8 @@ var Ka=Object.defineProperty;var Ga=(i,t,e)=>t in i?Ka(i,t,{enumerable:!0,config
 	<div class="slide__top-group">
 		<div class="slide-ttl z-up">
 			<h1 class="fs-2xl fw-eb">Component: <span class="txt-gradient">doughnut chart</span></h1>
-			<p class="fs-lg txt-gradient">Fetching data both from HTML data-attributes and .json | autolayout of a component
-				based on data from .json | option: icons</p>
+			<p class="fs-lg txt-gradient">Fetching data both from HTML data-attributes and .json | auto-building
+				components based on data from .json | option: icons</p>
 		</div>
 		<a href="#"
 			 class="brand-logo sm-d-none"
