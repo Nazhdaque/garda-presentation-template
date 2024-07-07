@@ -7,14 +7,13 @@
 	padding-block: 4rem;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-	background-image: var(--slide-img, none);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	row-gap: 4rem;
 
 	grid-auto-rows: min-content 1fr;
-	align-items: center;
+	align-items: start;
 }
 
 /* top right beam */

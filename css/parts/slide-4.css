@@ -1,7 +1,8 @@
 .__slide-4 {
 	--clr-bg: hsl(var(--clr-0b));
 	--clr-solid: hsl(var(--clr-0a));
-	--slide-img: url(/images/slide-bgs/heroes.webp);
+
+	background-image: url(/images/slide-bgs/heroes.webp);
 }
 
 .__slide-4 .cards-plain {
@@ -14,5 +15,4 @@
 .__slide-4 .bg-gradient {
 	max-width: 25ch;
 	padding: 0.5em 0.75em;
-	place-self: start;
 }

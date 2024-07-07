@@ -7,7 +7,7 @@
 	--card-border: 0.5rem;
 	--clr-frame: var(--clr-1b-1a);
 
-	grid-auto-rows: min-content;
+	place-self: start;
 }
 
 .card-framed {

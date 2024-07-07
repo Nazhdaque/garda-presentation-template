@@ -7,7 +7,8 @@
 		hsl(0, 0%, 0%, 0.5) 75%,
 		hsl(0, 0%, 0%, 1) 100%
 	);
-	--slide-img: var(--overlay), url(/images/slide-bgs/skyscrapper.webp);
+
+	background-image: var(--overlay), url(/images/slide-bgs/skyscrapper.webp);
 }
 
 .__slide-11 .flex-x {
@@ -23,8 +24,7 @@
 	place-self: end;
 }
 
-.__slide-11-list,
-.__slide-11-text {
+.__slide-11-list {
 	--img-size: 2.5rem;
 	--gap-y: 2rem;
 	--clr-1b-1a: linear-gradient(

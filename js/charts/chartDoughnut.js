@@ -38,11 +38,11 @@ const getChartData = async () => {
 		</section>
 	`;
 
-	const li = (value, legend, border, icons, i) => html` <li
+	const li = (value, legend, border, icons, i) => html`<li
 		data-value=${value ? value : 0}
 		data-color=${palette ? palette[i] : `red`}
 		data-border=${border ? border : `red`}
-		data-icon=${icons ? `./images/icons/${icons[i]}` : ""}>
+		data-icon=${icons ? `./images/icons/${icons[i]}` : ``}>
 		${legend}
 	</li>`;
 
@@ -124,7 +124,7 @@ const getChartData = async () => {
 			id: "segmentIcon",
 			afterDatasetDraw(chart) {
 				const { ctx, data } = chart;
-				const iconSize = 30;
+				const iconSize = window.outerWidth <= 576 ? chart.width / 18 : 30;
 				const angle = Math.PI / 180;
 
 				chart.getDatasetMeta(0).data.forEach((datapoint, i) => {
@@ -173,10 +173,12 @@ const getChartData = async () => {
 							const percentage = (value / total) * 100;
 							return percentage.toFixed(0) + "%";
 						},
-						font: {
-							family: "Proxima Nova",
-							size: 28,
-							weight: "bold",
+						font: ctx => {
+							return {
+								family: "Proxima Nova",
+								size: window.outerWidth <= 576 ? ctx.chart.width / 18 : 28,
+								weight: "bold",
+							};
 						},
 						color: data[i].colors,
 					},
