@@ -869,7 +869,7 @@ var Ga=Object.defineProperty;var Qa=(i,t,e)=>t in i?Ga(i,t,{enumerable:!0,config
 	<div class="slide-number"></div>
 	<div class="slide__top-group">
 		<div class="slide-ttl width-x z-up">
-			<h1 class="fs-2xl fw-eb">Component: <span class="txt-gradient">ordered list / stages</span></h1>
+			<h1 class="fs-2xl fw-eb">Component: <span class="txt-gradient">ordered list | stages</span></h1>
 			<p class="fs-lg txt-gradient">Based on framed cards</p>
 		</div>
 		<a href="#"
@@ -883,7 +883,7 @@ var Ga=Object.defineProperty;var Qa=(i,t,e)=>t in i?Ga(i,t,{enumerable:!0,config
 	<div class="cards-framed grid-x ordered-list">
 		<section class="card-framed -frame-off">
 			<div class="card-framed__head fs-2xl">
-				<div class="card-framed__icon img-box icon-bg "></div>
+				<div class="card-framed__icon img-box icon-bg"></div>
 			</div>
 			<div class="card-framed__body">
 				<div class="card-framed__txt">
