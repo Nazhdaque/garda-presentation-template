@@ -2,8 +2,8 @@
 	--clr-bg: hsl(var(--clr-0a));
 	--clr-solid: hsl(var(--clr-0b));
 
-	background-image: url(/images/light-bulbs.svg);
-	background-position: right 5% bottom -125%;
+	background-image: url(/images/bg-light-bulbs.svg);
+	background-position: right 5% bottom -50%;
 	background-size: 30%;
 }
 

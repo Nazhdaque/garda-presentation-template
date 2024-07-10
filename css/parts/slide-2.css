@@ -2,11 +2,24 @@
 	--clr-bg: hsl(var(--clr-0a));
 
 	z-index: 1;
+	background-image: url(/images/bg-check-marks-questions.svg);
+	background-position: right -30% bottom 130%;
+	background-size: 50%;
 }
 
 .__slide-2 .cards-plain {
 	--col: 4;
 	--x: 3;
 
-	place-self: center;
+	place-self: center start;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| xxl */
+@media (width < 1920px) {
+	.__slide-2 {
+		background-image: none;
+	}
+	.__slide-2 .cards-plain {
+		place-self: center;
+	}
 }
