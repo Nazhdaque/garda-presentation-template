@@ -1,0 +1,52 @@
+.__slide-final {
+	--clr-bg: hsl(var(--clr-0b));
+	--clr-solid: hsl(var(--clr-0a));
+
+	/* background-image: url(/images/bg-light-bulbs.svg);
+	background-position: right 5% bottom -50%;
+	background-size: 30%; */
+	--card-gtc: min-content auto;
+}
+
+.__slide-final .brand-logo {
+	--logo-size: 30rem;
+
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.__slide-final .cards-plain {
+	/* --col: 5;
+	--x: 2; */
+	--gap-y: 2em;
+	--gaf: column;
+	--gtr: repeat(6, auto);
+	--img-size: 3rem;
+	--inner-gap: 1em;
+
+	place-self: end start;
+}
+
+.__slide-final .card-plain .img-box {
+	transition: 0.25s transform;
+}
+.__slide-final .card-plain:hover .img-box {
+	transform: scale(1.1);
+}
+
+.social-media {
+	--img-h: 3em;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5em;
+	justify-content: center;
+}
+.social-media > * {
+	--asp: 1;
+
+	transition: 0.25s transform;
+}
+.social-media > :hover {
+	transform: scale(1.1);
+}

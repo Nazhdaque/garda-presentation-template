@@ -37,6 +37,11 @@
 @import url(./parts/slide-11.css) layer(parts);
 @import url(./parts/slide-12.css) layer(parts);
 @import url(./parts/slide-13.css) layer(parts);
+/* @import url(./parts/slide-14.css) layer(parts); */
+/* @import url(./parts/slide-15.css) layer(parts); */
+/* @import url(./parts/slide-16.css) layer(parts); */
+/* @import url(./parts/slide-17.css) layer(parts); */
+@import url(./parts/slide-final.css) layer(parts);
 @import url(./parts/bar_charts.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);
 

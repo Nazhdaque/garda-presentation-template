@@ -4,11 +4,13 @@ import "./js/importHTML.js";
 import "./js/scrollDownPromptDisable.js";
 import "./js/charts/chartDoughnut.js";
 
-document.querySelectorAll(".slide").forEach((slide, i) => {
-	document.querySelector(".slide-list").insertAdjacentHTML(
+const slides = document.querySelectorAll(".slide");
+const nav = document.querySelector(".slide-list");
+slides.forEach((__, i) => {
+	nav.insertAdjacentHTML(
 		"beforeend",
 		`<li>
-			<a href="#slide-${i + 1}">
+			<a href="#slide-${i === slides.length - 1 ? `final` : i + 1}">
 				<span class="sr-only">slide ${i + 1}</span>
 			</a>
 		</li>`

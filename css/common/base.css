@@ -15,9 +15,10 @@
 	list-style: none;
 }
 
-:where(a, button) {
+:where(a, button, address) {
 	cursor: pointer;
 	font-size: inherit;
+	font-style: inherit;
 	color: inherit;
 	border: none;
 	outline: none;
