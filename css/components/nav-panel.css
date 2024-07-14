@@ -1,13 +1,14 @@
 .nav-panel {
 	position: absolute;
 	right: 0;
-	color: hsl(var(--clr-solid));
 	z-index: 3;
 	place-self: center;
 }
 
 .slide-list {
 	--clr-solid: hsl(var(--clr-0a));
+	--clr-item: hsl(var(--clr-1b));
+	--time: 0.25s;
 
 	counter-reset: slide-counter 0;
 	display: grid;
@@ -28,7 +29,7 @@
 	width: var(--img-size);
 	aspect-ratio: 2 / 1;
 	counter-increment: slide-counter;
-	transition: transform 0.1s;
+	transition: transform var(--time);
 }
 
 .slide-list > *::before {
@@ -36,7 +37,8 @@
 	content: "";
 	border-top: var(--img-size) solid transparent;
 	border-bottom: var(--img-size) solid transparent;
-	border-right: var(--img-size) solid hsl(var(--clr-1b));
+	border-right: var(--img-size) solid var(--clr-item);
+	transition: border-right-color var(--time);
 }
 
 .slide-list > *::after {
@@ -46,7 +48,10 @@
 	pointer-events: none;
 }
 
-.slide-list > *:hover {
+.slide-list > *:hover,
+.slide-list :has(a:focus-visible) {
+	--clr-item: hsl(var(--clr-1a));
+
 	transform: translateX(var(--overflow));
 }
 

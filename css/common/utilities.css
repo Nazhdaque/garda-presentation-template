@@ -70,8 +70,8 @@
 	);
 
 	display: flex;
-	flex-wrap: var(--wrap, wrap);
-	justify-content: var(--justify, center);
+	/* flex-wrap: var(--wrap, wrap); */
+	/* justify-content: var(--justify, center); */
 	column-gap: var(--gap-x, normal);
 	row-gap: var(--gap-y, normal);
 }

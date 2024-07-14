@@ -4,6 +4,12 @@
 	.xxl-d-block {
 		display: block;
 	}
+	.xxl-d-flex {
+		display: flex;
+	}
+	.xxl-d-none {
+		display: none;
+	}
 	.xxl-wrap-1 {
 		flex-wrap: wrap;
 	}

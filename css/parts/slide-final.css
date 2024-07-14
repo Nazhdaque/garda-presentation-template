@@ -1,52 +1,93 @@
 .__slide-final {
 	--clr-bg: hsl(var(--clr-0b));
 	--clr-solid: hsl(var(--clr-0a));
+	--time: 0.25s;
 
-	/* background-image: url(/images/bg-light-bulbs.svg);
-	background-position: right 5% bottom -50%;
-	background-size: 30%; */
 	--card-gtc: min-content auto;
+
+	/* row-gap: 0; */
+	place-items: center stretch;
+	position: relative;
+}
+
+.__slide-final::after {
+	position: absolute;
+	content: "";
+	inset: 0;
+	clip-path: polygon(105% -10%, 0% 90%, 0% 240%);
+	background-image: linear-gradient(
+		to left,
+		hsl(var(--clr-1b), 0.5) 20%,
+		hsl(var(--clr-1a), 0.75) 100%
+	);
 }
 
 .__slide-final .brand-logo {
 	--logo-size: 30rem;
 
-	margin-left: 0;
-	margin-right: auto;
+	margin: 0 auto 0 0;
 }
 
 .__slide-final .cards-plain {
-	/* --col: 5;
-	--x: 2; */
+	--clr-icon: hsl(var(--clr-0a));
 	--gap-y: 2em;
 	--gaf: column;
 	--gtr: repeat(6, auto);
 	--img-size: 3rem;
 	--inner-gap: 1em;
-
-	place-self: end start;
 }
 
 .__slide-final .card-plain .img-box {
-	transition: 0.25s transform;
+	transition: var(--time) transform, var(--time) fill;
+	fill: var(--clr-icon);
 }
-.__slide-final .card-plain:hover .img-box {
+.__slide-final .card-plain:where(:hover, :focus-visible) .img-box,
+.__slide-final .img-box:has(+ * a:focus-visible) {
+	--clr-icon: hsl(var(--clr-1b));
+
 	transform: scale(1.1);
+}
+
+.center-group {
+	--gap-x: 5rem;
+	--gap-y: var(--gap-x);
+
+	align-items: center;
+}
+
+.thanks {
+	font-size: min(7rem, 10dvw + 1rem);
+	font-weight: var(--fw-eb);
+	max-width: 12ch;
+	line-height: 0.9;
+	margin: auto;
 }
 
 .social-media {
 	--img-h: 3em;
 
 	display: flex;
-	flex-wrap: wrap;
 	gap: 1.5em;
 	justify-content: center;
 }
 .social-media > * {
 	--asp: 1;
 
-	transition: 0.25s transform;
+	transition: var(--time) transform;
 }
-.social-media > :hover {
+.social-media > :where(:hover, :focus-visible) {
 	transform: scale(1.1);
+}
+.cards-plain .social-media {
+	justify-content: start;
+	margin-top: var(--img-h);
+}
+
+@media (width <= 1600px) {
+	.__slide-final::after {
+		display: none;
+	}
+	.thanks {
+		margin: 0;
+	}
 }

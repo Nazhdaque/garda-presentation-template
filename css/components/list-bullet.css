@@ -13,7 +13,7 @@
 	transition: 0.1s transform;
 }
 
-.list-bullet:not(.custom) li:hover::before {
+.list-bullet:not(.custom) li:where(:hover, :has(a:focus-visible))::before {
 	transform: scale(1.4);
 }
 

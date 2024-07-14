@@ -17,7 +17,7 @@
 }
 
 /* top right beam */
-.slide::before {
+.slide:not(:last-child):before {
 	position: absolute;
 	content: "";
 	top: -1.25rem;
@@ -55,4 +55,8 @@
 
 	margin-left: auto;
 	margin-top: 0.5rem;
+	transition: 0.25s transform;
+}
+.brand-logo:where(:hover, :focus-visible) {
+	transform: scale(1.05);
 }
