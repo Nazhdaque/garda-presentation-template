@@ -1,15 +1,38 @@
 .__slide-1 {
 	--clr-solid: hsl(var(--clr-0a));
 
-	grid-template-rows: min-content 1fr 2.25fr;
+	grid-template-rows: min-content 1fr min-content min-content;
 }
 
 .__slide-1 .slide-ttl {
-	place-self: end center;
+	place-self: center;
 }
 
 .__slide-1 .cards-plain {
 	--clr-solid: none;
 
-	place-self: start center;
+	place-self: start;
+}
+
+.speakers {
+	--radius: 50%;
+	--gap-y: 1em;
+	--card-gtc: min-content auto;
+
+	margin-top: auto;
+}
+.speakers .img-box {
+	border: 0.25em solid transparent;
+}
+.speakers .img-box::before {
+	content: "";
+	position: absolute;
+	inset: -0.25em;
+	background-image: var(--clr-1b-1a);
+	border-radius: 50%;
+}
+.speakers .card-plain__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
