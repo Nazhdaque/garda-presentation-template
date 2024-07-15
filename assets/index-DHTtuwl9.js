@@ -83,6 +83,37 @@ var ir=Object.defineProperty;var sr=(i,t,e)=>t in i?ir(i,t,{enumerable:!0,config
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis et tenetur!</p>
 			</div>
 		</section>
+	</div>
+
+	<div class="grid-x z-up cards-plain width-x speakers">
+		<section class="card-plain flow-col">
+			<div class="img-box icon-bg">
+				<img class="o-fit-cover"
+						 loading="lazy"
+						 decoding="async"
+						 src="./images/demo-person.webp"
+						 alt="">
+			</div>
+			<div class="card-plain__body">
+				<h2 class="fs-md fw-eb">Lorem ipsum</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+			</div>
+		</section>
+
+		<section class="card-plain flow-col">
+			<div class="img-box icon-bg">
+				<img class="o-fit-cover"
+						 loading="lazy"
+						 decoding="async"
+						 src="./images/demo-person.webp"
+						 alt="">
+			</div>
+			<div class="card-plain__body">
+				<h2 class="fs-md fw-eb">Lorem ipsum dolor</h2>
+				<p>Lorem ipsum dolor sit amet consectetur</p>
+			</div>
+		</section>
+	</div>
 </article>`,ar=`<article class="slide __slide-2 layout-center"
 				 id="slide-2">
 	<div class="slide-number"></div>
