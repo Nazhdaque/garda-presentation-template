@@ -14,7 +14,7 @@
 	place-self: center start;
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| xxl */
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 @media (width < 1920px) {
 	.__slide-2 {
 		background-image: none;

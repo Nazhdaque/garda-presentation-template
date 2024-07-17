@@ -1,5 +1,8 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| xxl */
 @media (width <= 1600px) {
+	.__slide-final::after {
+		display: none;
+	}
 	/* |||||||||| utilities */
 	.xxl-d-block {
 		display: block;
@@ -15,6 +18,9 @@
 	}
 	.xxl-order-up {
 		order: var(--order, 1);
+	}
+	.xxl-m-0 {
+		margin: 0;
 	}
 }
 

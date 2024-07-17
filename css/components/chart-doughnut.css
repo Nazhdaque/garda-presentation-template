@@ -18,14 +18,30 @@
 	margin-top: 2em;
 }
 .chart-legend > * {
+	--marker-w: 2.5em;
+	--marker-h: 0.8em;
+	--marker-top: 0.3em;
+	--arrow-size: calc(var(--marker-h) / 2);
+
 	display: grid;
 	grid-template-columns: min-content auto;
 	gap: 1em;
+	position: relative;
 }
 .chart-legend > ::before {
 	content: "";
 	background-color: var(--segment-color);
-	width: 2.5em;
-	height: 0.8em;
-	margin-top: 0.3em;
+	width: var(--marker-w);
+	height: var(--marker-h);
+	margin-top: var(--marker-top);
+}
+.chart-legend > :hover::after {
+	position: absolute;
+	top: var(--marker-top);
+	left: var(--marker-w);
+	height: var(--marker-h);
+	content: "";
+	border-top: var(--arrow-size) solid transparent;
+	border-bottom: var(--arrow-size) solid transparent;
+	border-left: var(--arrow-size) solid var(--segment-color);
 }

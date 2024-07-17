@@ -52,6 +52,15 @@
 	place-self: center;
 	padding: var(--card-gap); /* do not delete! */
 }
+.card-framed__icon::before,
+.card-framed .inner-icon {
+	transition: transform 0.25s;
+}
+
+.card-framed:has(.card-framed__body:hover) .card-framed__icon::before,
+.card-framed:has(.card-framed__body:hover) .inner-icon {
+	transform: scale(1.1);
+}
 
 .card-framed__body .card-framed__icon {
 	--icon-gap: 0;
@@ -84,6 +93,10 @@
 	inset: calc(var(--card-border) * -1);
 	z-index: -1;
 	border-radius: var(--radius, none);
+	transition: 0.25s transform;
+}
+.card-framed__body:hover::before {
+	transform: rotate(-3deg);
 }
 
 .card-framed__body:only-child {

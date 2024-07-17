@@ -48,11 +48,13 @@
 	pointer-events: none;
 }
 
+.slide-list > *.active,
 .slide-list > *:hover,
 .slide-list :has(a:focus-visible) {
-	--clr-item: hsl(var(--clr-1a));
-
 	transform: translateX(var(--overflow));
+}
+.slide-list > *.active {
+	--clr-item: hsl(var(--clr-1a));
 }
 
 .slide-list a {

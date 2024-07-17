@@ -75,6 +75,13 @@
 	margin: 0.75em 0.5em;
 }
 
+.card-plain .icon-bg {
+	transition: transform 0.25s;
+}
+.card-plain:hover .icon-bg {
+	transform: scale(1.1);
+}
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 .cards-plain.-list-icon {
 	--card-gtc: min-content;

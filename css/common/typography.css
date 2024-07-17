@@ -4,8 +4,8 @@
 	--fw-bd: 700;
 	--fw-eb: 800;
 
-	--fs-3xl: 5rem;
-	--fs-2xl: 3.25rem;
+	--fs-3xl: min(5rem, 10dvw + 1rem);
+	--fs-2xl: min(3.25rem, 10dvw + 1rem);
 	--fs-xl: 2rem;
 	--fs-lg: 1.5rem;
 	--fs-md: 1.25rem;

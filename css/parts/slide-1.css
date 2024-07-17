@@ -14,24 +14,38 @@
 	place-self: start;
 }
 
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .speakers {
 	--radius: 50%;
 	--gap-y: 1em;
 	--card-gtc: min-content auto;
+	--time: 0.25s;
 
 	margin-top: auto;
 }
-.speakers .img-box {
-	border: 0.25em solid transparent;
+
+.speakers__item:where(:hover, :focus-visible) .speakers__photo {
+	transform: scale(1.05);
+	filter: brightness(1.1);
 }
-.speakers .img-box::before {
+.speakers__item:where(:hover, :focus-visible) .speakers__photo::before {
+	transform: rotate(360deg);
+}
+
+.speakers__photo {
+	border: 0.25em solid transparent;
+	transition: transform var(--time), filter var(--time);
+}
+.speakers__photo::before {
 	content: "";
 	position: absolute;
 	inset: -0.25em;
 	background-image: var(--clr-1b-1a);
 	border-radius: 50%;
+	transition: transform calc(var(--time) * 2);
 }
-.speakers .card-plain__body {
+
+.speakers__about {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

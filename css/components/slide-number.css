@@ -1,6 +1,7 @@
 .slide-number {
 	--img-size: 3em;
-	--overflow: -0.75em;
+	/* --overflow: calc(var(--img-size) / -4); */
+	--overflow: calc(var(--img-size) * -1);
 	--clr-solid: hsl(var(--clr-0a));
 
 	font-size: var(--fs-sm);
@@ -15,6 +16,7 @@
 	top: var(--overflow);
 	aspect-ratio: 1 / 2;
 	height: var(--img-size);
+	transition: top 0.25s;
 }
 
 .slide-number::before {
