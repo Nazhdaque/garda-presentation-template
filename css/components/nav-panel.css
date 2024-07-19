@@ -2,7 +2,12 @@
 	position: absolute;
 	right: 0;
 	z-index: 3;
-	place-self: center;
+	/* place-self: center; */
+	/* safari; */
+	top: 0;
+	bottom: 0;
+	display: grid;
+	place-items: center;
 }
 
 .slide-list {

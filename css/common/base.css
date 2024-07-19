@@ -58,6 +58,7 @@ body {
 	overflow-x: hidden;
 	scroll-padding-top: var(--header-height);
 	height: 100%;
+	scroll-behavior: smooth;
 }
 
 body {

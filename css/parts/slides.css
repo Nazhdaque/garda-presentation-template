@@ -23,7 +23,6 @@
 	top: -1.25rem;
 	right: 0;
 	z-index: 2;
-	clip-path: polygon(100% 0, 0 70%, 100% 30%);
 	width: 6rem;
 	aspect-ratio: 1;
 	background-image: linear-gradient(
@@ -31,6 +30,19 @@
 		hsl(var(--clr-1b)) 0,
 		hsl(var(--clr-1a)) 100%
 	);
+	transition: clip-path 0.25s;
+}
+.slide:nth-child(2n-1)::before {
+	clip-path: polygon(100% 30%, 0 70%, 100% 30%);
+}
+.slide:nth-child(2n-1):not(:last-child):hover::before {
+	clip-path: polygon(100% 0, 0 70%, 100% 30%);
+}
+.slide:nth-child(2n):not(:last-child)::before {
+	clip-path: polygon(100% 0, 0 70%, 100% 0);
+}
+.slide:nth-child(2n):not(:last-child):hover::before {
+	clip-path: polygon(100% 0, 0 70%, 100% 30%);
 }
 
 .slide-ttl {
@@ -48,15 +60,4 @@
 	justify-content: space-between;
 	/* align-items: baseline; */
 	gap: 2em;
-}
-
-.brand-logo {
-	--logo-size: 14rem;
-
-	margin-left: auto;
-	margin-top: 0.5rem;
-	transition: 0.25s transform;
-}
-.brand-logo:where(:hover, :focus-visible) {
-	transform: scale(1.05);
 }

@@ -7,24 +7,32 @@
 
 	place-items: center stretch;
 	position: relative;
+	/* overflow: hidden; */
 }
 
 .__slide-final::after {
 	position: absolute;
 	content: "";
 	inset: 0;
-	clip-path: polygon(105% -10%, 0% 90%, 0% 240%);
+	clip-path: polygon(105% -10%, 0% 90%, 0% 90%);
 	background-image: linear-gradient(
-		to left,
+		150deg,
 		hsl(var(--clr-1b), 0.5) 20%,
 		hsl(var(--clr-1a), 0.75) 100%
 	);
+	transition: clip-path 0.25s;
+}
+
+.__slide-final.active:after {
+	clip-path: polygon(105% -10%, 0% 90%, 0% 240%);
 }
 
 .__slide-final .brand-logo {
 	--logo-size: 30rem;
 
 	margin: 0 auto 0 0;
+	translate: 0 -10dvh;
+	opacity: 0;
 }
 
 .contacts {
@@ -62,6 +70,9 @@
 	line-height: 0.9;
 	margin: auto;
 	/* text-align: center; */
+	translate: 0 -10dvh;
+	opacity: 0;
+	transition: var(--time) translate, var(--time) opacity;
 }
 
 .social-media {
@@ -71,15 +82,39 @@
 	gap: 1.5em;
 	justify-content: center;
 }
-.social-media > * {
+:where(.social-media, .contacts) > * {
 	--asp: 1;
+	--slide-in: translate cubic-bezier(0.34, 1.56, 0.64, 1);
 
-	transition: var(--time) transform;
+	translate: -100dvw 0;
+}
+:where(.social-media, .contacts) > :nth-child(1) {
+	transition: var(--time) scale, 0.9s 0.3s var(--slide-in);
+}
+:where(.social-media, .contacts) > :nth-child(2) {
+	transition: var(--time) scale, 0.8s 0.6s var(--slide-in);
+}
+:where(.social-media, .contacts) > :nth-child(3) {
+	transition: var(--time) scale, 0.7s 0.9s var(--slide-in);
+}
+:where(.social-media, .contacts) > :nth-child(4) {
+	transition: var(--time) scale, 0.6s 1.2s var(--slide-in);
+}
+:where(.social-media, .contacts) > :nth-child(5) {
+	transition: var(--time) scale, 0.5s 1.5s var(--slide-in);
 }
 .social-media > :where(:hover, :focus-visible) {
-	transform: scale(1.1);
+	scale: 1.1;
 }
 .cards-plain .social-media {
 	justify-content: start;
 	margin-top: var(--img-h);
+}
+
+:is(.thanks, .brand-logo).active {
+	translate: 0 0;
+	opacity: 1;
+}
+:where(.contacts, .social-media).active > * {
+	translate: 0 0;
 }

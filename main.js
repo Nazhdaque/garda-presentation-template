@@ -6,6 +6,19 @@ import "./js/charts/chartDoughnut.js";
 import { html, render } from "lit-html";
 
 const slides = document.querySelectorAll(".slide");
+const finalSlide = slides[slides.length - 1];
+const finalSlidelogo = finalSlide.querySelector(".brand-logo");
+const contacts = [...document.querySelectorAll(".contacts")];
+const socialMedia = [...document.querySelectorAll(".social-media")];
+const thanks = document.querySelector(".thanks");
+const animatedElements = [
+	finalSlide,
+	finalSlidelogo,
+	contacts,
+	socialMedia,
+	thanks,
+].flat();
+
 const nav = document.querySelector(".slide-list");
 slides.forEach((__, i) => {
 	nav.insertAdjacentHTML(
@@ -49,11 +62,11 @@ const link = (media, url) => html`<a
 
 const links = [];
 mediaNames.forEach((item, i) => links.push(link(item, mediaLinks[i])));
-document.querySelectorAll(".social-media").forEach(item => render(links, item));
+socialMedia.forEach(item => render(links, item));
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 const navLinks = document.querySelectorAll(".slide-list > *");
-const handleIn = e => {
+const navLinksAndSlideNumberAnimation = e => {
 	const num = e.currentTarget.querySelector(".slide-number");
 	if (num) num.style.top = `${num.getBoundingClientRect().height / -4}px`;
 	const activeLink = document.querySelector(".slide-list > *.active");
@@ -63,8 +76,21 @@ const handleIn = e => {
 			slide === e.currentTarget && navLinks[i].classList.add("active")
 	);
 };
-slides.forEach(slide => slide.addEventListener("mouseenter", handleIn));
-navLinks.forEach(link => link.addEventListener("click", handleIn));
+slides.forEach(slide =>
+	slide.addEventListener("mouseenter", navLinksAndSlideNumberAnimation)
+);
+navLinks.forEach(link =>
+	link.addEventListener("click", navLinksAndSlideNumberAnimation)
+);
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+const outro = () => {
+	animatedElements.forEach(item => item.classList.add("active"));
+	finalSlide.removeEventListener("mouseenter", outro);
+};
+finalSlide.addEventListener("mouseenter", outro);
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 
 // const heightSetter = new SizeSetter("h");
 // heightSetter.initWith([
