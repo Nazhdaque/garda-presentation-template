@@ -18,6 +18,7 @@
 	grid-auto-flow: var(--card-gaf, row);
 	grid-template-columns: var(--card-gtc, none);
 	grid-auto-rows: min-content;
+	background: var(--card-bg, none);
 }
 
 .flow-col.card-plain {
@@ -109,6 +110,26 @@
 	transform: translateX(-5%) translateY(5%) scale(1.05);
 }
 
+.ordered-list.cards-plain .img-box {
+	background-color: initial;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.card-plain.-bg {
+	--card-bg: hsl(var(--clr-0b));
+	--clr-solid: hsl(var(--clr-0a));
+
+	gap: 0;
+}
+.card-plain.-bg .card-plain__body {
+	padding: var(--inner-gap);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.card-plain:has(.card-plain__img.order-up) {
+	grid-auto-rows: auto min-content;
+}
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 /* .card-plain.-framed {
 	z-index: 1;
@@ -130,7 +151,3 @@
 	background-color: var(--clr-bg);
 	z-index: -1;
 } */
-
-.ordered-list.cards-plain .img-box {
-	background-color: initial;
-}

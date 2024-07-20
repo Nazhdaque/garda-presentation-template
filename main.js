@@ -71,10 +71,11 @@ const navLinksAndSlideNumberAnimation = e => {
 	if (num) num.style.top = `${num.getBoundingClientRect().height / -4}px`;
 	const activeLink = document.querySelector(".slide-list > *.active");
 	activeLink && activeLink.classList.remove("active");
-	slides.forEach(
-		(slide, i) =>
-			slide === e.currentTarget && navLinks[i].classList.add("active")
-	);
+	slides.forEach((slide, i) => {
+		slide === e.currentTarget &&
+			navLinks[i].querySelector("a").click() &
+				navLinks[i].classList.add("active");
+	});
 };
 slides.forEach(slide =>
 	slide.addEventListener("mouseenter", navLinksAndSlideNumberAnimation)
@@ -89,6 +90,7 @@ const outro = () => {
 	finalSlide.removeEventListener("mouseenter", outro);
 };
 finalSlide.addEventListener("mouseenter", outro);
+// [...navLinks].at(-1).addEventListener("click", outro);
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 
@@ -99,3 +101,9 @@ finalSlide.addEventListener("mouseenter", outro);
 // 	["h-master-1", "h-slave-3"],
 // 	["h-master-1", "h-slave-4"],
 // ]);
+
+slides.forEach((slide, i) => {
+	slide.addEventListener("keyup", e => {
+		e.key === "ArrowDown" && console.log(e.key);
+	});
+});
