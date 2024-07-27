@@ -8,7 +8,7 @@
 	outline: none;
 	overflow: hidden;
 	margin: 0.5rem 0 auto auto;
-	transition: var(--time) scale, var(--time) translate, var(--time) opacity;
+	transition: var(--time) scale;
 }
 
 .brand-logo:where(:hover, :focus-visible) {

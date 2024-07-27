@@ -101,9 +101,3 @@ finalSlide.addEventListener("mouseenter", outro);
 // 	["h-master-1", "h-slave-3"],
 // 	["h-master-1", "h-slave-4"],
 // ]);
-
-slides.forEach((slide, i) => {
-	slide.addEventListener("keyup", e => {
-		e.key === "ArrowDown" && console.log(e.key);
-	});
-});
