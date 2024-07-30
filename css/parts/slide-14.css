@@ -1,0 +1,18 @@
+.__slide-14 {
+	--clr-bg: hsl(var(--clr-0a));
+	--clr-solid: hsl(var(--clr-0b));
+
+	/* background-image: url(/images/bg-light-bulbs.svg);
+	background-position: right 5% bottom -50%;
+	background-size: 30%; */
+}
+
+.__slide-14 .chart {
+	place-self: center;
+}
+.__slide-14 .chart-box {
+	--img-w: 30rem;
+}
+.__slide-14 .chart-legend {
+	--clr-solid: hsl(var(--clr-0b));
+}

@@ -43,5 +43,20 @@
 			"Здравоохранение"
 		],
 		"border": "#ffffff"
+	},
+	{
+		"title": "Lorem ipsum dolor sit?",
+		"values": [17, 32, 25, 68, 72, 45, 53, 25],
+		"legends": [
+			"17 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, iusto.",
+			"32 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, quidem! Quisquam, alias.",
+			"25 Lorem ipsum dolor, sit amet consectetur.",
+			"68 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum!",
+			"72 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, porro libero cumque architecto dolores numquam?",
+			"45 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis recusandae harum sint illo.",
+			"53 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"25 Lorem ipsum dolor sit amet consectetur."
+		],
+		"border": "#ffffff"
 	}
 ]

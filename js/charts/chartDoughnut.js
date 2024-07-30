@@ -20,7 +20,7 @@ const mobile = 576;
 const API = new FetchWrapper("");
 const getChartData = async () => {
 	const json = await API.get("data-doughnuts.json");
-	const containers = getElements([".__slide-12", ".__slide-13"]);
+	const containers = getElements([".__slide-12", ".__slide-13", ".__slide-14"]);
 
 	const chartSection = (title, legends, index) => html`
 		<section class="grid-x cards-plain width-x chart z-up chart-doughnut">
@@ -51,6 +51,39 @@ const getChartData = async () => {
 	const sections = [];
 	const values = [];
 
+	// --- under dev
+	json.forEach(entry => {
+		const legendValue = {};
+		const iconValue = {};
+		const chartValues = [];
+		const chartLegends = [];
+
+		// console.log(entry);
+		const { values: vals, legends: comments, icons } = entry;
+		for (const [i, key] of comments.entries()) {
+			legendValue[key] = vals[i];
+			if (icons) iconValue[key] = icons[i];
+		}
+		// console.log(legendValue);
+		const sortedKeys = Object.keys(legendValue).sort(
+			(a, b) => legendValue[a] - legendValue[b]
+		);
+		// console.log(sortedKeys);
+		const sortedData = new Map();
+		sortedKeys.forEach(key => sortedData.set(key, legendValue[key]));
+		// console.log(sortedData);
+
+		for (const [legend, value] of sortedData) {
+			chartValues.push(Number.parseInt(value, 10));
+			chartLegends.push(legend);
+		}
+
+		// values.push(chartValues);
+		// console.log(chartValues);
+		// console.log(chartLegends);
+	});
+	// under dev ---
+
 	json.forEach(entry => {
 		const chartValues = [];
 		entry.values.forEach(value => chartValues.push(value));
@@ -71,7 +104,8 @@ const getChartData = async () => {
 		palette = [...colors];
 	});
 
-	render(sections, containers[1]);
+	render(sections.splice(0, 2), containers[1]);
+	render(sections, containers[2]);
 
 	// ---
 	const chartData = items => {
