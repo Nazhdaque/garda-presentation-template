@@ -52,45 +52,54 @@ const getChartData = async () => {
 	const values = [];
 
 	// --- under dev
-	json.forEach(entry => {
-		const legendValue = {};
-		const iconValue = {};
-		const chartValues = [];
-		const chartLegends = [];
+	const sortDescending = json => {
+		const sortedJson = [];
+		json.forEach(entry => {
+			const { title, values: vals, legends, border, icons } = entry;
+			const legendsValues = {};
+			const iconsValues = {};
+			const chartValues = [];
+			const chartLegends = [];
+			const chartIcons = [];
+			const sortedLegends = new Map();
+			const sortedIcons = new Map();
 
-		// console.log(entry);
-		const { values: vals, legends: comments, icons } = entry;
-		for (const [i, key] of comments.entries()) {
-			legendValue[key] = vals[i];
-			if (icons) iconValue[key] = icons[i];
-		}
-		// console.log(legendValue);
-		const sortedKeys = Object.keys(legendValue).sort(
-			(a, b) => legendValue[a] - legendValue[b]
-		);
-		// console.log(sortedKeys);
-		const sortedData = new Map();
-		sortedKeys.forEach(key => sortedData.set(key, legendValue[key]));
-		// console.log(sortedData);
+			for (const [i, key] of legends.entries()) legendsValues[key] = vals[i];
+			if (icons)
+				for (const [i, key] of icons.entries()) iconsValues[key] = vals[i];
 
-		for (const [legend, value] of sortedData) {
-			chartValues.push(Number.parseInt(value, 10));
-			chartLegends.push(legend);
-		}
+			Object.keys(legendsValues)
+				.sort((a, b) => legendsValues[a] - legendsValues[b])
+				.forEach(key => sortedLegends.set(key, legendsValues[key]));
 
-		// values.push(chartValues);
-		// console.log(chartValues);
-		// console.log(chartLegends);
-	});
+			Object.keys(iconsValues)
+				.sort((a, b) => iconsValues[a] - iconsValues[b])
+				.forEach(key => sortedIcons.set(key, iconsValues[key]));
+
+			for (const [legend, value] of sortedLegends) {
+				chartValues.unshift(Number.parseInt(value, 10));
+				chartLegends.unshift(legend);
+			}
+
+			for (const [icon, __] of sortedIcons) chartIcons.unshift(icon);
+
+			const sortedEntry = {
+				title,
+				values: chartValues,
+				legends: chartLegends,
+				border,
+				icons: chartIcons.length > 0 && chartIcons,
+			};
+
+			sortedJson.push(sortedEntry);
+			values.push(chartValues);
+		});
+
+		return sortedJson;
+	};
 	// under dev ---
 
-	json.forEach(entry => {
-		const chartValues = [];
-		entry.values.forEach(value => chartValues.push(value));
-		values.push(chartValues);
-	});
-
-	json.forEach((entry, index) => {
+	sortDescending(json).forEach((entry, index) => {
 		const chartLegends = [];
 		entry.values.forEach((value, i) => {
 			value === values[index][i - 1] &&

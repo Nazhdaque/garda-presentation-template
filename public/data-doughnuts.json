@@ -46,7 +46,7 @@
 	},
 	{
 		"title": "Lorem ipsum dolor sit?",
-		"values": [17, 32, 25, 68, 72, 45, 53, 25],
+		"values": [17, 32, 25, 68, 72, 45, 53, 25, 9],
 		"legends": [
 			"17 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, iusto.",
 			"32 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, quidem! Quisquam, alias.",
@@ -55,7 +55,8 @@
 			"72 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, porro libero cumque architecto dolores numquam?",
 			"45 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis recusandae harum sint illo.",
 			"53 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-			"25 Lorem ipsum dolor sit amet consectetur."
+			"25 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptates aspernatur.",
+			"9 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente id laudantium ratione."
 		],
 		"border": "#ffffff"
 	}
