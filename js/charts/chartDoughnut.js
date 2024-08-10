@@ -16,6 +16,18 @@ let palette = [
 ];
 const colors = [...palette];
 const mobile = 576;
+const getPairs = (items, values) => {
+	const pairs = {};
+	if (items) for (const [i, key] of items.entries()) pairs[key] = values[i];
+	return pairs;
+};
+const getSortedPairs = items => {
+	const pairs = new Map();
+	Object.keys(items)
+		.sort((a, b) => items[a] - items[b])
+		.forEach(key => pairs.set(key, items[key]));
+	return pairs;
+};
 
 const API = new FetchWrapper("");
 const getChartData = async () => {
@@ -51,53 +63,32 @@ const getChartData = async () => {
 	const sections = [];
 	const values = [];
 
-	// --- under dev
 	const sortDescending = json => {
 		const sortedJson = [];
-		json.forEach(entry => {
-			const { title, values: vals, legends, border, icons } = entry;
-			const legendsValues = {};
-			const iconsValues = {};
-			const chartValues = [];
-			const chartLegends = [];
-			const chartIcons = [];
-			const sortedLegends = new Map();
-			const sortedIcons = new Map();
-
-			for (const [i, key] of legends.entries()) legendsValues[key] = vals[i];
-			if (icons)
-				for (const [i, key] of icons.entries()) iconsValues[key] = vals[i];
-
-			Object.keys(legendsValues)
-				.sort((a, b) => legendsValues[a] - legendsValues[b])
-				.forEach(key => sortedLegends.set(key, legendsValues[key]));
-
-			Object.keys(iconsValues)
-				.sort((a, b) => iconsValues[a] - iconsValues[b])
-				.forEach(key => sortedIcons.set(key, iconsValues[key]));
-
-			for (const [legend, value] of sortedLegends) {
-				chartValues.unshift(Number.parseInt(value, 10));
-				chartLegends.unshift(legend);
-			}
-
-			for (const [icon, __] of sortedIcons) chartIcons.unshift(icon);
-
-			const sortedEntry = {
+		json.forEach(dataset => {
+			const { title, values: vals, legends, border, icons } = dataset;
+			const sortedDataset = {
 				title,
-				values: chartValues,
-				legends: chartLegends,
+				values: [],
+				legends: [],
 				border,
-				icons: chartIcons.length > 0 && chartIcons,
+				icons,
 			};
 
-			sortedJson.push(sortedEntry);
-			values.push(chartValues);
+			for (const [legend, value] of getSortedPairs(getPairs(legends, vals))) {
+				sortedDataset.values.unshift(Number.parseInt(value, 10));
+				sortedDataset.legends.unshift(legend);
+			}
+
+			for (const [icon, __] of getSortedPairs(getPairs(icons, vals)))
+				sortedDataset.icons.unshift(icon);
+
+			sortedJson.push(sortedDataset);
+			values.push(sortedDataset.values);
 		});
 
 		return sortedJson;
 	};
-	// under dev ---
 
 	sortDescending(json).forEach((entry, index) => {
 		const chartLegends = [];
