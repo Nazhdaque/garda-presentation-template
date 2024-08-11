@@ -21,7 +21,7 @@ const getPairs = (items, values) => {
 	if (items) for (const [i, key] of items.entries()) pairs[key] = values[i];
 	return pairs;
 };
-const getSortedPairs = items => {
+const sortPairs = items => {
 	const pairs = new Map();
 	Object.keys(items)
 		.sort((a, b) => items[a] - items[b])
@@ -29,9 +29,9 @@ const getSortedPairs = items => {
 	return pairs;
 };
 
-const API = new FetchWrapper("");
+const API = new FetchWrapper("data/");
 const getChartData = async () => {
-	const json = await API.get("data-doughnuts.json");
+	const json = await API.get("charts-data.json");
 	const containers = getElements([".__slide-12", ".__slide-13", ".__slide-14"]);
 
 	const chartSection = (title, legends, index) => html`
@@ -75,12 +75,12 @@ const getChartData = async () => {
 				icons,
 			};
 
-			for (const [legend, value] of getSortedPairs(getPairs(legends, vals))) {
+			for (const [legend, value] of sortPairs(getPairs(legends, vals))) {
 				sortedDataset.values.unshift(Number.parseInt(value, 10));
 				sortedDataset.legends.unshift(legend);
 			}
 
-			for (const [icon, __] of getSortedPairs(getPairs(icons, vals)))
+			for (const [icon, __] of sortPairs(getPairs(icons, vals)))
 				sortedDataset.icons.unshift(icon);
 
 			sortedJson.push(sortedDataset);
@@ -107,7 +107,7 @@ const getChartData = async () => {
 	render(sections.splice(0, 2), containers[1]);
 	render(sections, containers[2]);
 
-	// ---
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
 	const chartData = items => {
 		const values = [];
 		const colors = ["#2c313b"];
@@ -245,26 +245,3 @@ const getChartData = async () => {
 };
 
 getChartData();
-
-// {
-// 	"title": "В какой отрасли представлена ваша компания?",
-// 	"values": [110, 100, 65, 40, 35, 25, 20, 20, 15, 15, 15, 10, 10, 10, 10],
-// 	"legends": [
-// 		"Информационные технологии.",
-// 		"Государственный сектор.",
-// 		"Финансовый сектор.",
-// 		"Промышленность.",
-// 		"Телекоммуникации и связь.",
-// 		"Образование.",
-// 		"Ритейл.",
-// 		"Другое.",
-// 		"Нефтегазовая отрасль",
-// 		"Наука и консалтинг.",
-// 		"ТЭК.",
-// 		"ОПК.",
-// 		"Строительство",
-// 		"Логистика",
-// 		"Здравоохранение."
-// 	],
-// 	"border": "#ffffff"
-// }

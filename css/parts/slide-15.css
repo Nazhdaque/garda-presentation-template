@@ -1,0 +1,129 @@
+.__slide-15 {
+	--clr-bg: hsl(var(--clr-0a));
+	--clr-solid: hsl(var(--clr-0b));
+}
+
+:root {
+	font-size: 1rem;
+}
+.img-maker {
+	--clr-solid: hsl(var(--clr-0a));
+	--darker: 25%;
+	--img-w: 700px;
+	--asp: 7 / 5;
+	/* --mod: 1.25;
+	--img-w: 900px;
+	--asp: 9 / 6; */
+
+	--logo-show: none;
+	--logo-size: calc(12rem * var(--mod, 1));
+
+	/* --header-show: none; */
+	/* --footer-show: none; */
+	/* --body-show: none; */
+	/* --sub-show: none; */
+
+	--fs-top: calc(1.5rem * var(--mod, 1));
+	--fs-btm: calc(1.25rem * var(--mod, 1));
+	--fs-ttl: calc(2.5rem * var(--mod, 1));
+	--fs-sub: calc(1.5rem * var(--mod, 1));
+
+	--gap-ttl-sub: calc(1em * var(--mod, 1));
+
+	max-width: var(--img-w);
+	aspect-ratio: var(--asp);
+	padding: 2.5rem;
+	display: grid;
+	grid-template-rows: min-content auto min-content;
+	line-height: 1.1;
+
+	p,
+	p + * {
+		margin-top: 0;
+	}
+}
+.img-maker::before {
+	position: absolute;
+	content: "";
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: hsl(0 0% 0% / var(--darker, 0));
+}
+
+.img-header,
+.img-footer,
+.img-body {
+	display: grid;
+	place-items: center start;
+	grid-template-columns: max-content auto;
+	column-gap: 1rem;
+	z-index: 1;
+}
+
+.tag {
+	--clr-solid: hsl(var(--clr-0b));
+
+	background-color: hsl(var(--clr-0a));
+	border-radius: 0.4em;
+	padding: 0.5em 1em;
+	font-size: var(--fs-top);
+	font-weight: var(--fw-eb);
+	line-height: 1;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| header */
+.img-header {
+	display: var(--header-show, grid);
+	grid-row: 1;
+
+	.logo {
+		min-width: var(--logo-size);
+		display: var(--logo-show, block);
+	}
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| body */
+.img-body {
+	display: var(--body-show, grid);
+	grid-template-columns: auto;
+	place-items: center;
+	grid-row: 2;
+
+	.group {
+		display: grid;
+		row-gap: var(--gap-ttl-sub);
+	}
+
+	.ttl {
+		font-size: var(--fs-ttl);
+		font-weight: var(--fw-eb);
+		color: hsl(var(--clr-0a));
+	}
+
+	.sub {
+		font-size: var(--fs-sub);
+		display: var(--sub-show);
+	}
+	.sub :nth-child(2) {
+		font-size: 0.75em;
+	}
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| footer */
+.img-footer {
+	display: var(--footer-show, grid);
+	place-items: center start;
+	font-size: var(--fs-btm);
+	grid-row: 3;
+
+	.tag {
+		font-size: 1em;
+		font-weight: var(--fw-bd);
+	}
+
+	.txt :nth-child(2) {
+		font-size: 0.75em;
+	}
+}
