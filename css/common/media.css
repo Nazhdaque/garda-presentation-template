@@ -29,9 +29,10 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| xl */
 @media (width <= 1400px) {
-	.xl-gaf-row .chart-box {
-		--img-w: auto;
-		--img-h: 30rem;
+	.chart {
+		--x: 1;
+
+		place-self: center;
 	}
 	/* |||||||||| utilities */
 	.xl-order-0 {

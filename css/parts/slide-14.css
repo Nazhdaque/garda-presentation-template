@@ -10,9 +10,3 @@
 .__slide-14 .chart {
 	place-self: center;
 }
-.__slide-14 .chart-box {
-	--img-w: 30rem;
-}
-.__slide-14 .chart-legend {
-	--clr-solid: hsl(var(--clr-0b));
-}

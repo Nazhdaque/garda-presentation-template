@@ -1,6 +1,7 @@
 .__slide-12 {
 	--clr-bg: hsl(var(--clr-0b));
 	--clr-solid: hsl(var(--clr-0a));
+	--clr-solid: #bbbbbb;
 }
 
 .__slide-12 .chart-box {

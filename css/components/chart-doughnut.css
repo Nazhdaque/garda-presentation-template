@@ -1,26 +1,30 @@
 .chart {
 	--col: 3;
 	--x: 2;
-	--inner-gap: 4em;
+	--chart-size: min(30rem, 90dvw);
+	/* --clr-solid: hsl(var(--clr-0c)); */
 
-	place-self: center;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 4em;
+	place-items: center;
+	place-self: start center;
 }
 
-.chart-data {
-	place-self: center;
+.chart-box {
+	width: var(--chart-size);
+	aspect-ratio: 1;
 }
 
 .chart-legend {
-	--clr-solid: #bbbbbb;
-
 	display: grid;
-	row-gap: 0.5em;
+	row-gap: 0.4em;
 	margin-top: 2em;
 }
 .chart-legend > * {
-	--marker-w: 2.5em;
+	--marker-w: 2.4em;
 	--marker-h: 0.8em;
-	--marker-top: 0.3em;
+	--marker-top: 0.4em;
 	--arrow-size: calc(var(--marker-h) / 2);
 
 	display: grid;
@@ -44,5 +48,4 @@
 	border-top: var(--arrow-size) solid transparent;
 	border-bottom: var(--arrow-size) solid transparent;
 	border-left: var(--arrow-size) solid var(--segment-color);
-	/* transform: scale(2); */
 }

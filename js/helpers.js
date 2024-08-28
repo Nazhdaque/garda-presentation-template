@@ -53,14 +53,15 @@ export const flipArray = source => {
 
 //---
 export class GetCustomPropsValues {
-	constructor() {
+	constructor(element) {
 		this.values = [];
+		this.element = element ?? document.documentElement;
 	}
 
 	getValues = props => {
 		props.forEach(prop =>
 			this.values.push(
-				getComputedStyle(document.documentElement, null).getPropertyValue(prop)
+				getComputedStyle(this.element, null).getPropertyValue(prop)
 			)
 		);
 		return this.values;

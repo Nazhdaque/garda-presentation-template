@@ -2,7 +2,7 @@ import "./css/main.css";
 import "material-icons/iconfont/round.css";
 import "./js/importHTML.js";
 import "./js/scrollDownPromptDisable.js";
-import "./js/charts/chartDoughnut.js";
+import "./js/charts/chart-doughnut.js";
 import { html, render } from "lit-html";
 
 const slides = document.querySelectorAll(".slide");
