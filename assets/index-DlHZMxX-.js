@@ -100,7 +100,7 @@ var dr=Object.defineProperty;var un=i=>{throw TypeError(i)};var hr=(i,t,e)=>t in
 			</div>
 		</section>
 
-		<section class="card-plain flow-col speakers__item">
+		<!-- <section class="card-plain flow-col speakers__item">
 			<div class="img-box icon-bg speakers__photo">
 				<img class="o-fit-cover"
 						 loading="lazy"
@@ -112,7 +112,7 @@ var dr=Object.defineProperty;var un=i=>{throw TypeError(i)};var hr=(i,t,e)=>t in
 				<h2 class="fs-md fw-eb">Lorem ipsum dolor</h2>
 				<p>Lorem ipsum dolor sit amet consectetur</p>
 			</div>
-		</section>
+		</section> -->
 	</div>
 </article>`,pr=`<article class="slide __slide-2 layout-center"
 				 id="slide-2">
@@ -1235,7 +1235,7 @@ var dr=Object.defineProperty;var un=i=>{throw TypeError(i)};var hr=(i,t,e)=>t in
 				</div>
 				<div class="card-plain__body">
 					<p class="card-plain__ttl fs-md fw-eb">Офис в Москве</p>
-					<address">127015, Москва, Новодмитровская, 2Б</address>
+					<address">125167, Москва, Ленинградский проспект, д. 39, стр.80, башня «Б»</address>
 				</div>
 			</a>
 
