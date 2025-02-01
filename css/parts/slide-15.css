@@ -1,4 +1,29 @@
 .__slide-15 {
 	--clr-bg: hsl(var(--clr-0a));
 	--clr-solid: hsl(var(--clr-0b));
+
+	.cards-plain {
+		--col: 4;
+		--x: 3;
+		--inner-gap: 0;
+
+		place-self: center;
+	}
+
+	.card-plain {
+		grid-template-rows: subgrid;
+		grid-row: auto / span 3;
+
+		.img-box {
+			margin-bottom: 1.5em;
+		}
+
+		.card-plain__ttl {
+			place-self: start;
+		}
+
+		.card-plain__body {
+			display: contents;
+		}
+	}
 }
